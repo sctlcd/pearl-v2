@@ -4,3 +4,7 @@
 env
 *.sqlite3
 *.pyc
+.mdb
+bootstrap-material-design
+package-lock.json
+templates/base.html
