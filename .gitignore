@@ -8,3 +8,4 @@ env
 bootstrap-material-design
 package-lock.json
 env.py
+static\images\favicon.ico

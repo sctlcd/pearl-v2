@@ -155,7 +155,7 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [No result found page](https://github.com/sctlcd/pearl/blob/master/templates/noresultsfound.html) <a name="Noresultfoundpage"></a>
+##### [No result found page](https://github.com/sctlcd/pearl/blob/master/#TO_UPDATE) <a name="Noresultfoundpage"></a>
 
 - Humoristic picture and message letting know the user no result have been found matching with his/her search.
 - Link redirecting to Homepage.
@@ -164,7 +164,7 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [404 error page](https://github.com/sctlcd/pearl/blob/master/templates/errors/404errorpage.html) <a name="404errorpage"></a>
+##### [404 error page](https://github.com/sctlcd/pearl/blob/master/#TO_UPDATE) <a name="404errorpage"></a>
 
 
 Back to [top](#TableOfContents)
@@ -337,7 +337,29 @@ Back to [top](#TableOfContents)
 
 Sources of the images used on this site:
 
-- From ... sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/...)
+- From media/home/hero_image sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/media/home/hero_image)
+	- [](https://pixabay.com/fr/photos/outil-outils-%C3%A9quipement-travail-1957451/) - [Pixabay](https://pixabay.com/) | copyright [coyot](https://pixabay.com/fr/users/coyot-2009089/)
+	- [](https://pixabay.com/fr/photos/laine-d-acier-sombre-firespin-458840/) - [Pixabay](https://pixabay.com/) | copyright [463259](https://pixabay.com/fr/users/463259-463259/)  
+
+- From media/home/image_showcases sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/media/home/image_showcases)
+	- [](https://www.flickr.com/photos/woolgenie/11130456836/in/photolist-hXyv3d-5Y9E3c-5nT1q6-9fntLS-hw5rUx-bqVeMj-fdLe7t-BEdCfZ-soJx4-bNxP4i-63nP6c-e5cPNV-ckHujG-a2CVXo-8cvxSy-db7Yc5-81Y6dy-cfSt2L-dy4o3n-6fhExi-6p7Cpn-o9UymA-4wiG4Q-gwcN4-7t4EFt-7tp6xA-6UzTPj-7C4uvk-9Zzhxg-8pfMEs-aAhfP5-CZhs-7teK8f-biUirX-7jSHo1-4m89zu-7viAh3-6bwUfh-oxL6Z-7viAZS-iSoZF-5dtWk7-dLLYgg-4e37c3-8fi2Lx-85fwdc-rWakmW-dC8TzU-dgMAa9-2ehg9Ey) - [Flickr](https://www.flickr.com) | copyright [Heather](https://www.flickr.com/photos/woolgenie/)
+	- [](https://www.pexels.com/photo/assorted-color-great-board-decor-lot-1539581/) - [Pexels](https://www.pexels.com/) | copyright [Tim Mossholder](https://www.pexels.com/@timmossholder)
+	- [](https://www.flickr.com/photos/wespeck/4473683746/) - [Flickr](https://www.flickr.com) | copyright [gfpeck](https://www.flickr.com/photos/wespeck/)
+	- [](https://www.flickr.com/photos/mikecogh/43105291024/) - [Flickr](https://www.flickr.com) | copyright [Michael Coghlan](https://www.flickr.com/photos/mikecogh/)
+
+- From media/home/testimonials sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/media/home/testimonials)
+	- https://pixabay.com/fr/photos/mod%C3%A8le-femme-portrait-336658/  Image par Free-Photos de Pixabay
+	- https://pixabay.com/fr/photos/jeune-fille-%C3%A9changisme-coiffure-1245835/ Image par Free-Photos de Pixabay
+	- https://www.pexels.com/photo/portrait-photo-of-man-in-white-crew-neck-t-shirt-with-assorted-hand-tools-in-background-1139743/ de Juan Pablo Serrano Arenas https://www.pexels.com/@juanpphotoandvideo
+
+- From media/home/gallery sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/media/home/gallery)
+	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
+
+- From static/images sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/static/images)
+	- [favicon.ico](https://www.flaticon.com/free-icon/knowledge_3603994) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
+
+- From media/home sub-directory - [Github](https://github.com/sctlcd/pearl/tree/master/media/home)
+	- [pearl-min.png](https://www.flaticon.com/free-icon/knowledge_3603994) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 
 Back to [top](#TableOfContents)
 
