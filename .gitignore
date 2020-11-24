@@ -10,4 +10,3 @@ package-lock.json
 env.py
 static/images/home
 static/images/pearl.png
-templates/includes/base_main_nav.html
