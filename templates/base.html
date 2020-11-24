@@ -15,7 +15,8 @@
   {% endblock %}
 
   {% block corecss %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,23 +44,89 @@
 
 <body>
 
-  <header class="container-fluid fixed-top"></header>
+  <header class="container-fluid fixed-top">
+    <div id="topnav" class="row bg-hover pt-lg-2 d-none d-lg-flex">
+      <div class="col-12 col-lg-5 my-auto px-1 py-1 py-lg-0 text-center text-lg-left">
+        <a href="{% url 'home' %}" class="nav-link main-logo-link ">
+          <img src="/media/pearl-min.png" alt="Pearl" class="d-inline">
+          <h2 class="d-inline logo-font text-white my-0"><strong>Pearl</strong></h2>
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 search-container">
+        <form method="GET" action="#" class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search text-white" aria-hidden="true"></i>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li class="list-inline-item">
+            <a class="text-white nav-link" href="#">
+              <div class="text-center">
+                <div><i class="fas fa-images fa-lg text-white"></i></div>
+                <p class="my-0 text-white">
+                  Gallery
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item dropdown">
+            <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg text-white"></i></div>
+                <p class="my-0">My Account</p>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0 bg-white" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="#" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="#" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="#">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-basket fa-lg text-white"></i></div>
+                <p class="my-0">
+                  {% if grand_total %}
+                  ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                  $0.00
+                  {% endif %}
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
 
   {% if messages %}
   <div class="message-container">
-  {% endif %}
+    {% endif %}
 
-  {% block page_header %}
-  {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-  {% block content %}
-  {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-  <footer></footer>
+    <footer></footer>
 
-  {% block postloadjs %}
-  <!-- <script src="{% static 'js/base.js' %}"></script> -->
-  {% endblock %}
+    {% block postloadjs %}
+    <!-- <script src="{% static 'js/base.js' %}"></script> -->
+    {% endblock %}
 
 </body>
 

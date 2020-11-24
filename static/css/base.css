@@ -4,7 +4,7 @@ html {
 
 body {
   /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/static/images/home/hero_image/hero-image-background.jpg') no-repeat center center fixed;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/media/home/hero_image/hero-image-background-min.jpg') no-repeat center center fixed;
   background-size: cover;
 	height: 100vh;
   background-color: #555;
@@ -78,6 +78,20 @@ body {
 .bg-hover-white,
 .bg-hover-white:hover {
   background: #fafafa !important;
+}
+
+/* ------------------------------- header */
+
+/* ----------------------- topnav */
+
+.main-logo-link img {
+	height: 30px;
+  width: 30px;
+  margin: 0px 10px 16px 10px;
+}
+
+.search-container {
+	margin: 0 auto;
 }
 
 /* ------------------------------- hero image */
@@ -169,7 +183,7 @@ body {
 /* ------------------------------- gallery */
 
 .gallery {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/static/images/home/gallery/gallery-background-1920-min.jpg') no-repeat left top fixed;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/media/home/gallery/gallery-background-min.jpg') no-repeat left top fixed;
   background-size: cover;
 	color: #555;
 }
