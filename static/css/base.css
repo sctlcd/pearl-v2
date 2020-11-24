@@ -84,6 +84,11 @@ body {
 
 /* ----------------------- topnav */
 
+#topnav h2,
+#mobile-logo-title h5 {
+	font-family: 'Crafty Girls', cursive;
+}
+
 /* from Bulma */
 .icon {
   align-items: center;
@@ -111,6 +116,17 @@ body {
 	margin: 0 auto;
 }
 
+#mobile-logo-title img {
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+}
+
+/* ----------------------- navbar */
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
 /* ------------------------------- hero image */
 
 .hero-image-container {
@@ -179,6 +195,10 @@ body {
 }
 
 /* ------------------------------- testimonial */
+
+.testimonial h5 {
+	font-family: 'Crafty Girls', cursive;
+}
 
 .testimonial {
   padding-top: 7rem;

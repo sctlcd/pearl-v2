@@ -52,18 +52,16 @@
     </div>
 
     <div id="topnav" class="row bg-hover pt-lg-2 d-none d-lg-flex">
-      <div class="col-12 col-lg-5 my-auto px-1 py-1 py-lg-0 text-center text-lg-left">
-        <a href="{% url 'home' %}" class="nav-link main-logo-link ">
+      <div class="col-12 col-lg-4 my-auto px-1 py-1 py-lg-0 text-center text-lg-left">
+        <a href="{% url 'home' %}" class="nav-link main-logo-link">
           <img src="/media/pearl-min.png" alt="Pearl" class="d-inline">
           <h2 class="d-inline logo-font text-white my-0"><strong>Pearl</strong></h2>
         </a>
       </div>
-      <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 search-container">
-        <form method="GET" action="#" class="form-inline">
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search text-white" aria-hidden="true"></i>
-          </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 search-container">
+        <form method="GET" action="#" class="form-inline d-flex justify-content-center md-form form-sm my-0">
+          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search text-white" aria-hidden="true"></i>
         </form>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -115,7 +113,15 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        {% include 'includes/base_mobile_top_header.html' %}
+      </nav>
 
+    </div>
   </header>
 
   {% if messages %}
