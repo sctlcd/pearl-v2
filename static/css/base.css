@@ -1,0 +1,383 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/static/images/home/hero_image/hero-image-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+	height: 100vh;
+  background-color: #555;
+	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Crafty Girls', cursive; */
+  /* font-family: 'Smythe', cursive; */
+}
+
+/* ------------------------------- button */
+
+.btn-black {
+  background: #000;
+  color: #fafafa;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.share-now-button:hover,
+.share-now-button:active,
+.share-now-button:focus {
+	border: 1px solid #fb3;
+}
+
+/* ------------------------------- text, border, background style */
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: #fafafa !important;
+}
+
+.text-orange {
+  color: #fb3 !important;
+}
+
+.text-info {
+  color: #fafafa!important;
+}
+
+.border-black {
+  border: 1px solid black !important;
+}
+
+.border-orange {
+  border: 1px solid #fb3 !important;
+}
+
+.bg-orange {
+  background: #fb3 !important;
+}
+
+.bg-transparent {
+	background-color: rgba(0,0,0,.2) !important;
+}
+
+.bg-white {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
+.bg-hover-white {
+  transition: all .2s ease-out;
+}
+
+.bg-hover-white-no-transition {
+  transition: none;
+}
+
+.bg-hover-white,
+.bg-hover-white:hover {
+  background: #fafafa !important;
+}
+
+/* ------------------------------- hero image */
+
+.hero-image-container {
+	position: relative;
+}
+
+.hero-image-message {
+	position: absolute;
+  bottom: 2rem;
+}
+
+.shop-now-button {
+  min-width: 12rem;
+}
+
+/* ------------------------------- features icons */
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+	max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+	height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+	font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+	font-size: 5rem;
+}
+
+/* ------------------------------- Image Showcases */
+
+.showcase .showcase-text {
+	padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.showcase-img {
+	max-width: 100%;
+  height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* ------------------------------- testimonial */
+
+.testimonial {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonial-header {
+	padding-bottom: 4rem;
+}
+
+.testimonial .testimonial-item {
+	max-width: 18rem;
+}
+
+.testimonial .fa-comments {
+	padding-right: 1rem;
+}
+
+/* ------------------------------- gallery */
+
+.gallery {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/static/images/home/gallery/gallery-background-1920-min.jpg') no-repeat left top fixed;
+  background-size: cover;
+	color: #555;
+}
+
+.share-now-button {
+  min-width: 6rem;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+
+	.hero-image-message h1 {
+		font-size: 1.6rem;
+	}
+
+	.hero-image .btn.btn-lg {
+		font-size: 0.7rem;
+		padding: 0.3rem 0.7rem;
+	}
+
+	.shop-now-button {
+		min-width: 6rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 3rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 3.5rem;
+	}
+
+	.gallery h2 {
+		font-size: 1.3rem;
+	}
+
+	.gallery .btn.btn-md {
+		font-size: 0.6rem;
+		padding: 0.3rem 0.7rem;
+	}
+
+	.gallery .share-now-button {
+			min-width: 6rem;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+	.container {
+		max-width: 80%;
+	}
+
+	.hero-image-message h1 {
+		font-size: 1.8rem;
+	}
+
+	.hero-image .btn.btn-lg {
+		font-size: 0.8rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.shop-now-button {
+		min-width: 7rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 3.5rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 4rem;
+	}
+
+	.gallery h2 {
+		font-size: 1.6rem;
+	}
+
+	.gallery .btn.btn-md {
+		font-size: 0.7rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.gallery .share-now-button {
+			min-width: 7rem;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	.container {
+		max-width: 80%;
+	}
+
+	.hero-image-message h1 {
+    font-size: 2rem;
+  }
+
+	.hero-image .btn.btn-lg {
+		font-size: 1rem;
+		padding: 0.5rem 1.3rem;
+	}
+
+	.shop-now-button {
+		min-width: 8rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 4rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 4.5rem;
+	}
+
+	.showcase .showcase-text {
+  	padding: 7rem;
+	}
+
+	.gallery h2 {
+		font-size: 1.8rem;
+	}
+
+	.gallery .btn.btn-md {
+		font-size: 0.9rem;
+		padding: 0.5rem 1.3rem;
+	}
+
+	.gallery .share-now-button {
+			min-width: 8rem;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .container {
+    max-width: 80%;
+  }
+
+	.hero-image-message h1 {
+    font-size: 2.4rem;
+  }
+
+	.hero-image .btn.btn-lg {
+		font-size: 1.1rem;
+		padding: 0.6rem 1.5rem;
+	}
+
+	.shop-now-button {
+		min-width: 9rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 4rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 4.5rem;
+	}
+
+	.gallery h2 {
+		font-size: 2rem;
+	}
+
+	.gallery .btn.btn-md {
+		font-size: 1rem;
+		padding: 0.6rem 1.5rem;
+	}
+
+	.gallery .share-now-button {
+			min-width: 9rem;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* Slightly larger container on xl screens */
+@media only screen and (min-width: 1200px) {
+
+	.container {
+    max-width: 80%;
+  }
+
+	.hero-image-message h1 {
+			font-size: 3rem;
+	}
+
+	.hero-image .btn.btn-lg {
+		font-size: 1.2rem;
+		padding: 0.6rem 1.6rem;
+	}
+
+	.shop-now-button {
+		min-width: 12rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+			font-size: 4.5rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+			font-size: 5rem;
+	}
+
+	.gallery h2 {
+			font-size: 2.2rem;
+	}
+
+	.gallery .btn.btn-md {
+		font-size: 1.1rem;
+		padding: 0.6rem 1.6rem;
+	}
+
+	.gallery .share-now-button {
+			min-width: 10rem;
+	}
+}

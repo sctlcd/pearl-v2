@@ -4,3 +4,8 @@
 env
 *.sqlite3
 *.pyc
+.mdb
+bootstrap-material-design
+package-lock.json
+env.py
+static\images\favicon.ico
