@@ -26,7 +26,6 @@ body {
 .share-now-button:hover,
 .share-now-button:active,
 .share-now-button:focus {
-	background: #fb3;
 	border: 1px solid #fb3;
 }
 
@@ -93,8 +92,6 @@ body {
 }
 
 .shop-now-button {
-  background: #fafafa;
-  color: #000;
   min-width: 12rem;
 }
 
@@ -174,8 +171,6 @@ body {
 }
 
 .share-now-button {
-  background: #fafafa;
-  color: #000;
   min-width: 6rem;
 }
 
