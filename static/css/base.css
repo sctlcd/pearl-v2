@@ -118,10 +118,20 @@ body {
 	font-size: 5rem;
 }
 
+.features-icons-item h3 {
+	font-family: 'Smythe', cursive;
+	font-size: 2rem;
+}
+
 /* ------------------------------- Image Showcases */
 
 .showcase .showcase-text {
 	padding: 3rem;
+	font-family: 'Smythe', cursive;
+}
+
+.showcase-text h2 {
+	font-size: 3rem;
 }
 
 .showcase .showcase-img {
@@ -349,6 +359,7 @@ body {
 
 	.hero-image-message h1 {
 			font-size: 3rem;
+			font:
 	}
 
 	.hero-image .btn.btn-lg {
