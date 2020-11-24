@@ -45,6 +45,12 @@
 <body>
 
   <header class="container-fluid fixed-top">
+    <div id="delivery-banner" class="row text-center">
+      <div class="col sunny-morning-gradient text-white">
+        <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+      </div>
+    </div>
+
     <div id="topnav" class="row bg-hover pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-5 my-auto px-1 py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link ">

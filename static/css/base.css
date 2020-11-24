@@ -55,9 +55,9 @@ body {
   border: 1px solid #fb3 !important;
 }
 
-.bg-orange {
+/* .bg-orange {
   background: #fb3 !important;
-}
+} */
 
 .bg-transparent {
 	background-color: rgba(0,0,0,.2) !important;
@@ -83,6 +83,23 @@ body {
 /* ------------------------------- header */
 
 /* ----------------------- topnav */
+
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logo-font {
+  text-transform: uppercase;
+}
+
+.main-logo-link {
+  width: fit-content;
+}
 
 .main-logo-link img {
 	height: 30px;
