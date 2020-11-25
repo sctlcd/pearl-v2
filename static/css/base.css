@@ -48,6 +48,10 @@ form div > input {
   color: #fb3 !important;
 }
 
+.text-grey {
+  color: #adb5bd !important;
+}
+
 .text-info {
   color: #fafafa!important;
 }
@@ -348,6 +352,40 @@ nav .nav-item a.nav-link:hover {
   min-width: 6rem;
 }
 
+/* ------------------------------- footer */
+
+/* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -10rem;
+}
+
+.footer {
+	height: 15rem;
+}
+
+.footer {
+  padding-top: 5rem;
+	-webkit-box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+.footer .menu-items a:hover {
+	color: #fb3!important;
+}
+
+.footer .social-links i:hover {
+	color: #adb5bd!important;
+}
+
+.footer .fa-github:hover {
+	color: #fb3!important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -419,6 +457,10 @@ nav .nav-item a.nav-link:hover {
 	.gallery .share-now-button {
 			min-width: 6rem;
 	}
+
+	.footer {
+		padding-top: 3rem;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -486,6 +528,10 @@ nav .nav-item a.nav-link:hover {
 
 	.gallery .share-now-button {
 			min-width: 7rem;
+	}
+
+	.footer {
+		padding-top: 3rem;
 	}
 
 }
@@ -560,6 +606,10 @@ nav .nav-item a.nav-link:hover {
 	.gallery .share-now-button {
 			min-width: 8rem;
 	}
+
+	.footer {
+		padding-top: 4rem;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -601,6 +651,10 @@ nav .nav-item a.nav-link:hover {
 
 	.gallery .share-now-button {
 			min-width: 9rem;
+	}
+
+	.footer {
+		padding-top: 5rem;
 	}
 }
 
@@ -645,5 +699,9 @@ nav .nav-item a.nav-link:hover {
 
 	.gallery .share-now-button {
 			min-width: 10rem;
+	}
+
+	.footer {
+		padding-top: 5rem;
 	}
 }

@@ -55,7 +55,7 @@
       <div class="col-12 col-lg-4 my-auto px-1 py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
           <img src="/media/pearl-min.png" alt="Pearl" class="d-inline">
-          <h2 class="d-inline logo-font text-white my-0"><strong>Pearl</strong></h2>
+          <h2 class="d-inline logo-font text-white my-0 font-weight-bold">Pearl</h2>
         </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 search-container">
@@ -135,7 +135,64 @@
     {% block content %}
     {% endblock %}
 
-    <footer></footer>
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2 menu-items font-weight-bold">
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">About us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Contact us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Shipping</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Return</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Refund Policy</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Terms of use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-grey">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0"><i class="far fa-copyright"></i> 2020 by Lucinda Souchet <a href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github text-black"></i><span class="sr-only">Github</span></a>
+            </p>
+          </div>
+          <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0 social-links">
+              <li class="list-inline-item mr-3">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook fa-2x fa-fw text-orange"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fab fa-twitter-square fa-2x fa-fw text-orange"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram fa-2x fa-fw text-orange"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     {% block postloadjs %}
     <script src="{% static 'js/base.js' %}"></script>
