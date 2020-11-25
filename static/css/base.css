@@ -13,6 +13,11 @@ body {
   /* font-family: 'Smythe', cursive; */
 }
 
+form div > input {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
+
 /* ------------------------------- button */
 
 .btn-black {
@@ -82,7 +87,7 @@ body {
 
 #topnav h2,
 #mobile-logo-title h5 {
-	font-family: 'Crafty Girls', cursive;
+	/* font-family: 'Crafty Girls', cursive; */
 }
 
 /* from Bulma */
@@ -122,6 +127,123 @@ body {
 
 .navbar-desktop .dropdown:hover>.dropdown-menu {
   display: block;
+}
+
+.bg-hover-white:hover h2,
+.bg-hover-white:hover ul a i,
+.bg-hover-white h2,
+.bg-hover-white ul a i {
+	color: #68c6e6 !important;
+}
+
+.bg-hover-white:hover ul a p,
+.bg-hover-white ul a p {
+	color: black !important;
+}
+
+.bg-hover-white:hover form input,
+.bg-hover-white:hover form button,
+.bg-hover-white form input,
+.bg-hover-white form button {
+	border: 1px solid #68c6e6 !important;
+}
+
+.bg-hover-white form button {
+	background: #68c6e6 !important;
+}
+
+.bg-hover-white form button:hover {
+	background: #68c6e6c7 !important;
+	color: #fafafa;
+}
+
+.bg-hover-white:hover #main-nav ul li .nav-link,
+.bg-hover-white #main-nav ul li .nav-link {
+	color: black !important;
+}
+
+.bg-hover-white:hover.fixed-top,
+.bg-hover-white.fixed-top {
+	-webkit-box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+}
+
+.bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
+.bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.bg-hover-white:hover nav li a i,
+.bg-hover-white nav li a i {
+	color: #68c6e6 !important;
+}
+
+.bg-hover-white:hover nav li a p,
+.bg-hover-white nav li a p {
+	color: black !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #fafafa;
+}
+
+.bg-hover-white:hover .navbar-toggler,
+.bg-hover-white .navbar-toggler {
+  background-color: #fafafa;
+}
+
+.bg-hover-white:hover .custom-toggler .navbar-toggler-icon,
+.bg-hover-white .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-hover-white:hover .custom-toggler.navbar-toggler,
+.bg-hover-white .custom-toggler.navbar-toggler {
+  border-color: rgba(0,0,0, 0.2);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #dee2e6;
+}
+
+.header .list-inline-item.show a.nav-link {
+	background-color: #dee2e66e;
+}
+
+.header .list-inline-item a.nav-link:hover {
+	background-color: #dee2e66e;
+}
+
+nav .nav-item.show a.nav-link {
+	background-color: #dee2e66e;
+}
+nav .nav-item a.nav-link:hover {
+	background-color: #dee2e66e;
+}
+
+.header .list-inline-item.show .dropdown-menu.show,
+.navbar-desktop .nav-item.show .dropdown-menu.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .nav-item.show .dropdown-menu.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+	box-shadow: 0px 5px 10px 0px #dee2e6;
+	margin-bottom: 0.7rem;
+}
+
+.navbar-mobile .nav-item.show a.nav-link {
+	margin-right: 0px !important;
+}
+
+.navbar-mobile .nav-item a.nav-link {
+	margin-right: 0px !important;
 }
 
 /* ------------------------------- hero image */
@@ -231,6 +353,39 @@ body {
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
+	#mobile-logo-title h5 {
+		font-size: 0.8rem;
+	}
+
+	.nav-link {
+		padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+		font-size: 0.9rem;
+	}
+
+	.nav-link p {
+		font-size: 0.6rem;
+	}
+
+	.dropdown-menu a, .nav-item a {
+		font-size: 0.7rem;
+	}
+
+	.list-inline-item:not(:last-child) {
+    margin-right: .2rem;
+	}
+
+	.navbar-toggler {
+		padding: .2rem .2rem;
+		font-size: 0.5rem;
+	}
+
+	#delivery-banner h4 {
+		font-size: .7rem;
+	}
+
 	.hero-image-message h1 {
 		font-size: 1.6rem;
 	}
@@ -271,6 +426,32 @@ body {
 
 	.container {
 		max-width: 80%;
+	}
+
+	#mobile-logo-title h5 {
+		font-size: 1.1rem;
+		margin-left: 0.8rem;
+	}
+
+	.nav-link {
+		padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+		font-size: 1rem;
+	}
+
+	.nav-link p {
+		font-size: 0.8rem;
+	}
+
+	.navbar-toggler {
+		padding: .4rem .4rem;
+		font-size: 0.6rem;
+	}
+
+	#delivery-banner h4 {
+		font-size: .8rem;
 	}
 
 	.hero-image-message h1 {
@@ -315,6 +496,32 @@ body {
 	.container {
 		max-width: 80%;
 	}
+
+	#mobile-logo-title h5 {
+		font-size: 1.5rem;
+		margin-left: 0.8rem;
+	}
+
+	.nav-link {
+    padding: 0.15rem;
+  }
+
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
+
+	.nav-link p {
+		font-size: 1rem;
+	}
+
+  .navbar-toggler {
+    padding: .4rem .4rem;
+    font-size: 0.8rem;
+  }
+
+  #delivery-banner h4 {
+    font-size: .9rem;
+  }
 
 	.hero-image-message h1 {
     font-size: 2rem;
