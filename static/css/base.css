@@ -4,13 +4,17 @@ html {
 
 body {
   /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/static/images/home/hero_image/hero-image-background.jpg') no-repeat center center fixed;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/media/home/hero_image/hero-image-background-min.jpg') no-repeat center center fixed;
   background-size: cover;
 	height: 100vh;
   background-color: #555;
 	font-family: 'Open Sans', sans-serif;
 	/* font-family: 'Crafty Girls', cursive; */
   /* font-family: 'Smythe', cursive; */
+}
+
+form div > input {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
 /* ------------------------------- button */
@@ -43,6 +47,10 @@ body {
   color: #fb3 !important;
 }
 
+.text-grey {
+  color: #adb5bd !important;
+}
+
 .text-info {
   color: #fafafa!important;
 }
@@ -53,10 +61,6 @@ body {
 
 .border-orange {
   border: 1px solid #fb3 !important;
-}
-
-.bg-orange {
-  background: #fb3 !important;
 }
 
 .bg-transparent {
@@ -80,6 +84,234 @@ body {
   background: #fafafa !important;
 }
 
+/* ------------------------------- header */
+
+/* ----------------------- topnav */
+
+#topnav h2,
+#mobile-logo-title h5 {
+	color: #fafafa;
+}
+
+.bg-hover-white #topnav h2,
+.bg-hover-white:hover #topnav h2,
+.bg-hover-white #mobile-logo-title h5,
+.bg-hover-white:hover #mobile-logo-title h5 {
+	color: #fb3 !important;
+}
+
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.logo-font {
+  text-transform: uppercase;
+}
+
+.main-logo-link {
+  width: fit-content;
+}
+
+.main-logo-link img {
+	height: 30px;
+  width: 30px;
+  margin: 0px 10px 16px 10px;
+}
+
+.search-container {
+	margin: 0 auto;
+}
+
+#mobile-logo-title img {
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+}
+
+/* ----------------------- navbar */
+
+.navbar {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.navbar-desktop .dropdown:hover>.dropdown-menu {
+  display: block;
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .dropdown:hover>.dropdown-menu {
+-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+box-shadow: 0px 5px 10px 0px #dee2e6;
+}
+
+.bg-hover-white:hover h2,
+.bg-hover-white:hover ul a i,
+.bg-hover-white h2,
+.bg-hover-white ul a i {
+	color: #fb3 !important;
+}
+
+.bg-hover-white:hover ul a p,
+.bg-hover-white ul a p {
+	color: black !important;
+}
+
+.bg-hover-white:hover form input,
+/* .bg-hover-white:hover form button, */
+.bg-hover-white form input, {
+/* .bg-hover-white form button { */
+	border: 1px solid #fb3 !important;
+}
+
+.bg-hover-white:hover .search-container .fa-search,
+.bg-hover-white .search-container .fa-search {
+	color: #fb3 !important;
+}
+
+.bg-hover-white:hover .search-container input,
+.bg-hover-white .search-container input {
+	border: 1px solid transparent !important;
+}
+
+.active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0 1px 0 0 #fafafa;
+}
+.active-orange input.form-control[type=text] {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0 1px 0 0 #fafafa;
+}
+.active-orange .fa, .active-orange-2 .fa {
+  color: #fafafa;
+}
+
+.bg-hover-white:hover .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
+.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #fb3;
+  box-shadow: 0 1px 0 0 #fb3;
+}
+
+.bg-hover-white:hover .active-orange input.form-control[type=text],
+.bg-hover-white .active-orange input.form-control[type=text] {
+  border-bottom: 1px solid #fb3;
+  box-shadow: 0 1px 0 0 #fb3;
+}
+
+.bg-hover-white:hover .active-orange .fa, .active-orange-2 .fa,
+.bg-hover-white .active-orange .fa, .active-orange-2 .fa {
+  color: #fb3;
+}
+
+.bg-hover-white form button {
+	background: #fb3 !important;
+}
+
+.bg-hover-white form button:hover {
+	background: #fb3c7 !important;
+	color: #fafafa;
+}
+
+.bg-hover-white:hover #main-nav ul li .nav-link,
+.bg-hover-white #main-nav ul li .nav-link {
+	color: black !important;
+}
+
+.bg-hover-white:hover.fixed-top,
+.bg-hover-white.fixed-top {
+	-webkit-box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
+	box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
+}
+
+.bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
+.bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.bg-hover-white:hover nav li a i,
+.bg-hover-white nav li a i {
+	color: #fb3 !important;
+}
+
+.bg-hover-white:hover nav li a p,
+.bg-hover-white nav li a p {
+	color: black !important;
+}
+
+.navbar.navbar-dark .navbar-toggler {
+    background-color: transparent;
+		border-width: 1px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255,255,255, 0.6);
+}
+
+.bg-hover-white:hover .navbar-toggler,
+.bg-hover-white .navbar-toggler {
+  background-color: #fafafa;
+}
+
+.bg-hover-white:hover .custom-toggler .navbar-toggler-icon,
+.bg-hover-white .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108,117,125, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.bg-hover-white:hover .custom-toggler.navbar-toggler,
+.bg-hover-white .custom-toggler.navbar-toggler {
+  border-color: rgba(108,117,125, 0.5);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #dee2e6;
+}
+
+.header .list-inline-item.show a.nav-link {
+	background-color: #dee2e66e;
+}
+
+.header .list-inline-item a.nav-link:hover {
+	background-color: #dee2e66e;
+}
+
+nav .nav-item.show a.nav-link {
+	background-color: #dee2e66e;
+}
+nav .nav-item a.nav-link:hover {
+	background-color: #dee2e66e;
+}
+
+.header .list-inline-item.show .dropdown-menu.show,
+.navbar-desktop .nav-item.show .dropdown-menu.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .nav-item.show .dropdown-menu.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+	box-shadow: 0px 5px 10px 0px #dee2e6;
+	margin-bottom: 0.7rem;
+}
+
+.navbar-mobile .nav-item.show a.nav-link {
+	margin-right: 0px !important;
+}
+
+.navbar-mobile .nav-item a.nav-link {
+	margin-right: 0px !important;
+}
+
 /* ------------------------------- hero image */
 
 .hero-image-container {
@@ -93,13 +325,17 @@ body {
 
 .shop-now-button {
   min-width: 12rem;
+	border-radius: 45px;
+	border: 1px solid;
 }
 
 /* ------------------------------- features icons */
 
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.features-icons,
+.showcase,
+.testimonial,
+.newsletter {
+  padding-top: 10rem;
 }
 
 .features-icons .features-icons-item {
@@ -118,10 +354,20 @@ body {
 	font-size: 5rem;
 }
 
+.features-icons-item h3 {
+	font-family: 'Smythe', cursive;
+	font-size: 2rem;
+}
+
 /* ------------------------------- Image Showcases */
 
 .showcase .showcase-text {
 	padding: 3rem;
+	font-family: 'Smythe', cursive;
+}
+
+.showcase-text h2 {
+	font-size: 3rem;
 }
 
 .showcase .showcase-img {
@@ -139,13 +385,17 @@ body {
 
 /* ------------------------------- testimonial */
 
-.testimonial {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.testimonial,
+.newsletter {
+  padding-bottom: 10rem;
+}
+
+.testimonial h5 {
+	font-family: 'Crafty Girls', cursive;
 }
 
 .testimonial-header {
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
 .testimonial .testimonial-item {
@@ -159,19 +409,128 @@ body {
 /* ------------------------------- gallery */
 
 .gallery {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/static/images/home/gallery/gallery-background-1920-min.jpg') no-repeat left top fixed;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/media/home/gallery/gallery-background-min.jpg') no-repeat left top fixed;
   background-size: cover;
 	color: #555;
 }
 
 .share-now-button {
   min-width: 6rem;
+	border-radius: 45px;
+	border: 1px solid;
+}
+
+/* ------------------------------- newsletter */
+
+.newsletter .subscription {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.subscription-header {
+	padding-bottom: 4rem;
+}
+
+.newsletter .fa-envelope-open {
+	padding-right: 1rem;
+}
+
+.newsletter .subscription .form-control {
+	height: 50px;
+	border-radius: 45px 0 0 45px;
+}
+
+.newsletter .subscription .form-control:focus {
+	box-shadow: none;
+	border-color: #222;
+}
+
+.newsletter .subscription .btn {
+	margin: 0 auto;
+	min-height: 50px;
+	border-radius: 0 45px 45px 0;
+}
+
+.newsletter .btn-black:hover {
+	background: #222 !important;
+	color: #fafafa;
+	border: 1px solid #222 !important;
+}
+
+/* ------------------------------- footer */
+
+/* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -10rem;
+}
+
+.footer {
+	height: 15rem;
+}
+
+.footer {
+  padding-top: 5rem;
+	-webkit-box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
+	box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+.footer .menu-items a:hover {
+	color: #fb3!important;
+}
+
+.footer .social-links i:hover {
+	color: #adb5bd!important;
+}
+
+.footer .fa-github:hover {
+	color: #fb3!important;
 }
 
 /* -------------------------------- Media Queries */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
+
+	#mobile-logo-title h5 {
+		font-size: 0.8rem;
+	}
+
+	.nav-link {
+		padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+		font-size: 0.9rem;
+	}
+
+	.nav-link p {
+		font-size: 0.6rem;
+	}
+
+	.dropdown-menu a, .nav-item a {
+		font-size: 0.7rem;
+	}
+
+	.list-inline-item:not(:last-child) {
+    margin-right: .2rem;
+	}
+
+	.navbar-toggler {
+		padding: .2rem .2rem;
+		font-size: 0.5rem;
+	}
+
+	#delivery-banner h4 {
+		font-size: .7rem;
+	}
 
 	.hero-image-message h1 {
 		font-size: 1.6rem;
@@ -206,6 +565,10 @@ body {
 	.gallery .share-now-button {
 			min-width: 6rem;
 	}
+
+	.footer {
+		padding-top: 3rem;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -213,6 +576,32 @@ body {
 
 	.container {
 		max-width: 80%;
+	}
+
+	#mobile-logo-title h5 {
+		font-size: 1.1rem;
+		margin-left: 0.8rem;
+	}
+
+	.nav-link {
+		padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+		font-size: 1rem;
+	}
+
+	.nav-link p {
+		font-size: 0.8rem;
+	}
+
+	.navbar-toggler {
+		padding: .4rem .4rem;
+		font-size: 0.6rem;
+	}
+
+	#delivery-banner h4 {
+		font-size: .8rem;
 	}
 
 	.hero-image-message h1 {
@@ -249,6 +638,10 @@ body {
 			min-width: 7rem;
 	}
 
+	.footer {
+		padding-top: 3rem;
+	}
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -257,6 +650,32 @@ body {
 	.container {
 		max-width: 80%;
 	}
+
+	#mobile-logo-title h5 {
+		font-size: 1.5rem;
+		margin-left: 0.8rem;
+	}
+
+	.nav-link {
+    padding: 0.15rem;
+  }
+
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
+
+	.nav-link p {
+		font-size: 1rem;
+	}
+
+  .navbar-toggler {
+    padding: .4rem .4rem;
+    font-size: 0.8rem;
+  }
+
+  #delivery-banner h4 {
+    font-size: .9rem;
+  }
 
 	.hero-image-message h1 {
     font-size: 2rem;
@@ -294,6 +713,10 @@ body {
 
 	.gallery .share-now-button {
 			min-width: 8rem;
+	}
+
+	.footer {
+		padding-top: 4rem;
 	}
 }
 
@@ -337,6 +760,10 @@ body {
 	.gallery .share-now-button {
 			min-width: 9rem;
 	}
+
+	.footer {
+		padding-top: 5rem;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -349,6 +776,7 @@ body {
 
 	.hero-image-message h1 {
 			font-size: 3rem;
+			font:
 	}
 
 	.hero-image .btn.btn-lg {
@@ -379,5 +807,9 @@ body {
 
 	.gallery .share-now-button {
 			min-width: 10rem;
+	}
+
+	.footer {
+		padding-top: 5rem;
 	}
 }
