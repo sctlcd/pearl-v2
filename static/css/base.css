@@ -17,7 +17,6 @@ form div > input {
 	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
-
 /* ------------------------------- button */
 
 .btn-black {
@@ -91,7 +90,14 @@ form div > input {
 
 #topnav h2,
 #mobile-logo-title h5 {
-	/* font-family: 'Crafty Girls', cursive; */
+	color: #fafafa;
+}
+
+.bg-hover-white #topnav h2,
+.bg-hover-white:hover #topnav h2,
+.bg-hover-white #mobile-logo-title h5,
+.bg-hover-white:hover #mobile-logo-title h5 {
+	color: #fb3 !important;
 }
 
 /* from Bulma */
@@ -129,15 +135,27 @@ form div > input {
 
 /* ----------------------- navbar */
 
+.navbar {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
 .navbar-desktop .dropdown:hover>.dropdown-menu {
   display: block;
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .dropdown:hover>.dropdown-menu {
+-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+box-shadow: 0px 5px 10px 0px #dee2e6;
 }
 
 .bg-hover-white:hover h2,
 .bg-hover-white:hover ul a i,
 .bg-hover-white h2,
 .bg-hover-white ul a i {
-	color: #68c6e6 !important;
+	color: #fb3 !important;
 }
 
 .bg-hover-white:hover ul a p,
@@ -146,18 +164,57 @@ form div > input {
 }
 
 .bg-hover-white:hover form input,
-.bg-hover-white:hover form button,
-.bg-hover-white form input,
-.bg-hover-white form button {
-	border: 1px solid #68c6e6 !important;
+/* .bg-hover-white:hover form button, */
+.bg-hover-white form input, {
+/* .bg-hover-white form button { */
+	border: 1px solid #fb3 !important;
+}
+
+.bg-hover-white:hover .search-container .fa-search,
+.bg-hover-white .search-container .fa-search {
+	color: #fb3 !important;
+}
+
+.bg-hover-white:hover .search-container input,
+.bg-hover-white .search-container input {
+	border: 1px solid transparent !important;
+}
+
+.active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0 1px 0 0 #fafafa;
+}
+.active-orange input.form-control[type=text] {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0 1px 0 0 #fafafa;
+}
+.active-orange .fa, .active-orange-2 .fa {
+  color: #fafafa;
+}
+
+.bg-hover-white:hover .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
+.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #fb3;
+  box-shadow: 0 1px 0 0 #fb3;
+}
+
+.bg-hover-white:hover .active-orange input.form-control[type=text],
+.bg-hover-white .active-orange input.form-control[type=text] {
+  border-bottom: 1px solid #fb3;
+  box-shadow: 0 1px 0 0 #fb3;
+}
+
+.bg-hover-white:hover .active-orange .fa, .active-orange-2 .fa,
+.bg-hover-white .active-orange .fa, .active-orange-2 .fa {
+  color: #fb3;
 }
 
 .bg-hover-white form button {
-	background: #68c6e6 !important;
+	background: #fb3 !important;
 }
 
 .bg-hover-white form button:hover {
-	background: #68c6e6c7 !important;
+	background: #fb3c7 !important;
 	color: #fafafa;
 }
 
@@ -168,8 +225,8 @@ form div > input {
 
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
-	-webkit-box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
-	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+	-webkit-box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
+	box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
 }
 
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
@@ -180,7 +237,7 @@ form div > input {
 
 .bg-hover-white:hover nav li a i,
 .bg-hover-white nav li a i {
-	color: #68c6e6 !important;
+	color: #fb3 !important;
 }
 
 .bg-hover-white:hover nav li a p,
@@ -188,12 +245,17 @@ form div > input {
 	color: black !important;
 }
 
+.navbar.navbar-dark .navbar-toggler {
+    background-color: transparent;
+		border-width: 1px;
+}
+
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #fafafa;
+  border-color: rgba(255,255,255, 0.6);
 }
 
 .bg-hover-white:hover .navbar-toggler,
@@ -203,12 +265,12 @@ form div > input {
 
 .bg-hover-white:hover .custom-toggler .navbar-toggler-icon,
 .bg-hover-white .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108,117,125, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .bg-hover-white:hover .custom-toggler.navbar-toggler,
 .bg-hover-white .custom-toggler.navbar-toggler {
-  border-color: rgba(0,0,0, 0.2);
+  border-color: rgba(108,117,125, 0.5);
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -263,13 +325,17 @@ nav .nav-item a.nav-link:hover {
 
 .shop-now-button {
   min-width: 12rem;
+	border-radius: 45px;
+	border: 1px solid;
 }
 
 /* ------------------------------- features icons */
 
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.features-icons,
+.showcase,
+.testimonial,
+.newsletter {
+  padding-top: 10rem;
 }
 
 .features-icons .features-icons-item {
@@ -319,17 +385,17 @@ nav .nav-item a.nav-link:hover {
 
 /* ------------------------------- testimonial */
 
+.testimonial,
+.newsletter {
+  padding-bottom: 10rem;
+}
+
 .testimonial h5 {
 	font-family: 'Crafty Girls', cursive;
 }
 
-.testimonial {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .testimonial-header {
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
 .testimonial .testimonial-item {
@@ -350,6 +416,48 @@ nav .nav-item a.nav-link:hover {
 
 .share-now-button {
   min-width: 6rem;
+	border-radius: 45px;
+	border: 1px solid;
+}
+
+/* ------------------------------- newsletter */
+
+.newsletter .subscription {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.subscription-header {
+	padding-bottom: 4rem;
+}
+
+.newsletter .fa-envelope-open {
+	padding-right: 1rem;
+}
+
+.newsletter .subscription .form-control {
+	height: 50px;
+	border-radius: 45px 0 0 45px;
+}
+
+.newsletter .subscription .form-control:focus {
+	box-shadow: none;
+	border-color: #222;
+}
+
+.newsletter .subscription .btn {
+	margin: 0 auto;
+	min-height: 50px;
+	border-radius: 0 45px 45px 0;
+}
+
+.newsletter .btn-black:hover {
+	background: #222 !important;
+	color: #fafafa;
+	border: 1px solid #222 !important;
 }
 
 /* ------------------------------- footer */
@@ -366,8 +474,8 @@ nav .nav-item a.nav-link:hover {
 
 .footer {
   padding-top: 5rem;
-	-webkit-box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
-	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+	-webkit-box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
+	box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
   bottom: 0px;
   left: 0px;
   right: 0px;
