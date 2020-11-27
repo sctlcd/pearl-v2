@@ -232,7 +232,8 @@ box-shadow: 0px 5px 10px 0px #dee2e6;
 }
 
 .bg-hover-white:hover .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
-.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
+.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
+.bg-transparent .active-orange-2 input[type="text"]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #fb3 !important;
   box-shadow: 0 1px 0 0 #fb3 !important;
 }
