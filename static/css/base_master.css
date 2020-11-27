@@ -24,6 +24,11 @@ form div > input {
   color: #fafafa;
 }
 
+.btn-grey {
+	background-color: #6c757d !important;
+	color: #fafafa;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -31,8 +36,20 @@ form div > input {
 .share-now-button:active,
 .share-now-button:focus {
 	border: 1px solid #fb3;
+	color: #6c757d !important;
 }
 
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+	color: #6a6a6e !important;
+}
+
+.share-now-button:hover,
+.share-now-button:active,
+.share-now-button:focus {
+	color: #000 !important;
+}
 /* ------------------------------- text, border, background style */
 
 .text-black {
@@ -48,7 +65,11 @@ form div > input {
 }
 
 .text-grey {
-  color: #adb5bd !important;
+	color: #6c757d !important;
+}
+
+.text-brown {
+	color: #6a6a6e !important;
 }
 
 .text-info {
@@ -63,8 +84,16 @@ form div > input {
   border: 1px solid #fb3 !important;
 }
 
+.border-grey {
+  border: 1px solid #6c757d !important;
+}
+
 .bg-transparent {
-	background-color: rgba(0,0,0,.2) !important;
+	background-color: rgb(253 160 133 / 0.16) !important;
+}
+
+.bg-orange {
+	background-color: #fb3 !important;
 }
 
 .bg-white {
@@ -82,6 +111,18 @@ form div > input {
 .bg-hover-white,
 .bg-hover-white:hover {
   background: #fafafa !important;
+}
+
+/* ------------------------------- form */
+
+.md-form input:not([type]):focus:not([readonly]),
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]){
+  box-shadow: 0 1px 0 0 rgba(108, 117, 125, 0.65) !important;
+	border-bottom: 0 1px 0 0 rgba(108, 117, 125, 0.65) !important;
+}
+
+.form-control {
+	font-size: 0.9rem;
 }
 
 /* ------------------------------- header */
@@ -133,6 +174,12 @@ form div > input {
     margin: 0px;
 }
 
+.dropdown-menu-mobile-search .input-group.md-form.form-sm.form-2 input {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+
 /* ----------------------- navbar */
 
 .navbar {
@@ -180,32 +227,26 @@ box-shadow: 0px 5px 10px 0px #dee2e6;
 	border: 1px solid transparent !important;
 }
 
-.active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #fafafa;
-  box-shadow: 0 1px 0 0 #fafafa;
-}
-.active-orange input.form-control[type=text] {
-  border-bottom: 1px solid #fafafa;
-  box-shadow: 0 1px 0 0 #fafafa;
-}
-.active-orange .fa, .active-orange-2 .fa {
+.active-orange-2 .fa {
   color: #fafafa;
 }
 
 .bg-hover-white:hover .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
-.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #fb3;
-  box-shadow: 0 1px 0 0 #fb3;
+.bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
+.bg-transparent .active-orange-2 input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #fb3 !important;
+  box-shadow: 0 1px 0 0 #fb3 !important;
 }
 
-.bg-hover-white:hover .active-orange input.form-control[type=text],
-.bg-hover-white .active-orange input.form-control[type=text] {
-  border-bottom: 1px solid #fb3;
-  box-shadow: 0 1px 0 0 #fb3;
+.bg-hover-white:hover .active-orange-2 input.form-control[type=text],
+.bg-hover-white .active-orange-2 input.form-control[type=text] {
+  border-bottom: 1px solid rgba(108, 117, 125, 0.65);
+  box-shadow: 0 1px 0 0 rgba(108, 117, 125, 0.65);
 }
 
-.bg-hover-white:hover .active-orange .fa, .active-orange-2 .fa,
-.bg-hover-white .active-orange .fa, .active-orange-2 .fa {
+
+.active-orange-2 .fa,
+.active-orange-2 .fa {
   color: #fb3;
 }
 
@@ -225,8 +266,9 @@ box-shadow: 0px 5px 10px 0px #dee2e6;
 
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
-	-webkit-box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
-	box-shadow: 2px 2px 2px rgba(255, 187, 51, 0.75);
+	-webkit-box-shadow: 0px 2px 2px rgba(255, 187, 51, 0.75);
+	box-shadow: 0px 1px 10px rgba(255, 187, 51, 0.75);
+	border-bottom: 5px double rgba(255, 187, 51, 0.75);
 }
 
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
@@ -324,7 +366,6 @@ nav .nav-item a.nav-link:hover {
 }
 
 .shop-now-button {
-  min-width: 12rem;
 	border-radius: 45px;
 	border: 1px solid;
 }
@@ -445,7 +486,7 @@ nav .nav-item a.nav-link:hover {
 
 .newsletter .subscription .form-control:focus {
 	box-shadow: none;
-	border-color: #222;
+	border-color: rgba(108, 117, 125, 0.65) !important;
 }
 
 .newsletter .subscription .btn {
@@ -454,10 +495,9 @@ nav .nav-item a.nav-link:hover {
 	border-radius: 0 45px 45px 0;
 }
 
-.newsletter .btn-black:hover {
-	background: #222 !important;
+.newsletter .btn-grey:hover {
+	background: rgba(108, 117, 125, 0.65) !important;
 	color: #fafafa;
-	border: 1px solid #222 !important;
 }
 
 /* ------------------------------- footer */
@@ -487,7 +527,7 @@ nav .nav-item a.nav-link:hover {
 }
 
 .footer .social-links i:hover {
-	color: #adb5bd!important;
+	color: #6c757d!important;
 }
 
 .footer .fa-github:hover {
@@ -538,11 +578,11 @@ nav .nav-item a.nav-link:hover {
 
 	.hero-image .btn.btn-lg {
 		font-size: 0.7rem;
-		padding: 0.3rem 0.7rem;
+		padding: 0.4rem 0.7rem;
 	}
 
 	.shop-now-button {
-		min-width: 6rem;
+		min-width: 7rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
@@ -559,7 +599,7 @@ nav .nav-item a.nav-link:hover {
 
 	.gallery .btn.btn-md {
 		font-size: 0.6rem;
-		padding: 0.3rem 0.7rem;
+		padding: 0.4rem 0.7rem;
 	}
 
 	.gallery .share-now-button {
@@ -614,7 +654,7 @@ nav .nav-item a.nav-link:hover {
 	}
 
 	.shop-now-button {
-		min-width: 7rem;
+		min-width: 8rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
@@ -683,11 +723,11 @@ nav .nav-item a.nav-link:hover {
 
 	.hero-image .btn.btn-lg {
 		font-size: 1rem;
-		padding: 0.5rem 1.3rem;
+		padding: 0.5rem 1.2rem;
 	}
 
 	.shop-now-button {
-		min-width: 8rem;
+		min-width: 9rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
@@ -733,11 +773,11 @@ nav .nav-item a.nav-link:hover {
 
 	.hero-image .btn.btn-lg {
 		font-size: 1.1rem;
-		padding: 0.6rem 1.5rem;
+		padding: 0.6rem 1.4rem;
 	}
 
 	.shop-now-button {
-		min-width: 9rem;
+		min-width: 10rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
@@ -781,11 +821,11 @@ nav .nav-item a.nav-link:hover {
 
 	.hero-image .btn.btn-lg {
 		font-size: 1.2rem;
-		padding: 0.6rem 1.6rem;
+		padding: 0.6rem 1.5rem;
 	}
 
 	.shop-now-button {
-		min-width: 12rem;
+		min-width: 11rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
