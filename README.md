@@ -1,6 +1,6 @@
 # Pearl
 
-# [The Green Corner](https://the-green-corner.herokuapp.com/)
+# [Pearl](https://pearl.herokuapp.com/)
 
 <img src="https://github.com/sctlcd/pearl/blob/master/wireframes/multi_device_website_mockups-min.png" alt="Pearl" width="700">
 <dl>

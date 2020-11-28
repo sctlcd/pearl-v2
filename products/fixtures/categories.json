@@ -1,0 +1,74 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "beads",
+      "friendly_name": "Beads"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "pompoms",
+      "friendly_name": "Pom poms"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "clearance",
+      "friendly_name": "Clearance"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "deals",
+      "friendly_name": "Deals"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "glitter",
+      "friendly_name": "Glitter"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "paint",
+      "friendly_name": "Paint"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "ink_dyes",
+      "friendly_name": "Ink & Dyes"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "new_arrivals",
+      "friendly_name": "New Arrivals"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "paper_cards",
+      "friendly_name": "Paper & Card"
+    }
+  }
+]
