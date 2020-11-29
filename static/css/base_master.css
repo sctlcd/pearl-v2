@@ -500,6 +500,18 @@ nav .nav-item a.nav-link:hover {
 	color: #fafafa;
 }
 
+/* ------------------------------- products */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #fafafa;
+	z-index: -1;
+}
+
 /* ------------------------------- footer */
 
 /* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
