@@ -8,5 +8,3 @@ env
 bootstrap-material-design
 package-lock.json
 env.py
-templates/base_extension.html
-static/js/base_extension.js

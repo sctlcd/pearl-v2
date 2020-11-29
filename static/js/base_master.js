@@ -75,6 +75,16 @@ $(document).ready(function() {
       });
   }
 
+  // // This code will execute when the dropdown-menu lass of navbar-desktop class is hovered
+  // $('.navbar-desktop .dropdown .dropdown-menu').hover(function() {
+  //   // This code will execute when mouse enters the header class element
+  //   $(this).parent().addClass('bg-header-menu-highlighted');
+  // },
+  // function() {
+  //   // This code will execute when mouse leaves the header class element
+  //   $(this).parent().removeClass('bg-header-menu-highlighted');
+  // });
+
   // Trigger the click event on the navbar-toggler class element
   $('.navbar-toggler').click(function(event) {
     $('#main-nav').toggleClass('navbar-mobile');
