@@ -195,11 +195,10 @@ form div > input {
   box-shadow: 0 0 0 0 transparent;
 }
 
-
 .navbar-desktop .dropdown:hover>.dropdown-menu {
 	/* display the dropdown menu when the nav-item is hovered */
   display: block;
-
+	padding: 0;
 	-webkit-box-shadow: 0px 5px 10px 0px #353535;
 	box-shadow: 0px 5px 10px 0px #353535;
 }
@@ -282,9 +281,13 @@ form div > input {
 }
 
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
-.bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show {
+.bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
+.desktop-user-options-container:hover .dropdown-menu,
+.header .list-inline-item.show .dropdown-menu.show,
+.navbar-desktop .nav-item.show .dropdown-menu.show {
 	-webkit-box-shadow: 0px 5px 10px 0px #353535;
 	box-shadow: 0px 5px 10px 0px #353535;
+	padding: 0;
 }
 
 .bg-hover-white:hover nav li a i,
@@ -345,13 +348,6 @@ nav .nav-item:hover {
 	background-color: #d8d8d86e;
 }
 
-.desktop-user-options-container:hover .dropdown-menu,
-.header .list-inline-item.show .dropdown-menu.show,
-.navbar-desktop .nav-item.show .dropdown-menu.show {
-	-webkit-box-shadow: 0px 5px 10px 0px #353535;
-	box-shadow: 0px 5px 10px 0px #353535;
-}
-
 .desktop-user-options-container:hover .dropdown-menu {
 	display: block;
 }
@@ -360,6 +356,7 @@ nav .nav-item:hover {
 	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
 	box-shadow: 0px 5px 10px 0px #dee2e6;
 	margin-bottom: 0.7rem;
+	padding: 0;
 }
 
 .navbar-mobile .nav-item.show a.nav-link {
@@ -368,6 +365,10 @@ nav .nav-item:hover {
 
 .navbar-mobile .nav-item a.nav-link {
 	margin-right: 0px !important;
+}
+
+nav a.waves-effect, nav a.waves-effect {
+	display: inline-flex;
 }
 
 /* ------------------------------- hero image */
