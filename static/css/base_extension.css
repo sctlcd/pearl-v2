@@ -10,3 +10,28 @@ body {
 .header-container {
   padding-top: 4rem;
 }
+
+/* ------------------------------- products */
+
+.badge {
+  color: #000 !important;
+	letter-spacing: 1px;
+}
+
+a.category-badge > span.badge:hover {
+  background: #212529 !important;
+  color: #fafafa!important;
+}
+
+ .products-container .text-info a {
+	color: #33b5e5 !important;
+ }
+
+ .products-container .text-info,
+ .products-container .text-info a {
+	color: #33b5e5 !important;
+ }
+
+ .products-container .text-info a:hover {
+  color: #0074f1 !important;
+ }
