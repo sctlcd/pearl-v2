@@ -19,6 +19,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base_master.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base_extension.css' %}">
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
   {% endblock %}
 
@@ -56,7 +57,7 @@
         </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 search-container">
-        <form method="GET" action="#" id="desktop-search" class="form-inline d-flex justify-content-center md-form form-sm active-orange-2 my-0">
+        <form method="GET" action="#" class="form-inline d-flex justify-content-center md-form form-sm active-orange-2 my-0">
           <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
           <i class="fas fa-search text-white" aria-hidden="true"></i>
         </form>
@@ -64,7 +65,7 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item">
-            <a id="desktop-gallery" class="text-white nav-link" href="#">
+            <a class="text-white nav-link" href="#">
               <div class="text-center">
                 <div><i class="fas fa-images fa-lg text-white"></i></div>
                 <p class="my-0 text-white">
@@ -192,7 +193,7 @@
     </footer>
 
     {% block postloadjs %}
-    <script src="{% static 'js/base_master.js' %}"></script>
+    <script src="{% static 'js/base_extension.js' %}"></script>
     {% endblock %}
 
 </body>
