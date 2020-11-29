@@ -17,10 +17,10 @@
                 Art supplies
             </a>
             <div class="dropdown-menu border-0 bg-white" aria-labelledby="clothing-link">
-                <a href="#" class="dropdown-item">Beads</a>
-                <a href="#" class="dropdown-item">Pom poms</a>
-                <a href="#" class="dropdown-item">Glitter</a>
-                <a href="#" class="dropdown-item">All Art supplies</a>
+                <a href="{% url 'products' %}?category=beads" class="dropdown-item">Beads</a>
+                <a href="{% url 'products' %}?category=pompoms" class="dropdown-item">Pom poms</a>
+                <a href="{% url 'products' %}?category=glitter" class="dropdown-item">Glitter</a>
+                <a href="{% url 'products' %}?category=beads,pompoms,glitter" class="dropdown-item">All Art supplies</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Craft supplies
             </a>
             <div class="dropdown-menu border-0 bg-white" aria-labelledby="homeware-link">
-                <a href="#" class="dropdown-item">Paint</a>
-                <a href="#" class="dropdown-item">Ink & Dyes</a>
-                <a href="#" class="dropdown-item">Paper & Cards</a>
-                <a href="#" class="dropdown-item">All Craft supplies</a>
+                <a href="{% url 'products' %}?category=paint" class="dropdown-item">Paint</a>
+                <a href="{% url 'products' %}?category=ink_dyes" class="dropdown-item">Ink & Dyes</a>
+                <a href="{% url 'products' %}?category=paper_cards" class="dropdown-item">Paper & Cards</a>
+                <a href="{% url 'products' %}?category=paint,ink_dyes,paper_cards" class="dropdown-item">All Craft supplies</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0 bg-white" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">New arrivals</a>
-                <a href="#" class="dropdown-item">Deals</a>
-                <a href="#" class="dropdown-item">Clearance</a>
-                <a href="#" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
