@@ -1,0 +1,771 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000001",
+      "name": "Metallic Alphabet Cube Beads",
+      "description": "Word up! We don’t have to spell it out - these beads are really cool! It’s easy to create thoughtful, personal gifts when you have these dazzlers in your jewellery making kit! The colourful beads are a fashionistas dream - you can create so many designs from bracelets, belts, glasses holders, rings, earrings, necklaces and everything in between! But don’t stop there, you can experiment with papercrafts like cards and invitations, writing out messages or names with the gems, or adding customised touches to decorations. Use with stretchy elastic and our metallic beads - whatever you try, it’s sure to draw the eye and your recipient will be pleased! Thread, design, share and wear!",
+      "price": 6.20,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/e/metallic-alphabet-cube-beads-ax319q.jpg",
+      "image": "metallic-alphabet-cube-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000002",
+      "name": "Wooden Painted Flower Beads",
+      "description": "Eye-catching wooden flower beads in 6 assorted colours. Children will love threading these to make their very own fashion jewellery. Use with our stretchy cord or elastic. Bead size 9mm. 200 assorted beads per pack.",
+      "price": 4.60,
+      "category": 1,
+      "rating": 3.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/w/o/wooden-painted-flower-beads-ec161.jpg",
+      "image": "wooden-painted-flower-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000003",
+      "name": "Funny Face Beads",
+      "description": "Funny face plastic beads with assorted expressions. Thread with our stretchy cord or elastic to make fun jewellery, keychains and bag danglers. 7 assorted. Size 8mm.",
+      "price": "4.60",
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/f/u/funny-face-beads-ac685d.jpg",
+      "image": "funny-face-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000004",
+      "name": "Metallic Pony Beads",
+      "description": "Plastic beads in assorted metallic colours. Ideal for jewellery making and crafts. Size 5mm.",
+      "price": 4.60,
+      "category": 1,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/e/metallic-pony-beads-av868f.jpg",
+      "image": "metallic-pony-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000005",
+      "name": "Mini Pom Pom Fluffy Sheep",
+      "description": "Mini fluffy pom pom sheep to decorate cards and crafts. 6 colours. Size 20mm. Decorative use only. Pack of 10",
+      "price": 4.00,
+      "category": 2,
+      "rating": 3.2,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/i/mini-pom-pom-fluffy-sheep-ar275g.jpg",
+      "image": "mini-pom-pom-fluffy-sheep-min.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000006",
+      "name": "Pom Pom Makers",
+      "description": "Pom poms made simple! Easy to use plastic kits in 3 sizes. Simply wind the yarn around the pair of rings, cut and unlock to release the pom pom. Reusable. 3 sizes - 55mm, 70mm & 90mm. (Yarn not included).",
+      "price": 5.00,
+      "category": 2,
+      "rating": 3.8,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/o/pom-pom-makers-ef880w.jpg",
+      "image": "pom-pom-makers-min.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000007",
+      "name": "Mini Coloured Pom Poms",
+      "description": "A value pack of mini pom poms in assorted bright colours. Use with glue for 3D effects on collage and artwork. 2 assorted sizes - 8mm & 13mm. 500 pom poms per pack.",
+      "price": 3.70,
+      "category": 2,
+      "rating": 3.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/l/8/l821e.jpg",
+      "image": "mini-coloured-pom-poms-min.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000008",
+      "name": "Assorted Pom Poms",
+      "description": "Brightly coloured pom poms in assorted sizes. Use with glue for 3D effects. Up to 40mm each in size. Assorted colours. 100 pieces per pack.",
+      "price": 3.70,
+      "category": 2,
+      "rating": 3.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/o/pom-poms-d828.jpg",
+      "image": "pom-poms-min.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000009",
+      "name": "Gold & Silver Large Glitter Shakers",
+      "description": "Large size shakers of Gold and Silver glitter flakes to add sparkly effects to cards and crafts. 100g per shaker. 8cm high. 2 assorted per set.",
+      "price": 6.20,
+      "category": 5,
+      "rating": 4.2,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/x/ex808t.jpg",
+      "image": "gold-silver-large-glitter-shakers-min.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000010",
+      "name": "Large Glitter Shakers",
+      "description": "Large size shakers - ideal for classroom use! Vibrant glitter flakes in 6 assorted colours. 100g per shaker. 8cm high. 6 shakers per pack.",
+      "price": 16.30,
+      "category": 5,
+      "rating": 4.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/x/ex807p.jpg",
+      "image": "large-glitter-shakers-min.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000011",
+      "name": "Glitter Shakers Bumper Value Pack",
+      "description": "Fantastic value pack of 24 assorted glitter shakers. 10g per shaker.",
+      "price": 19.90,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/g/l/glitter-shakers-bumper-value-pack-av689f.jpg",
+      "image": "glitter-shakers-bumper-value-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000012",
+      "name": "Jumbo Glitter Glue",
+      "description": "Great value jumbo-sized glitter glue tubes. In easy to use 120g squeezy bottles, add sparkly effects to crafts and collage. 6 assorted colours per pack.",
+      "price": 9.90,
+      "category": 5,
+      "rating": 4.7,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/v/ev900k.jpg",
+      "image": "jumbo-glitter-glue-min.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000013",
+      "name": "Sparkle Beads",
+      "description": "Coloured plastic beads encrusted with tiny ’gemstones’. Thread with our stretchy cord or elastic to make sparkling jewellery, keychains and bag danglers. Bead size 7mm. 250 assorted beads per pack.",
+      "price": 4.6,
+      "category": 1,
+      "rating": 3.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/s/p/sparkle-beads-ex432.jpg",
+      "image": "sparkle-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000014",
+      "name": "Mini Seaside Beads",
+      "description": "’Sea’ what you can create with these pretty seaside design beads! Use with our stretchy cord or elastic. Bead size 10mm. 400 per pack.",
+      "price": 4.6,
+      "category": 1,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/i/mini-seaside-beads-ev153.jpg",
+      "image": "mini-seaside-beads-min.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000015",
+      "name": "Rainbow Glitter Shakers",
+      "description": "It’s time to shake, rattle, roll and sparkle with this set of dazzling dust!Our Rainbow Glitter Shakers will add instant sparkle to any craft project. Whether you’re creating magical scenes of fairies and unicorns or designing an entire rainbow made from the sparkly stuff, the results will be breathtaking. In a beautiful range of seven vibrant hues, there’s a colour for every craft project. Add some extra shine to your life today!Sprinkle, shake, sparkle, shine!",
+      "price": 5.70,
+      "category": 5,
+      "rating": 4.3,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/r/a/rainbow-colours-glitter-shakers-at704n.jpg",
+      "image": "rainbow-colours-glitter-shakers-min.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000016",
+      "name": "Glitter Glue Pens",
+      "description": "These vibrant rainbow colours will add a splash of magic to any project. Swirl and doodle, zig-zag and dot, sweep the glitter pens across the page and watch the cascade of shimmer follow in its wake. Whether you’re decorating a gift, or making a card, these crafty must-haves will take it the extra mile when it comes to style. Children will enjoy using the easy to grip tools, and like mixing up glitz with felt pens, paint and other creative essentials. Draw, design, colour and glitter! 8 per pack",
+      "price": 6.20,
+      "category": 5,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/g/l/glitter-glue-pens-ar874i.jpg",
+      "image": "glitter-glue-pens-min.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000017",
+      "name": "Rainbow Woolly Pom Poms",
+      "description": "Life really can be all sunshine and rainbows with these tactile treasures!Children will want to get stuck in straight away with these pretty pompoms! Perfectly fluffy and in amazingly vibrant tones, they’ll add cheer to any crafty pursuit! You can use them in collages or cardmaking or even to add bobtails and noses to animal pictures! Or let the awesome embellishments speak for themselves, and make a pompom garland or wreath.Stick, decorate, string, display!",
+      "price": 5.00,
+      "category": 2,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/r/a/rainbow-colours_-pom-poms-at762n.jpg",
+      "image": "rainbow-colours-pom-poms-min.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000018",
+      "name": "Gold & Silver Glitter Pom Poms",
+      "description": "These woollen wonders aren’t just for the top of your bobble hat! What will you make with our glitzy embellishments? Perhaps you’ll glue them together to form an unusual bauble, or string them up across the mantel in a festive garland. Or maybe they’ll decorate the front of a card, be turned into a headdress, or sewn onto a t-shirt as a glittery trim. There’s no limit to what can be done, so explore, get creative and have some fun…Sew, glue, shape and design!",
+      "price": 3.70,
+      "category": 2,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/g/o/gold-and-silver-glitter-pom-poms-ar687i.jpg",
+      "image": "gold-and-silver-glitter-pom-poms-min.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000019",
+      "name": "Pebeo Porcelain Paint Pots Bumper Pack",
+      "description": "Decorate porcelain, ceramic and terracotta with these fantastic enamel effect paints. Paints are fully intermixable and waterproof - simply bake finished work for 35 minutes to fix. Dishwasher resistant. 12 assorted 20ml water-based colours.",
+      "price": 6.40,
+      "category": 6,
+      "rating": 4.0,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/e/pebeo-porcelain-paint-pots-bumper-pack-ef7321c.jpg",
+      "image": "pebeo-porcelain-paint-pots-bumper-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000020",
+      "name": "Fluorescent Acrylic Paint",
+      "description": "Add a touch of neon colour to all your crafts! Handy tubs of fluorescent acrylic paint to use on glass, porcelain, plastic, wood or card. Dries to a glossy and flexible finish. 6 assorted colours.",
+      "price": 15.20,
+      "category": 6,
+      "rating": 3.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/f/l/fluorescent-acrylic-paint-af458x3.jpg",
+      "image": "fluorescent-acrylic-paint-min.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000021",
+      "name": "Pearlised Acrylic Paint",
+      "description": "Water-based acrylic paint in rich jewel colours that dries to a bright metallic pearlised finish. Quick to dry and waterproof on most surfaces. 6 assorted pearlescent colours per pack - Red, Pink, Blue, Green, Purple & Yellow. 150ml bottles.",
+      "price": 13.90,
+      "category": 6,
+      "rating": 4.3,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/7/e749-new.jpg",
+      "image": "pearlised-acrylic-paint-min.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000022",
+      "name": "Textile Paint",
+      "description": "Paint directly onto fabric and iron for permanent designs. 6 assorted colours per pack - Red, Green, Blue, Yellow, White & Black. 150ml per bottle. Water-based.",
+      "price": 13.90,
+      "category": 6,
+      "rating": 4.2,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/5/e569.jpg",
+      "image": "textile-paint-min.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000023",
+      "name": "Pebeo Glass Paint Pots Bumper Pack",
+      "description": "Translucent-effect paints that are fully mixable and waterproof. Dishwasher resistant once baked. 12 assorted. 20ml paints.",
+      "price": 23.30,
+      "category": 6,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/e/pebeo-glass-paint-pots-bumper-pack-ef7331f.jpg",
+      "image": "pebeo-glass-paint-pots-bumper-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000024",
+      "name": "Glitter Paint Pack",
+      "description": "Your crafts will look extra-special with a touch of glitter! Handy bottles of sparkling paint in 6 assorted colours. Use a paintbrush to add colourful dazzling effects on card and paper. 300ml per bottle.",
+      "price": 21.80,
+      "category": 6,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/g/l/glitter-paint-pack-ac566c.jpg",
+      "image": "glitter-paint-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000025",
+      "name": "Fluorescent Marbling Ink",
+      "description": "Add stunning marble effects to crafts with these fluorescent marbling inks. Add a few drops to a bowl of water then dip in your chosen object for amazing effects. 6 assorted colours per pack, in specially designed 25ml dropper-top plastic bottles. Instructions included. Adult supervision required.",
+      "price": 8.90,
+      "category": 7,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/e/v/ev947-new.jpg",
+      "image": "fluorescent-marbling-ink-min.jpg"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000026",
+      "name": "Christmas Marbling Ink",
+      "description": "Looking for a seriously funky twist to add to your festive makes? This cool ink will do the trick! You’re sure to be wowed when you get your hands on these - a set of stunning marbling inks that are perfect for holiday crafting. Make sure your Christmas cards stand out from the rest by creating a stack of completely unique marbled paper and card that can be used as a backdrop or greeting blank. Add droplets of different colours into water, then dip your material in and swirl it around. As it dries, you’ll see the pattern come to life before your eyes. Trim into motifs, letters or bunting flags, fringe and create faux flowers, experiment with different colours combinations...just go with the flow and your imagination! Drop, swirl, cut and design!",
+      "price": 10.20,
+      "category": 7,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/c/h/christmas-marbling-ink-ax451q.jpg",
+      "image": "christmas-marbling-ink-min.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000027",
+      "name": "Marbling Ink Set",
+      "description": "Young children will love creating multi-coloured patterns and designs with these specially formulated easy to use marbling inks. 6 assorted colours per set in specially designed 25ml dropper-top plastic bottles. Instructions included.",
+      "price": 8.90,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/a/marbling-ink-e676.jpg",
+      "image": "marbling-ink-min.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000028",
+      "name": "Pastel Marbling Ink",
+      "description": "You’ll be mesmerised by the colourful magic that’s revealed before your eyes! This enchanting kit is sure to delight - children will be enthralled by the wondrous sight. Using the six coloured inks, you can create your very own swirly, marbled designs - experiment with different amounts, different colours and see what you find! Perfect for unusual cards, making up your own gift wrap or tags, bunting flags, polystyrene shapes and handmade paper bags! Now in the pretty colours of spring, you won’t be able to contain yourself, you’ll be marbling everything! Sprinkle, mix, swirl and dip!",
+      "price": 11.30,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/a/pastel-marbling-ink-aw677j.jpg",
+      "image": "pastel-marbling-ink-min.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000029",
+      "name": "Vivid Block Printing Ink",
+      "description": "Intermixable block printing ink which has excellent tack and transfer properties. Perfect for lino, potato, block and stick printing techniques. Great for young children getting to grips with printing. 6 assorted colours. 300ml per tube.",
+      "price": 26.90,
+      "category": 7,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/v/i/vivid-block-printing-ink-ag103.jpg",
+      "image": "vivid-block-printing-ink-min.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000030",
+      "name": "Tie Dye Kit",
+      "description": "Embrace all of summer’s rainbow shades with a clever effect for all your fabric makes!Children will be wowed when they realise they can design their own t-shirt, bag, tea towel and more using our brilliant kit. A fun-packed way to spend a summer’s day, this lets them explore their creative side the tie-dye way. The pack comes with everything you need, apart from the projects you want to transform, so follow the instructions and you’ll have an array of funky accessories in no time at all. Experiment with different designs, patterns and colours - each piece will be truly unique!Create, transform, design and wear!",
+      "price": 34.80,
+      "category": 7,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/t/i/tie-dye-classpack-ax109n.jpg",
+      "image": "tie-dye-classpack-min.jpg"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000031",
+      "name": "Papyrus Effect Paper",
+      "description": "Delve into ancient worlds with papyrus effect paper! Use for historical art projects, collage or to practise your calligraphy. 32 double-sided sheets in 2 papyrus designs. Size 21cm x 28cm (74gsm).",
+      "price": 15.70,
+      "category": 9,
+      "rating": 4.0,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/a/papyrus-effect-paper-ac935d.jpg",
+      "image": "papyrus-effect-paper-min.jpg"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000032",
+      "name": "Bumper Craft Creativity Pack",
+      "description": "A bumper craft pack of assorted card, paper, stickers and more! Children can get crafty and design their own cards, boxes and decorations. Sheet size 35cm x 25cm.",
+      "price": 12.60,
+      "category": 9,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/b/u/bumper-craft-creativity-pack-ef730a.jpg",
+      "image": "bumper-craft-creativity-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000033",
+      "name": "Nature's Textures A4 Sheets",
+      "description": "Kids will love these graphic nature craft papers that are great for collage, display and educational purposes. 20 assorted designs. Size 215mm x 280mm. 145gsm.",
+      "price": 8.90,
+      "category": 9,
+      "rating": 4.2,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/n/a/natures-textures-a4-sheets-ag931b.jpg",
+      "image": "natures-textures-a4-sheets-min.jpg"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000034",
+      "name": "Tissue Paper Combination Pack",
+      "description": "Great value! Mixed pack of tissue paper shapes. 1440 per pack. 480 each - 5cm squares, 10cm circles and 15cm squares. 10 assorted colours.",
+      "price": 7.6,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/t/i/tissue-paper-combination-pack-e328.jpg",
+      "image": "tissue-paper-combination-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000035",
+      "name": "Animal Print Paper Sheets",
+      "description": "Go wild with your crafts! Includes 40 sheets of paper in six fun animal designs - giraffe, zebra, reptile, leopard, tiger and snakeskin. Ideal for crafts, collage and modelling. A4 size (100gsm).",
+      "price": 6.20,
+      "category": 9,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/a/n/animal-print-paper-sheets-ef912v.jpg",
+      "image": "animal-print-paper-sheets-min.jpg"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000036",
+      "name": "Tissue Sheet Value Pack",
+      "description": "Great value pack containing assorted sheets of tissue in a wide variety of colours and sizes. Ideal for cutting, gluing and collage. 350g per pack.",
+      "price": 7.60,
+      "category": 9,
+      "rating": 4.4,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/t/i/tissue-sheet-value-pack-k484.jpg",
+      "image": "tissue-sheet-value-pack-min.jpg"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000037",
+      "name": "Woodland Animal Woodcraft Kits",
+      "description": "Prepare to be wowed as you transform these flat shapes into 3-D models! Bring all the magic of the great outdoors inside with these amazing kits that allow you to make and decorate your own gang of woodland friends. Each familiar face comes with all the pre-cut wooden pieces you’ll need, and they’re left blank for your designs. So, mix up your paint or grab your paint pens and decide which colours to use. Go for traditional shades or go a little wild, it’s up to you to choose. Leave to dry then slot the pieces in place and your animal will take shape. Embellish further with adornments from your stash, from wiggle-eyes to metallic pens and more. Paint, design, decorate and build!",
+      "price" : 1.5,
+      "category": 8,
+      "rating": 3.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/w/o/woodland-animal-woodcraft-kits-ax196q.jpg",
+      "image": "woodland-animal-woodcraft-kits-min.jpg"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000038",
+      "name": "Christmas Gift Bags",
+      "description": "Get Christmas in the bag this year by transforming these cool containers with DIY designs! Grab your craft kit as you’ll want all your favourite embellishments to hands for this fun-packed project. The gift bags are available in the classic Christmas colours of red and green and are completely blank, so you can leave them plain and add a tag and shredded tissue inside, or put on your crafty cap and let your imagination run wild. Use foam stickers, create a jolly Santa face from card, paper and wiggle-eyes or maybe Rudolph instead, draw and snip a Christmas pud from self-adhesive felt, spell out a name with letter stickers or beads; whatever you like, it’s sure to delight! Fill with trinkets, treats and gifts, then pop under the tree for the big day. Decorate, design, fill and gift!",
+      "price": 0.60,
+      "category": 8,
+      "rating": 3.6,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/c/h/christmas-gift-bags-ax301q.jpg",
+      "image": "christmas-gift-bags-min.jpg"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000039",
+      "name": "Wooden Buttons Assortment",
+      "description": "Keep your craft kit stocked up this season with this assortment of wooden buttons. They come in a wide variety of shapes and sizes and come in handy for any number of projects, whether you’re entertaining the kids, making gifts or hosting a craft party. Paint them, colour with pens, glue them on to boxes, cards, picture frames, or collages... the possibilities are endless! Colour, stick, design, and create!",
+      "price": 5.00,
+      "category": 8,
+      "rating": 4.7,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/w/o/wooden-buttons-assortment-ax377q.jpg",
+      "image": "wooden-buttons-assortment-min.jpg"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000040",
+      "name": "Large Wooden Chalkboards",
+      "description": "Chalk it up to experience, but we think these boards are a real must have! Reminiscent of school days gone by, these generously sized chalkboards are surprisingly on trend! Ideal for home, school, craft groups and even special events like weddings and parties where they’re used as retro signage, they have plenty of uses. Grab your stash of coloured chalk and get creative - practise letters and numbers, write messages, draw pictures and doodles then wipe and start again! Leave a note to Santa or perhaps share warm wishes with neighbours and passers-by - you can pop one in your window where it will catch the eye! Draw, doodle, write and use!",
+      "price": 2.5,
+      "category": 8,
+      "rating": 4.0,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/l/a/large-wooden-chalkboards-ax378q.jpg",
+      "image": "large-wooden-chalkboards-min.jpg"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000041",
+      "name": "Hedgehog Ceramic Flowerpots",
+      "description": "Wow! Hedgehogs like you’ve never seen them before! This brilliant fun-packed project is sure to raise a smile when it’s complete and the full effect is clear for all to see. Start by mixing up your favourite porcelain paints or grabbing your porcelain pens - the pots are engraved so you can be guided by the shapes and makeover your hedgehog friend! Artistic children who love painting will be thrilled with the chance to flex their skills, exploring different colourways and tools. Once the painting is done, seal according to the instructions, then it’s time to put your green fingers to the test! As your plant grows, so will your hedgehog’s bristles - children will be delighted to follow its progress! Paint, decorate, plant and grow!",
+      "price": 3.20,
+      "category": 8,
+      "rating": 4.7,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/h/e/hedgehog-ceramic-flowerpots-ax166q-p.jpg",
+      "image": "hedgehog-ceramic-flowerpots-min.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000042",
+      "name": "Design Your Own Water Bottles",
+      "description": "Going green has never been cooler. Quench your thirst and design your own water bottle to take it with you wherever you go! Each blank bottle can be coloured using your favourite glass pens or acrylic paints, you just need to settle on a design! Write your name on it so there’s no confusion, add some flowers or stars or make it a festive theme as the holidays approach - the possibilities are endless! Design, paint, create, and quench!",
+      "price": 3.20,
+      "category": 8,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/d/e/design-your-own-water-bottles-ax323q-pc4.jpg",
+      "image": "design-your-own-water-bottles-min.jpg"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000043",
+      "name": "Fabric Aprons",
+      "description": "A fun idea and practical too! Children will love designing and personalising their very own apron using textile paint, fabric pens and stickers(not included). Length 71cm. Straps can be adjusted to fit most children (and adults). Age 4+.",
+      "price": 3.20,
+      "category": 4,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/d/e/design-a-fabric-apron-ek112z.jpg",
+      "image": "design-a-fabric-apron-min.jpg"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000044",
+      "name": "Natural Hair Brushes",
+      "description": "Fantastic value pack of soft, natural hair paint brushes. In 3 assorted sizes - 1, 3 and 5 - they are ideal for painting our canvases.",
+      "price": 6.00,
+      "category": 4,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/n/a/natural-hair-paint-brushes-ek303.jpg",
+      "image": "natural-hair-paint-brushes-min.jpg"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000045",
+      "name": "Monster Bunch Hand Puppet Sewing Kits",
+      "description": "Put on a roaringly good show with these hair-raising characters, they’re almost ready to go! Playful children with a creative streak will love trying their hand at this project. The kit comes with everything they need to stitch a mischievous monster, simply use the plastic needle and feed the thread through the pre-punched holes. Adding the details couldn’t be easier, all the embellishments are peel and stick, so children can press them into place, it’s really that quick. Each quirky monster has different distinctive features, so they’re sure to be keen to make them all, and this activity is ideal for solo home crafting, craft clubs or getting creative at school! Stitch, stick, decorate and play!",
+      "price": 1.80,
+      "category": 4,
+      "rating": 4.2,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/o/monster-bunch-hand-puppet-kits-ax244-p1.jpg",
+      "image": "monster-bunch-hand-puppet-kits-min.jpg"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000046",
+      "name": "Guitar Wooden Kits",
+      "description": "There’s always time for a guitar solo with our amazing instruments!These Guitar Wooden Kits will be like music to your ears! Decorate yours in beautiful bright colours using Deco Pens or acrylic paints (not included) then attach the strings included and start composing your number one hit! Will it be an upbeat pop tune or a soulful blues track? Whatever you decode, this craft is an excellent way to teach children about music.Decorate, string, play, compose!",
+      "price": 2.00,
+      "category": 4,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/w/o/wooden-guitar-kits-at812n.jpg",
+      "image": "wooden-guitar-kits-min.jpg"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000047",
+      "name": "Hedgehog Dreamcatcher Kits",
+      "description": "Our cute little critter is made up of leaves that catch the nightmares and send on sweet dreams! These hedgehogs have come out of the woodland to make use of a very particular skill - keeping nightmares at bay so you can have a peaceful slumber! That’s right, these little creatures have a magical gift, but in order to use it they need to be put together. Luckily we’ve got all the pieces, so we just need your crafty know-how. Feed the thread through the pre-punched holes in the base shape, then add the self-adhesive foam embellishments to decorate and form the face. The final touch is the beaded, feathered tassels, then your dreamy design is ready to hang up over your bed! Thread, weave, peel and stick!",
+      "price": 1.80,
+      "category": 4,
+      "rating": 4.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/h/e/hedgehog-dreamcatcher-kits-aw936l.jpg",
+      "image": "hedgehog-dreamcatcher-kits-min.jpg"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000048",
+      "name": "Tipi Colour-in Cross Stitch Kits",
+      "description": "Spend the night under the stars as your imagination takes you near and far! A traditional tipi was usually made of animal skins, cloth or canvas and can be easily recognised by the smoke flaps at the top of the structure. Now you can recreate the cool conical tents and learn all about them at the same time by putting your colouring skills to good use. Children will enjoy this unique craft which allows them to shade between the pre-drawn lines, putting their own creative flair on the classic patterns. Then, it’s time to reach for the needle and thread, and stitch through the pre-punched holes, to add delicate textured details before completing your rich tapestry of design with a cluster of vibrant feathers and pipe cleaners. Colour, stitch, fold and finish! Pack of 4",
+      "price": 5.30,
+      "category": 4,
+      "rating": 4.0,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/t/i/tipi-colour-in-cross-stitch-kits-aw658k.jpg",
+      "image": "tipi-colour-in-cross-stitch-kits-min.jpg"
+    }
+  },{
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000049",
+      "name": "Festive Friends Puzzle Cube Keyrings",
+      "description": "Wow what fun! A cool accessory and a toy all in one! Playful kids will absolutely love this! Each cube showcases a selection of different classic Christmas scenes with an array of familiar festive faces. Attached to a metal ring, you can affix it to your keys, belt or bag...but not only that, it can turn into some serious entertainment too! Jumble up the rows and the pictures on each side will be all mixed up - it’s up to you to work out how to line them all up again. These little toys would make brilliant stocking fillers or party bag tokens - they’d even be great prizes for party games…Jumble, puzzle, crack and carry!",
+      "price": 1.2,
+      "category": 3,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/f/e/festive-friends-puzzle-cube-keyrings-at347.jpg",
+      "image": "festive-friends-puzzle-cube-keyrings-min.jpg"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000050",
+      "name": "Gold & Silver Lobster Claw Clasps",
+      "description": "Fasten your handmade accessories in style! Fashionistas who like to make their own jewellery will be delighted with this mixed bag - a selection of trigger findings in both gold and silver so you’ll have the right match whatever you’re making. The understated loops are the ideal way to give necklaces and bracelets a professional finish to keep them nice and secure each time you wear them, do you don’t need to worry. Simply loop thread or elastic through the little hole, or feed beads onto headpins and bend the end with wire, hooking it into the clasp to fix in place. The shiny metallic sheen will complement sparkly gems, charms, macrame and ribbon knotting designs and more. Thread, fix, bead and secure! Pack of 50.",
+      "price": 3.95,
+      "category": 3,
+      "rating": 4.5,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/g/o/gold-and-silver-lobster-claw-clasps-aw542k.jpg",
+      "image": "gold-and-silver-lobster-claw-clasps-min.jpg"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000051",
+      "name": "Pearlised A4 Card",
+      "description": "Add a pretty pearly touch to all your crafts this season! This perfect pack is the ideal addition to your craft kit - bursting with stunning, striking shades that boast a gorgeous pearl finish. Crafty kids will enjoy combining the A4 sheets with dazzling gems, buttons, stickers and glitter - cut shapes from card, fold into greetings, make cones and boxes, whatever you decide, the finished work will be mighty fine! Ideal for the classroom or just to stock up your supplies, you’ll soon be considering this lovely essential a serious must-buy! Cut, draw, create and make! Pack of 15.",
+      "price": 4.60,
+      "category": 3,
+      "rating": 3.9,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/e/pearlised-a4-card-aw335j.jpg",
+      "image": "pearlised-a4-card-min.jpg"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000052",
+      "name": "Monster Bunch Wreath Kits",
+      "description": "You won’t believe your eyes when your spot these roaringly good designs! Monster-loving kids will be grinning with delight when they see this monstrous sight! A wreath unlike any you’ve ever seen before, it will give a scare-raising jump to anyone who walks by your door! But first you need to put it together, ready for display - simply peel and stick the self-adhesive foam pieces and stick them around the foam wreath base. Add the ‘orrible horns and a set of gnashing teeth and you’ll have your very own Halloween wreath! Stick, design, make and display! Pack of 3",
+      "price": 3.95,
+      "category": 3,
+      "rating": 3.8,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/m/o/monster-bunch-wreath-kits-aw775l.jpg",
+      "image": "monster-bunch-wreath-kits-min.jpg"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000053",
+      "name": "Festive Friends Colour-in Puzzle Cubes",
+      "description": "Fun puzzle cubes to colour in, then twist and turn. Each side features a different festive design. 54mm diameter. Age 5+. Pack of 2.",
+      "price": 4.70,
+      "category": 3,
+      "rating": 4.1,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/f/e/festive-friends-colour-in-puzzle-cubes-av815f.jpg",
+      "image": "festive-friends-colour-in-puzzle-cubes-min.jpg"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000054",
+      "name": "Circle Wooden Tealight Holders",
+      "description": "It isn’t just your room that will light up with these cute containers - your face will too! Our candle holders might look rather plain at first glance but they can be transformed into stunning decorations given half the chance! Use your pens or paints to customise the circular base, transforming it into a Christmas pudding, an angel’s halo, a snowman face or just jazz them up with patterns and doodles. Try drawing on detail with glitter pens for extra sparkle - we’re pretty sure the end result will make you marvel! Then pop an LED tealight (not included) inside and arrange as part of your festive display… Colour, draw, paint and decorate! Pack of 4.",
+      "price": 5.30,
+      "category": 3,
+      "rating": 3.8,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/w/o/wooden-tealight-holders-at102lp3.jpg",
+      "image": "wooden-tealight-holders-min.jpg"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp0000000055",
+      "name": "Pastel Candle Making Kit",
+      "description": "Crafty kids will be waxing lyrical about this clever craft kit! Curious minds will delight with this find - mouldable wax that’s warmed by the heat of your hands, allowing you to shape it into candles of your own design. The blocks come in the prettiest pastels, perfect for Easter, and can be transformed into 3D works of art! Ideal as gifts for friends and family, as a chocolate alternative, they’re also perfect for classroom displays, rainy day projects and party activities too! Break, shape, mould and make!",
+      "price": 11.90,
+      "category": 3,
+      "rating": 4.0,
+      "image_url": "https://www.bakerross.ie/media/catalog/product/cache/091fccd117e158c6452fa011d67fe1fd/p/a/pastel-candle-making-kit-aw110jp.jpg",
+      "image": "pastel-candle-making-kit-min.jpg"
+    }
+  }
+]
