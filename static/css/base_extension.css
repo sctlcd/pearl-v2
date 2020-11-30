@@ -63,3 +63,26 @@ color: #0074f1 !important;
 .remove-item {
  cursor: pointer;
 }
+
+/* ------------------------------- bag */
+
+
+.btn-outline-elegant,
+.btn-elegant,
+.btn-outline-elegant:hover,
+.btn-elegant:hover {
+	border-radius: 45px !important;
+}
+
+.btn-elegant {
+	border: 1px solid #2e2e2e;
+}
+
+.btn-elegant:hover {
+	background-color: #222 !important;
+	color: #fafafa !important;
+	border: 1px solid #222 !important;
+	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
+	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
+
+}
