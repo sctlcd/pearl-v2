@@ -6,6 +6,7 @@ $(document).ready(function() {
   }
 
   function bgHoverWhite() {
+    bgWhite();
     $('.header').addClass('bg-hover-white');
   }
 
@@ -28,7 +29,6 @@ $(document).ready(function() {
 
   // Initialisation (page not scrolled)
   function init() {
-    bgWhite();
     bgHoverWhite();
     navbarNotFixedTop();
   }

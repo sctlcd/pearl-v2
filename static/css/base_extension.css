@@ -10,3 +10,56 @@ body {
 .header-container {
   padding-top: 4rem;
 }
+
+/* ------------------------------- products */
+
+.badge {
+  color: #000 !important;
+	letter-spacing: 1px;
+}
+
+a.category-badge > span.badge:hover {
+  background: #212529 !important;
+  color: #fafafa!important;
+}
+
+.products-container .text-info a {
+color: #33b5e5 !important;
+}
+
+.products-container .text-info,
+.products-container .text-info a {
+color: #33b5e5 !important;
+}
+
+.products-container .text-info a:hover {
+color: #0074f1 !important;
+}
+
+.btt-button-top,
+.btt-button-down {
+	position: fixed;
+	right: 0.6rem;
+	border-radius: 45px;
+	background-color: rgba(108, 117, 125, 0.65);
+	color: #fafafa;
+	-webkit-box-shadow: 0px 4px 10px #353535  !important;
+	box-shadow: 0px 4px 10px #353535  !important;
+}
+
+.btt-button-down {
+	bottom: 0.6rem;
+}
+
+.btt-button-top:hover,
+.btt-button-down:hover {
+	background-color: #6c757d;
+	-webkit-box-shadow: 0px 4px 10px #353535  !important;
+	box-shadow: 0px 4px 10px #353535  !important;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+ cursor: pointer;
+}
