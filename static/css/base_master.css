@@ -93,7 +93,7 @@ form div > input {
 }
 
 .bg-transparent {
-	background-color: rgb(253 160 133 / 0.16) !important;
+	background-color: rgba(0, 0, 0, 0.50) !important;
 }
 
 .bg-orange {
