@@ -125,76 +125,90 @@
 
   {% if messages %}
   <div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
     {% endif %}
+    {% endwith %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
-    <footer class="footer bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2 menu-items">
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">About us</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Contact us</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Shipping</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Return</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Refund Policy</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Terms of use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-grey">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0"><i class="far fa-copyright"></i> 2020 by Lucinda Souchet <a href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github text-black"></i><span class="sr-only">Github</span></a>
-            </p>
-          </div>
-          <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0 social-links">
-              <li class="list-inline-item mr-3">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <i class="fab fa-facebook fa-2x fa-fw text-orange"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mr-3">
-                <a href="https://twitter.com/" target="_blank">
-                  <i class="fab fa-twitter-square fa-2x fa-fw text-orange"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/" target="_blank">
-                  <i class="fab fa-instagram fa-2x fa-fw text-orange"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <footer class="footer bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2 menu-items">
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">About us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Contact us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Shipping</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Return</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Refund Policy</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Terms of use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-grey">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0"><i class="far fa-copyright"></i> 2020 by Lucinda Souchet <a href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github text-black"></i><span class="sr-only">Github</span></a>
+          </p>
+        </div>
+        <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0 social-links">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-2x fa-fw text-orange"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter-square fa-2x fa-fw text-orange"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram fa-2x fa-fw text-orange"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    {% block postloadjs %}
-    <script src="{% static 'js/base_extension.js' %}"></script>
-    {% endblock %}
+  {% block postloadjs %}
+  <script src="{% static 'js/base_extension.js' %}"></script>
+  {% endblock %}
 
 </body>
 

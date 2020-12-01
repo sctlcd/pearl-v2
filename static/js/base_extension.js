@@ -87,5 +87,5 @@ $(document).ready(function() {
   });
 
   init();
-
+  $('.toast').toast('show');
 });
