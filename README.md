@@ -376,6 +376,7 @@ Back to [top](#TableOfContents)
 - Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
 - Material Design for Bootstrap documentation - [mdbootstrap](https://mdbootstrap.com/)
 - How to integrate mdbootstrap with django - [mdbootstrap](https://mdbootstrap.com/articles/jquery/how-to-integrate-mdbootstrap-with-django/)
+- mdb input number [mdbootstrap](https://mdbootstrap.com/docs/jquery/forms/inputs/)
 
 
 Back to [top](#TableOfContents)
