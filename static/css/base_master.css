@@ -65,7 +65,7 @@ form div > input {
 }
 
 .text-orange {
-  color: #fb3 !important;
+  color: #fc9601eb !important;
 }
 
 .text-grey {
@@ -85,7 +85,7 @@ form div > input {
 }
 
 .border-orange {
-  border: 1px solid #fb3 !important;
+  border: 1px solid #fc9601eb !important;
 }
 
 .border-grey {
@@ -97,7 +97,7 @@ form div > input {
 }
 
 .bg-orange {
-	background-color: #fb3 !important;
+	background-color: #fc9601eb !important;
 }
 
 .bg-white {
@@ -146,7 +146,7 @@ form div > input {
 .bg-hover-white:hover #topnav h2,
 .bg-hover-white #mobile-logo-title h5,
 .bg-hover-white:hover #mobile-logo-title h5 {
-	color: #fb3 !important;
+	color: #fc9601eb !important;
 }
 
 /* from Bulma */
@@ -212,7 +212,7 @@ form div > input {
 .bg-hover-white:hover ul a i,
 .bg-hover-white h2,
 .bg-hover-white ul a i {
-	color: #fb3 !important;
+	color: #fc9601eb !important;
 }
 
 .bg-hover-white:hover ul a p,
@@ -224,12 +224,12 @@ form div > input {
 /* .bg-hover-white:hover form button, */
 .bg-hover-white form input, {
 /* .bg-hover-white form button { */
-	border: 1px solid #fb3 !important;
+	border: 1px solid #fc9601eb !important;
 }
 
 .bg-hover-white:hover .search-container .fa-search,
 .bg-hover-white .search-container .fa-search {
-	color: #fb3 !important;
+	color: #fc9601eb !important;
 }
 
 .bg-hover-white:hover .search-container input,
@@ -244,8 +244,8 @@ form div > input {
 .bg-hover-white:hover .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
 .bg-hover-white .active-orange-2 input.form-control[type=text]:focus:not([readonly]),
 .bg-transparent .active-orange-2 input[type="text"]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #fb3 !important;
-  box-shadow: 0 1px 0 0 #fb3 !important;
+  border-bottom: 1px solid #fc9601eb !important;
+  box-shadow: 0 1px 0 0 #fc9601eb !important;
 }
 
 .bg-hover-white:hover .active-orange-2 input.form-control[type=text],
@@ -256,17 +256,17 @@ form div > input {
 
 .active-orange-2 .fa,
 .active-orange-2 .fa {
-  color: #fb3;
+  color: #fc9601eb;
 }
 
-.bg-hover-white form button {
-	background: #fb3 !important;
+/* .bg-hover-white form button {
+	background: #fc9601eb !important;
 }
 
 .bg-hover-white form button:hover {
 	background: #fb3c7 !important;
 	color: #fafafa;
-}
+} */
 
 .bg-hover-white:hover #main-nav ul li .nav-link,
 .bg-hover-white #main-nav ul li .nav-link {
@@ -275,9 +275,9 @@ form div > input {
 
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
-	-webkit-box-shadow: 0px 1px 10px rgba(255, 187, 51, 0.75);
-	box-shadow: 0px 1px 10px rgba(255, 187, 51, 0.75);
-	border-bottom: 5px double rgba(255, 187, 51, 0.75);
+	-webkit-box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+	box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+	border-bottom: 4px double rgba(252, 150, 1, 0.75);
 }
 
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
@@ -292,7 +292,7 @@ form div > input {
 
 .bg-hover-white:hover nav li a i,
 .bg-hover-white nav li a i {
-	color: #fb3 !important;
+	color: #fc9601eb !important;
 }
 
 .bg-hover-white:hover nav li a p,
@@ -543,9 +543,9 @@ nav a.waves-effect, nav a.waves-effect {
 
 .footer {
   padding-top: 5rem;
-	-webkit-box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
-	box-shadow: 0px 0px 0px rgba(255, 187, 51, 0.75);
-	border-top: 1px solid rgba(255, 187, 51, 0.75);
+	-webkit-box-shadow: 2px -2px 3px rgba(252, 150, 1, 0.75);
+	box-shadow: 0px 0px 0px rgba(252, 150, 1, 0.75);
+	border-top: 3px double rgba(252, 150, 1, 0.75);
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -553,7 +553,8 @@ nav a.waves-effect, nav a.waves-effect {
 }
 
 .footer .menu-items a:hover {
-	color: #fb3!important;
+	color: #000!important;
+  text-shadow: 2px 2px 10px #fc9601eb;
 }
 
 .footer .social-links i:hover {
@@ -561,9 +562,80 @@ nav a.waves-effect, nav a.waves-effect {
 }
 
 .footer .fa-github:hover {
-	color: #fb3!important;
+	color: #fc9601eb!important;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+	/* high Z index to assure it's always on top of everything else. */
+  z-index: 99999999999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 10px solid black;
+  position: absolute;
+  top: -10px;
+  right: 36px;
+}
+
+/*
+Convenience classes - colors (dark shade) copied from Material Design Bootstrap:
+https://mdbootstrap.com/docs/standard/content-styles/colors/
+ */
+.arrow-primary {
+  border-bottom-color: #1266F1 !important;
+}
+
+.arrow-secondary {
+  border-bottom-color: #B23CFD !important;
+}
+
+.arrow-success {
+  border-bottom-color: #00B74A !important;
+}
+
+.arrow-danger {
+  border-bottom-color: #F93154 !important;
+}
+
+.arrow-warning {
+  border-bottom-color: #FFA900 !important;
+}
+
+.arrow-info {
+  border-bottom-color: #39C0ED !important;
+}
+
+.arrow-light {
+  border-bottom-color: #FBFBFB !important;
+}
+
+.arrow-dark {
+  border-bottom-color: #262626 !important;
+}
+
+.bag-notification-wrapper {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 /* -------------------------------- Media Queries */
 
