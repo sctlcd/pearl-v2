@@ -1,6 +1,6 @@
-/*--------------------------------------------------------------------------------------------------------------
-																									base_master style
----------------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------------------------------- */
+/*																									base_master style */
+/*---------------------------------------------------------------------------------------------------------------- */
 
 html {
   height: 100%;
@@ -23,10 +23,10 @@ form div > input {
 
 /* ------------------------------- button */
 
-.btn-black {
+/* .btn-black {
   background: #000;
   color: #fafafa;
-}
+} */
 
 .btn-grey {
 	background-color: #6c757d !important;
@@ -76,7 +76,7 @@ form div > input {
 	color: #6a6a6e !important;
 }
 
-.text-info {
+.header .text-info {
   color: #fafafa!important;
 }
 
@@ -93,7 +93,7 @@ form div > input {
 }
 
 .bg-transparent {
-	background-color: rgb(253 160 133 / 0.16) !important;
+	background-color: rgba(0, 0, 0, 0.50) !important;
 }
 
 .bg-orange {
@@ -544,7 +544,8 @@ nav a.waves-effect, nav a.waves-effect {
 .footer {
   padding-top: 5rem;
 	-webkit-box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
-	box-shadow: 2px -2px 3px rgba(255, 187, 51, 0.75);
+	box-shadow: 0px 0px 0px rgba(255, 187, 51, 0.75);
+	border-top: 1px solid rgba(255, 187, 51, 0.75);
   bottom: 0px;
   left: 0px;
   right: 0px;
