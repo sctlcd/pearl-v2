@@ -328,8 +328,10 @@ form div > input {
   border-color: rgba(108,117,125, 0.5);
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
   background-color: #d6d4d4;
+  border-radius: .25rem;
 }
 
 .header .list-inline-item.show a.nav-link {
@@ -367,7 +369,7 @@ nav .nav-item:hover {
 	margin-right: 0px !important;
 }
 
-nav a.waves-effect, nav a.waves-effect {
+nav a.waves-effect {
 	display: inline-flex;
 }
 
