@@ -88,7 +88,6 @@ $(document).ready(function() {
 
     init();
 
-    toast
     $('.toast').toast({
       autohide: true,
       delay: 3000

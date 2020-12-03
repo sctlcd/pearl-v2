@@ -1,0 +1,109 @@
+{% extends "base_extension.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid text-center bg-white">
+  <div class="row">
+    <div class="container col mt-3">
+      <hr>
+      <h2 class="logo-font my-4">Gallery</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col container gallery-container">
+
+      <div class="gallery-content">
+        <div class="row mtb-20">
+          <div class="col-xs-12">
+            <ul class="nav pill-nav gallery-filters">
+              <li role="presentation" class="active" gallery-filter="all"><a href="#">All</a></li>
+              <li role="presentation" gallery-filter="beads"><a href="#">Beads</a></li>
+              <li role="presentation" gallery-filter="pompoms"><a href="#">Pom poms</a></li>
+              <li role="presentation" gallery-filter="glitter"><a href="#">Glitter</a></li>
+              <li role="presentation" gallery-filter="paint"><a href="#">Paint</a></li>
+              <li role="presentation" gallery-filter="ink_dyes"><a href="#">Ink & Dyes</a></li>
+              <li role="presentation" gallery-filter="paper_cards"><a href="#">Paper & Cards</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gallery-images">
+          <div class="col-sm-4 gallery-img-holder" filter-category="beads">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-fluid img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="pompoms">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="glitter">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="paint">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="ink_dyes">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="paper_cards">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="beads">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="pompoms">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="glitter">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="paint">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+          <div class="col-sm-4 gallery-img-holder" filter-category="ink_dyes">
+            <img src="/media/animal-print-paper-sheets-min.jpg" class="img-thumbnail" data-target="#modal-carousel" />
+          </div>
+        </div>
+      </div>
+
+      <!-- gallery footer -->
+      <div class="gallery-footer my-5 mx-5">
+        <p class="text-black d-inline">Would you like to share your own piece of art? Let's go! <a href="#" class="text-orange pl-1"><i class="fas fa-share"></i></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+  jQuery('document').ready(function($) {
+    $('.gallery-filters li').on('click', function() {
+      $('.gallery-filters li').removeClass('active');
+      $(this).addClass('active');
+      filter = $(this).attr('gallery-filter');
+
+      $('.gallery-img-holder').each(function() {
+        if (filter == 'all') {
+          $(this).fadeIn();
+        } else {
+          $(this).hide();
+          if ($(this).attr('filter-category') == filter) {
+            $(this).fadeIn();
+          }
+        }
+      });
+    });
+  });
+</script>
+
+{% endblock %}

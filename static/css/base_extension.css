@@ -177,6 +177,43 @@ color: #0074f1 !important;
 	color: #495057;
 }
 
+/* ------------------------------- gallery */
+
+/* Style the links inside the pill navigation menu */
+.pill-nav li {
+  display: inline-block;
+  /* color: black; */
+  text-align: center;
+  padding: 0.2rem 0.6rem 0.1rem 0.6rem;
+  text-decoration: none;
+  border-radius: 10px;
+	border: 1px solid #000;
+	margin-right: 0.2rem;
+}
+
+.pill-nav li a {
+	color: black;
+	padding-bottom: 0rem;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav li:hover {
+  background-color: #d8d8d86e;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav li.active {
+  background-color: #fc9601eb;
+	border: 2px solid #fc9601eb;
+}
+
+.gallery-footer p a:hover {
+	color: #6c757d !important;
+}
+/* ------------------------------- media query */
+
+/* Quantity input number */
 @media not all and (min-resolution:.001dpcm) {
 @supports (-webkit-appearance: none) and (stroke-color:transparent) {
 
