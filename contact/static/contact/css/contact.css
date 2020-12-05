@@ -1,0 +1,22 @@
+.md-form textarea.md-textarea+label {
+    top: 0;
+}
+
+.line-orange {
+    width: 30px;
+    border-top: 8px solid #fc9601eb;
+    border-radius: 45px;
+}
+
+.google-map {
+    padding-bottom: 8rem;
+}
+
+.contact-information {
+    border-radius: 30px;
+}
+
+.section-body {
+    width: 70%;
+    margin: 0 auto;
+}

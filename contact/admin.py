@@ -9,7 +9,6 @@ class ContactAdmin(admin.ModelAdmin):
         'first_name',
         'last_name',
         'email',
-        'subject',
         'message',
     )
 
