@@ -125,6 +125,14 @@
 </div>
 {% endblock %}
 
+{% block page_bottom %}
+<div class="container bottom-container">
+ <div class="row">
+	 <div class="col"></div>
+ </div>
+</div>
+{% endblock %}
+
 {% block postloadjs %}
 {{ block.super }}
 <script src="{% static 'products/js/products.js' %}" type="text/javascript"></script>

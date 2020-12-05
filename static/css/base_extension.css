@@ -11,6 +11,10 @@ body {
   padding-top: 4rem;
 }
 
+.bottom-container {
+  padding-top: 8rem;
+}
+
 /* ------------------------------- products */
 
 .badge {
