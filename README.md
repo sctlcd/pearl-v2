@@ -377,10 +377,11 @@ Back to [top](#TableOfContents)
 - Material Design for Bootstrap documentation - [mdbootstrap](https://mdbootstrap.com/)
 - How to integrate mdbootstrap with django - [mdbootstrap](https://mdbootstrap.com/articles/jquery/how-to-integrate-mdbootstrap-with-django/)
 - mdb input number [mdbootstrap](https://mdbootstrap.com/docs/jquery/forms/inputs/)
-- Creating a modal image gallery with bootstrap components - (css-tricks)[https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/]
-- How to - Portfolio Gallery with Filtering - (w3schools)[https://www.w3schools.com/howto/howto_js_portfolio_filter.asp]
-- How to - Lightbox - (w3schools)[https://www.w3schools.com/howto/howto_js_lightbox.asp]
-- Material Design Full Screen Modal - (mdbootstrap)[https://mdbootstrap.com/snippets/jquery/mustafaozkaya/789907#html-tab-view]
+- Creating a modal image gallery with bootstrap components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
+- How to - Portfolio Gallery with Filtering - [w3schools](https://www.w3schools.com/howto/howto_js_portfolio_filter.asp)
+- How to - Lightbox - [w3schools](https://www.w3schools.com/howto/howto_js_lightbox.asp)
+- Material Design Full Screen Modal - [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mustafaozkaya/789907#html-tab-view)
+- How to change your commit messages in Git? [github](https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4)
 
 
 Back to [top](#TableOfContents)
