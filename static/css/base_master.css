@@ -23,6 +23,10 @@ form div > textarea {
 	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
+form div > label.active {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
 /* ------------------------------- button */
 
 /* .btn-black {

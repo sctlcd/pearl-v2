@@ -2,8 +2,8 @@ from django.urls import path
 from . import views
 
 
-# Checkout urls
+# Contact urls
 
 urlpatterns = [
-    path('', views.checkout, name='checkout')
+    path('', views.contact, name='contact')
 ]

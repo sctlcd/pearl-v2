@@ -12,8 +12,8 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid text-center bg-white">
-  <div class="row">
-    <div class="container col mt-3">
+  <div class="row mb-5">
+    <div class="container col-12">
       <hr>
       <h2 class="logo-font my-4">Gallery</h2>
       <hr>
@@ -570,7 +570,14 @@
     </div>
   </div>
 </div>
+{% endblock %}
 
+{% block page_bottom %}
+<div class="container bottom-container">
+ <div class="row">
+	 <div class="col"></div>
+ </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}

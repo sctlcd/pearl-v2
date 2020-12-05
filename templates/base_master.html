@@ -145,9 +145,13 @@
   {% block content %}
   {% endblock %}
 
+  {% block page_bottom %}
+  {% endblock %}
+
   <footer class="footer bg-white">
-    <div class="container">
-      <div class="row">
+    <div class="container bg-white">
+      <div class="row bg-white">
+
         <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2 menu-items">
             <li class="list-inline-item">
@@ -155,7 +159,7 @@
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#" class="text-grey">Contact us</a>
+              <a href="{% url 'contact' %}" class="text-grey">Contact us</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
@@ -200,8 +204,7 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+
   </footer>
 
   {% block postloadjs %}

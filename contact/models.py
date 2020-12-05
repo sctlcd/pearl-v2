@@ -1,0 +1,13 @@
+from django.db import models
+
+
+# Contact models
+
+class Contact(models.Model):
+    first_name = models.CharField(max_length=50, null=False, blank=False)
+    last_name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    message = models.TextField()
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
