@@ -169,10 +169,20 @@ $(document).ready(function() {
 
   init();
 
+  // Toast notifications
   $('.toast').toast({
     autohide: true,
     delay: 3000
   });
 
   $('.toast').toast('show');
+
+  // Connect links zoom when hovered
+  $('.connect-links a i').hover(function() {
+    // This code will execute when mouse enters the header class element;
+    $(this).addClass('fa-lg');
+  }, function() {
+    // This code will execute when mouse leaves the header class element
+    $(this).removeClass('fa-lg');
+  });
 });
