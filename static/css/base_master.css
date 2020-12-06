@@ -29,11 +29,6 @@ form div > label.active {
 
 /* ------------------------------- button */
 
-/* .btn-black {
-  background: #000;
-  color: #fafafa;
-} */
-
 .btn-grey {
 	background-color: #6c757d !important;
 	color: #fafafa;
@@ -44,21 +39,23 @@ form div > label.active {
 .shop-now-button:focus,
 .share-now-button:hover,
 .share-now-button:active,
-.share-now-button:focus {
+.share-now-button:focus,
+.contact-button:hover,
+.contact-button:active,
+.contact-button:focus {
 	border: 1px solid #fb3;
 	color: #6c757d !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-	color: #6a6a6e !important;
+.shop-now-button,
+.share-now-button,
+.contact-button {
+	border-radius: 45px;
+	border: 1px solid;
 }
 
-.share-now-button:hover,
-.share-now-button:active,
-.share-now-button:focus {
-	color: #000 !important;
+.share-now-button {
+  min-width: 6rem;
 }
 
 .btn-orange {
@@ -73,10 +70,6 @@ form div > label.active {
 .btn-orange:focus {
 	border: 1px solid #fc9601eb;
 	color: #6a6a6e !important;
-}
-
-.shop-now-button:hover, .shop-now-button:active, .shop-now-button:focus {
-    color: #6a6a6e !important;
 }
 
 /* ------------------------------- text, border, background style */
@@ -363,18 +356,9 @@ form div > label.active {
   border-radius: .25rem;
 }
 
-.header .list-inline-item.show a.nav-link {
-	background-color: #d8d8d86e;
-}
-
-.header .list-inline-item a.nav-link:hover {
-	background-color: #d8d8d86e;
-}
-
-nav .nav-item.show {
-	background-color: #d8d8d86e;
-}
-
+.header .list-inline-item.show a.nav-link,
+.header .list-inline-item a.nav-link:hover,
+nav .nav-item.show,
 nav .nav-item:hover {
 	background-color: #d8d8d86e;
 }
@@ -411,11 +395,6 @@ nav a.waves-effect {
 .hero-image-message {
 	position: absolute;
   bottom: 2rem;
-}
-
-.shop-now-button {
-	border-radius: 45px;
-	border: 1px solid;
 }
 
 /* ------------------------------- features icons */
@@ -503,12 +482,6 @@ nav a.waves-effect {
 	color: #555;
 }
 
-.share-now-button {
-  min-width: 6rem;
-	border-radius: 45px;
-	border: 1px solid;
-}
-
 /* ------------------------------- newsletter */
 
 .newsletter .subscription {
@@ -573,10 +546,6 @@ nav a.waves-effect {
 }
 
 .page-footer {
-  /* padding-top: 5rem; */
-	/* -webkit-box-shadow: 2px -2px 3px rgba(252, 150, 1, 0.75);
-	box-shadow: 0px 0px 0px rgba(252, 150, 1, 0.75); */
-	/* border-top: 3px double rgba(252, 150, 1, 0.75); */
   /* bottom: 0px;
   left: 0px;
   right: 0px;

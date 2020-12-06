@@ -220,7 +220,7 @@ color: #0074f1 !important;
 }
 
 .modal-dialog-full-width {
-	width: 100% !important; */
+	width: 100% !important;
 	height: 100% !important;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -234,12 +234,9 @@ color: #0074f1 !important;
 	background-color: #fafafa !important
 }
 
-.modal-header-full-width  {
-	border-bottom: 1px solid #d8d8d86e !important;
-}
-
+.modal-header-full-width,
 .modal-footer-full-width  {
-	border-top: 1px solid #d8d8d86e !important;
+	border-bottom: 1px solid #d8d8d86e !important;
 }
 
 .gallery-footer p a:hover {
