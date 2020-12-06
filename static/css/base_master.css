@@ -72,6 +72,31 @@ form div > label.active {
 	color: #6a6a6e !important;
 }
 
+.btn-sm {
+  padding: .5rem 1rem !important;
+}
+
+.btn[class*="btn-outline-"].btn-sm {
+  padding: .25rem 1rem !important;
+}
+
+.btn-md {
+  padding: .7rem 1.2rem !important;
+}
+
+.btn[class*="btn-outline-"].btn-md,
+.bag-container .btn-md {
+  padding: .5rem 1.2rem !important;
+}
+
+.btn-lg {
+  padding: .9rem 1.6rem !important;
+}
+
+.btn[class*="btn-outline-"].btn-lg {
+	padding: .7rem 1.6rem !important;
+}
+
 /* ------------------------------- text, border, background style */
 
 .text-black {
@@ -90,8 +115,13 @@ form div > label.active {
 	color: #6c757d !important;
 }
 
-.text-brown {
-	color: #6a6a6e !important;
+.text-info,
+.text-info a {
+color: #33b5e5 !important;
+}
+
+.text-info a:hover {
+color: #0074f1 !important;
 }
 
 .header .text-info {
@@ -347,6 +377,7 @@ form div > label.active {
 
 .bg-hover-white:hover .custom-toggler.navbar-toggler,
 .bg-hover-white .custom-toggler.navbar-toggler {
+	background-color: transparent;
   border-color: rgba(108,117,125, 0.5);
 }
 
@@ -536,20 +567,19 @@ nav a.waves-effect {
 /* ------------------------------- footer */
 
 /* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
-.wrapper {
+/* .wrapper {
   min-height: 100%;
   margin-bottom: -10rem;
 }
 
 .footer {
 	height: 15rem;
-}
+} */
 
-.page-footer {
-  /* bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px; */
+.company h6,
+.about-links h6,
+.contact h6 {
+	letter-spacing: 2px;
 }
 
 .page-footer .fa-github:hover {
@@ -559,7 +589,6 @@ nav a.waves-effect {
 .about-links p a:hover {
 	color: #fc9601eb !important;
 }
-
 
 /* ------------------------------- bootstrap toasts */
 
@@ -597,7 +626,7 @@ box-shadow: 0px 5px 10px 0px #6c757d;
 }
 
 /*
-Convenience classes - colors (dark shade) copied from Material Design Bootstrap:
+Convenience classes - colors copied from Material Design Bootstrap:
 https://mdbootstrap.com/docs/standard/content-styles/colors/
  */
 .arrow-primary {
@@ -643,6 +672,10 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
+	.page-footer .container {
+		max-width: 80%;
+	}
+
 	#mobile-logo-title h5 {
 		font-size: 0.8rem;
 	}
@@ -680,12 +713,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 1.6rem;
 	}
 
-	.hero-image .btn.btn-lg {
-		font-size: 0.7rem;
-		padding: 0.4rem 0.7rem;
+	.hero-image .btn-lg {
+		padding: 0.6rem 0.7rem !important;
 	}
 
 	.shop-now-button {
+		font-size: 0.7rem !important;
 		min-width: 7rem;
 	}
 
@@ -701,17 +734,17 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 1.3rem;
 	}
 
-	.gallery .btn.btn-md {
-		font-size: 0.6rem;
-		padding: 0.4rem 0.7rem;
+	.gallery .btn-md {
+		padding: 0.4rem 0.7rem !important;
 	}
 
-	.gallery .share-now-button {
-			min-width: 6rem;
+	.share-now-button {
+		font-size: 0.6rem !important;
+		min-width: 6rem;
 	}
 
-	.footer {
-		padding-top: 3rem;
+	.no-result-found-text h6 {
+		font-size: 0.8rem;
 	}
 
 	.btt-button-top {
@@ -728,6 +761,10 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 	.fa-arrow-up,
 	.fa-arrow-down {
 		font-size: 0.6rem;
+	}
+
+	.page-footer {
+    font-size: .7rem;
 	}
 }
 
@@ -768,12 +805,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 1.8rem;
 	}
 
-	.hero-image .btn.btn-lg {
-		font-size: 0.8rem;
-		padding: 0.5rem 1rem;
+	.hero-image .btn-lg {
+		padding: 0.7rem 1rem !important;
 	}
 
 	.shop-now-button {
+		font-size: 0.8rem !important;
 		min-width: 8rem;
 	}
 
@@ -789,17 +826,17 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 1.6rem;
 	}
 
-	.gallery .btn.btn-md {
-		font-size: 0.7rem;
-		padding: 0.5rem 1rem;
+	.gallery .btn-md {
+		padding: 0.5rem 1rem !important;
 	}
 
-	.gallery .share-now-button {
-			min-width: 7rem;
+	.share-now-button {
+		font-size: 0.7rem !important;
+		min-width: 7rem;
 	}
 
-	.footer {
-		padding-top: 3rem;
+	.no-result-found-text h6 {
+		font-size: 0.9rem;
 	}
 
 	.btt-button-top {
@@ -815,6 +852,10 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 	.fa-arrow-up,
 	.fa-arrow-down {
 		font-size: 0.8rem;
+	}
+
+	.page-footer {
+    font-size: .8rem;
 	}
 }
 
@@ -855,12 +896,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
     font-size: 2rem;
   }
 
-	.hero-image .btn.btn-lg {
-		font-size: 1rem;
-		padding: 0.5rem 1.2rem;
+	.hero-image .btn-lg {
+		padding: 0.8rem 1.2rem !important;
 	}
 
 	.shop-now-button {
+		font-size: 1rem !important;
 		min-width: 9rem;
 	}
 
@@ -880,27 +921,35 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 1.8rem;
 	}
 
-	.gallery .btn.btn-md {
-		font-size: 0.9rem;
-		padding: 0.5rem 1.3rem;
+	.gallery .btn-md {
+		padding: 0.5rem 1.3rem !important;
 	}
 
-	.gallery .share-now-button {
-			min-width: 8rem;
+	.share-now-button {
+		font-size: 0.9rem !important;
+		min-width: 8rem;
 	}
 
-	.footer {
-		padding-top: 4rem;
+	.no-result-found-text h5 {
+		font-size: 1.4rem;
+	}
+
+	.no-result-found-text h6 {
+		font-size: 1rem;
 	}
 
 	.btt-button-top {
-			bottom: 3.75rem;
-		}
+		bottom: 3.75rem;
+	}
 
 	.btt-button-top,
 	.btt-button-down {
 		height: 2.6rem;
 		width: 2.6rem;
+	}
+
+	.page-footer {
+    font-size: .8rem;
 	}
 }
 
@@ -915,12 +964,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
     font-size: 2.4rem;
   }
 
-	.hero-image .btn.btn-lg {
-		font-size: 1.1rem;
-		padding: 0.6rem 1.4rem;
+	.hero-image .btn-lg {
+		padding: 0.9rem 1.4rem !important;
 	}
 
 	.shop-now-button {
+		font-size: 1.1rem !important;
 		min-width: 10rem;
 	}
 
@@ -936,17 +985,21 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 		font-size: 2rem;
 	}
 
-	.gallery .btn.btn-md {
-		font-size: 1rem;
-		padding: 0.6rem 1.5rem;
+	.gallery .btn-md {
+		padding: 0.6rem 1.5rem !important;
 	}
 
-	.gallery .share-now-button {
-			min-width: 9rem;
+	.share-now-button {
+		font-size: 1rem !important;
+		min-width: 9rem;
 	}
 
-	.footer {
-		padding-top: 5rem;
+	.no-result-found-text h5 {
+		font-size: 1.5rem;
+	}
+
+	.page-footer {
+    font-size: .9rem;
 	}
 }
 
@@ -959,41 +1012,40 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
   }
 
 	.hero-image-message h1 {
-			font-size: 3rem;
-			font:
+		font-size: 3rem;
 	}
 
-	.hero-image .btn.btn-lg {
-		font-size: 1.2rem;
-		padding: 0.6rem 1.5rem;
+	.hero-image .btn-lg {
+		padding: 1rem 1.5rem !important;
 	}
 
 	.shop-now-button {
+		font-size: 1.2rem !important;
 		min-width: 11rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
-			font-size: 4.5rem;
+		font-size: 4.5rem;
 	}
 
 	.features-icons .features-icons-item:hover .features-icons-icon i {
-			font-size: 5rem;
+		font-size: 5rem;
 	}
 
 	.gallery h2 {
-			font-size: 2.2rem;
+		font-size: 2.2rem;
 	}
 
-	.gallery .btn.btn-md {
-		font-size: 1.1rem;
-		padding: 0.6rem 1.6rem;
+	.gallery .btn-md {
+		padding: 0.6rem 1.6rem !important;
 	}
 
-	.gallery .share-now-button {
-			min-width: 10rem;
+	.share-now-button {
+		font-size: 1.1rem !important;
+		min-width: 10rem;
 	}
 
-	.footer {
-		padding-top: 5rem;
+	.no-result-found-text h5 {
+		font-size: 1.6rem;
 	}
 }

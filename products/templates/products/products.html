@@ -1,6 +1,10 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
 	<div class="row">
@@ -108,6 +112,10 @@
 					<hr>
 				</div>
 				{% endif %}
+				{% empty %}
+				<!-- if the search result is empty inform the user no products match with the search entry -->
+				{% include 'products/includes/no_results_found.html' %}
+				<div class="push-products-empty-search"></div>
 				{% endfor %}
 			</div>
 		</div>

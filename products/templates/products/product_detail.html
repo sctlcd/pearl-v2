@@ -1,6 +1,10 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
   <div class="row">
@@ -48,6 +52,7 @@
         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
           {% csrf_token %}
           <div class="form-row">
+						<div class="row">
             <div class="col-12">
               <div class="def-number-input number-input safari_only">
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="decrement-qty btn btn-qty minus" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}"></button>
@@ -56,9 +61,11 @@
               </div>
             </div>
           </div>
+					</div>
 
-          <div class="col{% if s %}-12 mt-2{% endif %}">
-            <a href="{% url 'products' %}" class="btn btn-outline-elegant btn-md waves-effect mt-5">
+					<div class="row">
+          <div class="col-12 text-center">
+            <a href="{% url 'products' %}" class="btn btn-outline-elegant btn-md waves-effect mt-5 mr-0">
               <span class="icon">
                 <i class="fas fa-chevron-left"></i>
               </span>
@@ -67,6 +74,7 @@
             <input type="submit" class="btn btn-elegant btn-md text-uppercase mt-5" value="Add to Bag">
             <input type="hidden" name="redirect_url" value="{{ request.path }}">
           </div>
+					</div>
         </form>
       </div>
     </div>
