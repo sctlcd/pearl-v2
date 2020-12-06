@@ -47,6 +47,8 @@
         <i class="fas fa-envelope fa-lg"></i>
         <p>pear@info.com</p>
       </div>
+			<div>
+			</div>
     </div>
     <div class="col-12 col-md-8">
       <div class="contact-form">
@@ -78,7 +80,13 @@
               <textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5"></textarea>
               <label for="message">Message</label>
             </div>
-            <button type="submit" class="btn btn-elegant btn-md">Send</button>
+						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
+							<span class="icon">
+								<i class="fas fa-chevron-left"></i>
+							</span>
+							<span class="text-uppercase">Home</span>
+						</a>
+            <button type="submit" class="btn btn-elegant btn-sm">Send</button>
         </form>
       </div>
     </div>
