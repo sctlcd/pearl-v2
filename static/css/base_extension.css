@@ -163,6 +163,10 @@ body {
 	color: #495057;
 }
 
+.push-bag-empty  {
+	height: 27rem;
+}
+
 /* ------------------------------- gallery */
 
 /* Style the links inside the pill navigation menu */
