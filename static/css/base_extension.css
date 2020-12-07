@@ -156,7 +156,7 @@ body {
 
 .number-input.number-input input[type=number] {
 	max-width: 4rem;
-	padding: .5rem;
+	/* padding: 0rem; */
 	border: 1px solid transparent;
 	border-width: 0 1px;
 	font-size: 0.9rem;
@@ -166,6 +166,12 @@ body {
 
 .push-bag-empty  {
 	height: 27rem;
+}
+
+.md-form input[type="number"]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #fc9601eb;
+  -webkit-box-shadow: 0 1px 0 0 #fc9601eb;
+  box-shadow: 0 1px 0 0 #fc9601eb;
 }
 
 /* ------------------------------- bag */

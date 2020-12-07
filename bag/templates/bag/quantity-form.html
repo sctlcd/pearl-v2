@@ -1,12 +1,14 @@
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
   {% csrf_token %}
-  <div class="form-group">
-    <div class="def-number-input number-input safari_only ml-auto">
+  <div class="md-form d-flex justify-content-center mb-1">
+    <div class="def-number-input number-input safari_only">
       <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="decrement-qty btn btn-qty minus" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}"></button>
       <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
       <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="increment-qty btn btn-qty plus" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}"></button>
     </div>
   </div>
 </form>
-<a class="update-link text-info font-weight-bold float-right"><small>Update</small></a>
-<a class="remove-item text-danger font-weight-bold float-right mr-3" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+<div class="d-flex justify-content-center">
+  <a class="update-link text-info font-weight-bold mr-4"><small>Update</small></a>
+  <a class="remove-item text-danger font-weight-bold" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+</div>
