@@ -40,7 +40,7 @@
 				</div>
 				{% for item in bag_items %}
 				<div class="row">
-					<div class="col-12 col-sm-6 product-image zoom mb-2">
+					<div class="col-12 col-sm-6 product-image mb-2">
 						{% include "bag/product-image.html" %}
 					</div>
 					<div class="col-12 col-sm-6 mb-3">
@@ -91,7 +91,7 @@
 
 					{% for item in bag_items %}
 					<tr>
-						<td class="py-3 w-25 zoom">
+						<td class="justify-content-center py-3 mb-3 w-25 zoom">
 							{% include "bag/product-image.html" %}
 						</td>
 						<td class="py-3 w-auto">
@@ -100,7 +100,7 @@
 						<td class="py-3 w-auto">
 							<p class="my-0">${{ item.product.price }}</p>
 						</td>
-						<td class="py-1 w-auto">
+						<td class="py-1 w-25">
 							{% include "bag/quantity-form.html" %}
 						</td>
 						<td class="py-3 w-auto">

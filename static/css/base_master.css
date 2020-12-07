@@ -151,6 +151,10 @@ a.text-danger:hover, a.text-danger:focus {
 	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
+.bg-light-grey {
+	background-color: #efefef;
+}
+
 .bg-dark-grey {
 	background-color: rgba(0, 0, 0, 0.60);
 }
