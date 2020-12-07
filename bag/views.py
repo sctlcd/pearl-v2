@@ -17,7 +17,7 @@ def add_to_bag(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
+    # redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
     if item_id in list(bag.keys()):
@@ -28,7 +28,17 @@ def add_to_bag(request, item_id):
         messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
-    return redirect(redirect_url)
+
+    context = {
+        'product': product,
+        'quantity': bag[item_id],
+    }
+
+    # return redirect(redirect_url)
+
+    # reload product_detail page quantity updated accordingly to the quantity
+    # in the shopping bag and reset quantity input number to 1
+    return render(request, 'products/product_detail.html', context)
 
 
 def adjust_bag(request, item_id):

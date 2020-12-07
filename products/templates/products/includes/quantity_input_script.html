@@ -18,6 +18,7 @@
     // Check enable/disable every time the input is changed
     $('.qty_input').change(function() {
         var itemId = $(this).data('item_id');
+        console.log(itemId);
         handleEnableDisable(itemId);
     });
 

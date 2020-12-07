@@ -16,7 +16,7 @@
 	<div class="row mb-5">
 		<div class="col">
 			<hr>
-			<h2 class="logo-font mb-4 text-center">Shopping Bag</h2>
+			<h2 class="logo-font mb-3 text-center">Shopping Bag</h2>
 			<hr>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 								{% include "bag/product-info.html" %}
 							</div>
 							<div class="col-12 quantity-form mt-3">
-								<p class="mb-0">Quantity:</p>
+								<p class="mb-1">Quantity:</p>
 								{% include "bag/quantity-form.html" %}
 							</div>
 							<div class="col-12 subtotal order-sm-last mt-4">
@@ -145,26 +145,8 @@
 
 {% block postloadjs %}
 {{ block.super }}
-
 {% include 'products/includes/quantity_input_script.html' %}
-
 <script type="text/javascript">
-	// Go to the top of the page
-	$('.btt-button-top').click(function(e) {
-		window.scrollTo(0, 0)
-	})
-
-	// Go to the bottom of the page
-	$('.btt-button-down').click(function(e) {
-		window.scrollTo(0, document.body.scrollHeight)
-	})
-
-	// Update quantity on click
-	$('.update-link').click(function(e) {
-		var form = $(this).parent().prev('.update-form');
-		form.submit();
-	})
-
 	// Remove item and reload on click
 	$('.remove-item').click(function(e) {
 		var csrfToken = "{{ csrf_token }}";
@@ -180,4 +162,5 @@
 			});
 	})
 </script>
+<script src="{% static 'bag/js/bag.js' %}" type="text/javascript"></script>
 {% endblock %}
