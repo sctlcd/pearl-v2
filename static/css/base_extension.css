@@ -15,14 +15,15 @@ body {
   padding-top: 8rem;
 }
 
-/* ------------------------------- top/down buttons */
+/* ------------------------------- buttons */
 
+/* top/down buttons */
 .btt-button-top,
 .btt-button-down {
 	position: fixed;
 	right: 0.6rem;
 	border-radius: 45px;
-	background-color: rgba(108, 117, 125, 0.65);
+	background-color: #a4aaaf;
 	color: #fafafa;
 	-webkit-box-shadow: 0px 4px 10px #353535  !important;
 	box-shadow: 0px 4px 10px #353535  !important;
@@ -45,23 +46,6 @@ body {
  cursor: pointer;
 }
 
-/* ------------------------------- navbar */
-
-.bg-hover-white,
-.bg-hover-white:hover {
-  background: #f3f3f3 !important;
-}
-
-.bg-hover-white:hover.fixed-top,
-.bg-hover-white.fixed-top {
-	background-color: #fafafa !important;
-	-webkit-box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
-	box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
-	border-bottom: 4px double rgba(252, 150, 1, 0.75);
-}
-
-/* ------------------------------- bag */
-
 .btn-outline-elegant,
 .btn-elegant,
 .btn-outline-elegant:hover,
@@ -80,6 +64,23 @@ body {
 	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
 	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
 }
+
+/* ------------------------------- navbar */
+
+.bg-hover-white,
+.bg-hover-white:hover {
+  background: #f3f3f3 !important;
+}
+
+.bg-hover-white:hover.fixed-top,
+.bg-hover-white.fixed-top {
+	background-color: #fafafa !important;
+	-webkit-box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+	box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+	border-bottom: 4px double rgba(252, 150, 1, 0.75);
+}
+
+/* ------------------------------- Quantity input number */
 
 /* Quantity input number credit : https://mdbootstrap.com/docs/jquery/forms/inputs/ */
 .number-input input[type="number"] {
@@ -133,7 +134,7 @@ body {
 
 .number-input.number-input {
 	border: 1px solid transparent;
-	max-width: 10rem;
+	max-width: 6rem;
 	border-radius: .25rem;
 }
 
@@ -144,7 +145,7 @@ body {
 
 .number-input.number-input button.minus,
 .number-input.number-input button.plus {
-	padding: 1rem;
+	padding: 0.7rem;
 }
 
 .number-input.number-input button:before,
@@ -158,9 +159,19 @@ body {
 	padding: .5rem;
 	border: 1px solid transparent;
 	border-width: 0 1px;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	height: 2rem;
 	color: #495057;
+}
+
+.push-bag-empty  {
+	height: 27rem;
+}
+
+/* ------------------------------- bag */
+
+.bag-container .form-group {
+	margin-bottom: 0.3rem;
 }
 
 /* ------------------------------- gallery */

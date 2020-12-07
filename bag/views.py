@@ -66,3 +66,19 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def item_detail(request, item_id, quantity):
+    """
+        A view to show individual product details
+    """
+
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = quantity
+
+    context = {
+        'product': product,
+        'quantity': quantity,
+    }
+
+    return render(request, 'products/product_detail.html', context)
