@@ -96,7 +96,7 @@
 						<td class="py-3 w-auto">
 							<p class="my-0">${{ item.product.price }}</p>
 						</td>
-						<td class="py-2 w-auto">
+						<td class="py-1 w-auto">
 							{% include "bag/quantity-form.html" %}
 						</td>
 						<td class="py-3 w-auto">
@@ -157,7 +157,7 @@
 
 	// Update quantity on click
 	$('.update-link').click(function(e) {
-		var form = $(this).prev('.update-form');
+		var form = $(this).parent().prev('.update-form');
 		form.submit();
 	})
 

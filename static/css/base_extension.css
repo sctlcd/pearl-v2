@@ -134,7 +134,7 @@ body {
 
 .number-input.number-input {
 	border: 1px solid transparent;
-	max-width: 6rem;
+	max-width: 6.5rem;
 	border-radius: .25rem;
 }
 
@@ -156,22 +156,27 @@ body {
 
 .number-input.number-input input[type=number] {
 	max-width: 4rem;
-	/* padding: 0rem; */
 	border: 1px solid transparent;
 	border-width: 0 1px;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	height: 2rem;
 	color: #495057;
 }
 
-.push-bag-empty  {
-	height: 27rem;
+.md-form .number-input.number-input input[type=number] {
+	padding-top: 0.9rem;
+	padding-bottom: 0.4rem;
 }
 
-.md-form input[type="number"]:not(.browser-default):focus:not([readonly]) {
+.md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
+.number-input.number-input input[type="number"]:not(.browser-default):focus:not([readonly]) {
 	border-bottom: 1px solid #fc9601eb;
   -webkit-box-shadow: 0 1px 0 0 #fc9601eb;
   box-shadow: 0 1px 0 0 #fc9601eb;
+}
+
+.push-bag-empty  {
+	height: 27rem;
 }
 
 /* ------------------------------- bag */
