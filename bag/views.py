@@ -74,7 +74,7 @@ def item_detail(request, item_id, quantity):
     """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = quantity
+    quantity = int(quantity)
 
     context = {
         'product': product,

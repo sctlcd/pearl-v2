@@ -7,12 +7,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.header-container {
-  padding-top: 4rem;
-}
-
+.header-container,
 .bottom-container {
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 
 /* ------------------------------- buttons */
@@ -134,7 +131,7 @@ body {
 
 .number-input.number-input {
 	border: 1px solid transparent;
-	max-width: 6rem;
+	max-width: 6.5rem;
 	border-radius: .25rem;
 }
 
@@ -156,12 +153,28 @@ body {
 
 .number-input.number-input input[type=number] {
 	max-width: 4rem;
-	padding: .5rem;
 	border: 1px solid transparent;
 	border-width: 0 1px;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	height: 2rem;
 	color: #495057;
+}
+
+.md-form .number-input.number-input input[type=number] {
+	padding-top: 0.9rem;
+	padding-bottom: 0.4rem;
+}
+
+.md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
+.number-input.number-input input[type="number"]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #fc9601eb;
+  -webkit-box-shadow: 0 1px 0 0 #fc9601eb;
+  box-shadow: 0 1px 0 0 #fc9601eb;
+}
+
+.bag-container-mobile .md-form {
+	margin-top: 0rem !important;
+	margin-bottom: 0rem !important;
 }
 
 .push-bag-empty  {
@@ -259,4 +272,23 @@ body {
 	margin-top: -.3rem;
 }
 }
+}
+
+/* -------------------------------- Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+
+	.bag-container-mobile .product-image img {
+		width: 90%;
+	}
+
+	.bag-container-mobile .product-info {
+		margin-top: 2rem;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
 }

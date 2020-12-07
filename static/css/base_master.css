@@ -107,6 +107,10 @@ form div > label.active {
   color: #fafafa !important;
 }
 
+.text-yellow {
+  color: #ffc107 !important;
+}
+
 .text-orange {
   color: #fc9601eb !important;
 }
@@ -115,13 +119,8 @@ form div > label.active {
 	color: #6c757d !important;
 }
 
-.text-info,
-.text-info a {
-color: #33b5e5 !important;
-}
-
-.text-info a:hover {
-color: #0074f1 !important;
+a.text-danger:hover, a.text-danger:focus {
+    color: #a71d2a !important;
 }
 
 .header .text-info {
@@ -189,13 +188,13 @@ color: #0074f1 !important;
 
 /* ----------------------- topnav */
 
-#topnav h2,
+.topnav h2,
 #mobile-logo-title h5 {
 	color: #fafafa;
 }
 
-.bg-hover-white #topnav h2,
-.bg-hover-white:hover #topnav h2,
+.bg-hover-white .topnav h2,
+.bg-hover-white:hover .topnav h2,
 .bg-hover-white #mobile-logo-title h5,
 .bg-hover-white:hover #mobile-logo-title h5 {
 	color: #fc9601eb !important;
@@ -335,6 +334,7 @@ color: #0074f1 !important;
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
 .bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
 .desktop-user-options-container:hover .dropdown-menu,
+.mobile-user-options-container .dropdown-menu,
 .header .list-inline-item.show .dropdown-menu.show,
 .navbar-desktop .nav-item.show .dropdown-menu.show {
 	-webkit-box-shadow: 0px 5px 10px 0px #353535;
@@ -394,7 +394,8 @@ nav .nav-item:hover {
 	background-color: #d8d8d86e;
 }
 
-.desktop-user-options-container:hover .dropdown-menu {
+.desktop-user-options-container:hover .dropdown-menu,
+.mobile-user-options-container:hover .dropdown-menu {
 	display: block;
 }
 
@@ -415,6 +416,15 @@ nav .nav-item:hover {
 
 nav a.waves-effect {
 	display: inline-flex;
+}
+
+/* topnav dropdown menu offset */
+.topnav .dropdown-menu {
+	margin-left: -1.2rem;
+}
+
+.dropdown-item {
+	padding: 0.7rem;
 }
 
 /* ------------------------------- hero image */
@@ -766,6 +776,14 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 	.page-footer {
     font-size: .7rem;
 	}
+
+	.mobile-user-options-container .dropdown-menu {
+		margin-left: -3.4rem !important;
+	}
+
+	.mobile-user-options-container .dropdown-menu a {
+		font-size: small;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -856,6 +874,14 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 
 	.page-footer {
     font-size: .8rem;
+	}
+
+	.mobile-user-options-container .dropdown-menu {
+		margin-left: -1.4rem !important;
+	}
+
+	.mobile-user-options-container .dropdown-menu a {
+		font-size: small;
 	}
 }
 
@@ -950,6 +976,14 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
 
 	.page-footer {
     font-size: .8rem;
+	}
+
+	.mobile-user-options-container .dropdown-menu {
+		margin-left: -1rem !important;
+	}
+
+	.mobile-user-options-container .dropdown-menu a {
+		font-size: medium;
 	}
 }
 
