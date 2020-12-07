@@ -7,12 +7,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.header-container {
-  padding-top: 4rem;
-}
-
+.header-container,
 .bottom-container {
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 
 /* ------------------------------- buttons */
@@ -175,6 +172,11 @@ body {
   box-shadow: 0 1px 0 0 #fc9601eb;
 }
 
+.bag-container-mobile .md-form {
+	margin-top: 0rem !important;
+	margin-bottom: 0rem !important;
+}
+
 .push-bag-empty  {
 	height: 27rem;
 }
@@ -270,4 +272,23 @@ body {
 	margin-top: -.3rem;
 }
 }
+}
+
+/* -------------------------------- Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+
+	.bag-container-mobile .product-image img {
+		width: 90%;
+	}
+
+	.bag-container-mobile .product-info {
+		margin-top: 2rem;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
 }

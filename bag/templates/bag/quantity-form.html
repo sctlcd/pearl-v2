@@ -1,6 +1,6 @@
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
   {% csrf_token %}
-  <div class="md-form d-flex justify-content-center mb-1 mt-0">
+  <div class="md-form d-flex justify-content-center my-1">
     <div class="def-number-input number-input safari_only">
       <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="decrement-qty btn btn-qty minus" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}"></button>
       <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">

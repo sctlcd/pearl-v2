@@ -60,11 +60,11 @@
 					</div>
 
 					<div class="row">
-						<div class="col-12 pt-2 text-info font-small">
+						<div class="col-12 pt-2 text-info">
 							{% if quantity  %}
-							<p>You have {{ quantity }} {{ product.name }} in your shopping bag.</p>
+							<p><small>You have {{ quantity }} {{ product.name }} in your shopping bag.</small></p>
 							{% else %}
-							<p>No {{ product.name }} yet in your shopping bag!</p>
+							<p><small>No {{ product.name }} yet in your shopping bag!</small></p>
 							{% endif %}
 						</div>
 					</div>
