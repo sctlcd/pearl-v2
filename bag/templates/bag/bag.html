@@ -26,7 +26,7 @@
 		<div class="bag-container col text-center">
 			{% if bag_items %}
 			<div class="d-block d-md-none">
-        <div class="row pt-4">
+        <div class="row">
           <div class="col">
             {% include "bag/bag-total.html" %}
           </div>
@@ -34,7 +34,7 @@
         <div class="row pt-3 pb-4">
           <div class="col">
             {% include "bag/checkout-buttons.html" %}
-            <p class="text-muted mb-5">A summary of your bag contents is below</p>
+            <p class="text-muted mb-4 mt-3">Here are details of your bag content</p>
           </div>
         </div>
         {% for item in bag_items %}
@@ -50,6 +50,7 @@
             <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
           </div>
           <div class="col-12 col-sm-6">
+						<p class="ml-auto">Quantity:</p>
             {% include "bag/quantity-form.html" %}
           </div>
         </div>
@@ -71,6 +72,7 @@
         </div>
       </div>
 
+			<!-- desktop display -->
 			<div class="table-responsive rounded d-none d-md-block ">
 				<table class="table table-sm table-borderless">
 					<thead class="text-black">
