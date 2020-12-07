@@ -161,8 +161,7 @@ body {
 }
 
 .md-form .number-input.number-input input[type=number] {
-	padding-top: 0.9rem;
-	padding-bottom: 0.4rem;
+	padding: 0rem;
 }
 
 .md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
