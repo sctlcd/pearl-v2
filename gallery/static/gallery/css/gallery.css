@@ -69,3 +69,13 @@
 .modal-footer a i:hover {
 	color: #6c757d!important;
 }
+
+.custom-select:focus {
+  border-color: #fc9601eb;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(252,150,1,.25);
+}
+
+.custom-file-label {
+	background-color: #fafafa;
+}

@@ -7,9 +7,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.header-container,
-.bottom-container {
+.header-container {
   padding-top: 4rem;
+}
+
+.bottom-container {
+	padding-top: 6rem;
 }
 
 /* ------------------------------- buttons */
@@ -202,14 +205,13 @@ body {
 @media not all and (min-resolution:.001dpcm) {
 @supports (-webkit-appearance: none) and (stroke-color:transparent) {
 
-.number-input.def-number-input.safari_only button:before,
-.number-input.def-number-input.safari_only button:after {
-	margin-top: -.3rem;
-}
+	.number-input.def-number-input.safari_only button:before,
+	.number-input.def-number-input.safari_only button:after {
+		margin-top: -.3rem;
+	}
 }
 }
 
-/* -------------------------------- Media Queries */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
@@ -221,6 +223,10 @@ body {
 	.bag-container-mobile .product-info {
 		margin-top: 2rem;
 	}
+
+	.contact-information-container {
+    padding-bottom: 8rem !important;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -229,10 +235,12 @@ body {
 	.bag-container-mobile .product-image img {
 		width: 100%;
 	}
+
+	.contact-information-container {
+    padding-bottom: 8rem !important;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-
 }
