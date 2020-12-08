@@ -1,0 +1,95 @@
+{% extends "base_extension.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'gallery/css/gallery.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mb-2">
+	<div class="row mb-5">
+		<div class="col">
+			<hr>
+			<h2 class="logo-font mb-4 text-center">Share your work of art</h2>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<div class="">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="share-form">
+				<!-- <div class="section-heading text-center mb-5">
+					<h2>....</h2>
+					<hr class="line-orange">
+					</hr>
+				</div> -->
+				<form method="POST" action="{% url 'contact'%}" id="share-form">
+					{% csrf_token %}
+					<div class="section-body">
+						<div class="md-form md-outline input-with-post-icon form-sm">
+							<i class="fas fa-user  input-prefix"></i>
+							<input type="text" class="form-control form-control-sm" id="first-name" name="first-name">
+							<label for="first-name">First name</label>
+						</div>
+						<div class="md-form md-outline input-with-post-icon form-sm">
+							<i class="fas fa-user  input-prefix"></i>
+							<input type="text" class="form-control form-control-sm" id="last-name" name="last-name">
+							<label for="last-name">Last name</label>
+						</div>
+						<div class="md-form md-outline input-with-post-icon form-sm">
+							<i class="fas fa-envelope  input-prefix"></i>
+							<input type="email" class="form-control form-control-sm" id="email" name="email">
+							<label for="email">E-mail address</label>
+						</div>
+						<select class="custom-select custom-select-sm">
+							<option selected>Select a category</option>
+							<option value="beads">Beads</option>
+							<option value="pompoms">Pom Poms</option>
+							<option value="glitter">Glitter</option>
+							<option value="paint">Paint</option>
+							<option value="ink_dyes">Ink & Dyes</option>
+							<option value="paper_cards">Paper & Cards</option>
+							<option value="other">Other</option>
+						</select>
+						<div class="md-form md-outline input-with-post-icon form-sm">
+              <i class="fas fa-pencil-alt  input-prefix"></i>
+              <textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5"></textarea>
+              <label for="message">Message</label>
+            </div>
+						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
+							<span class="icon">
+								<i class="fas fa-chevron-left"></i>
+							</span>
+							<span class="text-uppercase">Home</span>
+						</a>
+						<button type="submit" class="btn btn-elegant btn-sm">Share</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock %}
+
+{% block page_bottom %}
+<div class="container bottom-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
