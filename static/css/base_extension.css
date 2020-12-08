@@ -186,6 +186,16 @@ body {
 	margin-bottom: 0.3rem;
 }
 
+.bag-container-mobile .product-image img {
+	display: block;
+	margin: auto;
+}
+
+.bag-container-desktop img {
+	width: 80%;
+	margin: 0rem auto 0rem auto;
+}
+
 /* ------------------------------- gallery */
 
 /* Style the links inside the pill navigation menu */
@@ -289,5 +299,14 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
+
+	.bag-container-mobile .product-image img {
+		width: 100%;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
 
 }
