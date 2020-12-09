@@ -73,7 +73,7 @@
 .custom-select:focus {
   border-color: #fc9601eb;
   outline: 0;
-  box-shadow: 0 0 0 0rem rgba(252,150,1,.25);
+  box-shadow: 0 0 0 0rem rgba(252,150,1,.25) !important;
 }
 
 .custom-file-label {
