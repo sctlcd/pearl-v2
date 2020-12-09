@@ -51,69 +51,70 @@
 			</div>
 		</div>
 		<div class="col-12 col-md-6 offset-md-1 col-lg-6 offset-lg-1 contact-form">
-				<div class="section-heading text-center mb-5">
-					<h2>Drop us a line</h2>
-					<hr class="line-orange">
-					</hr>
-				</div>
-				<div class="section-body">
-					<form method="POST" action="{% url 'contact'%}" id="contact-form" class="needs-validation" novalidate>
-						{% csrf_token %}
-							<div class="md-form md-outline form-sm">
-								<i class="fas fa-user prefix"></i>
-								<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
-								<label for="first-name">First name</label>
-								<div class="valid-feedback pl-4">
-									Looks good!
-								</div>
-								<div class="invalid-feedback pl-4">
-									Please provide a valid first name.
-								</div>
-							</div>
-							<div class="md-form md-outline form-sm">
-								<i class="fas fa-user prefix"></i>
-								<input type="text" class="form-control form-control-sm" id="last-name" name="last-name" value="" required>
-								<label for="last-name">Last name</label>
-								<div class="valid-feedback pl-4">
-									Looks good!
-								</div>
-								<div class="invalid-feedback pl-4">
-									Please provide a valid last name.
-								</div>
-							</div>
-							<div class="md-form md-outline form-sm">
-								<i class="fas fa-envelope prefix"></i>
-								<input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
-								<label for="email">E-mail address</label>
-								<div class="valid-feedback pl-4">
-									Looks good!
-								</div>
-								<div class="invalid-feedback pl-4">
-									Please provide a valid e-mail address.
-								</div>
-							</div>
-							<div class="md-form md-outline form-sm">
-								<i class="fas fa-pencil-alt prefix"></i>
-								<textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5" value="xx" required></textarea>
-								<label for="message">Message</label>
-								<div class="valid-feedback pl-4">
-									Looks good!
-								</div>
-								<div class="invalid-feedback pl-4">
-									Please provide a valid message.
-								</div>
-							</div>
-							<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
-								<span class="icon">
-									<i class="fas fa-chevron-left"></i>
-								</span>
-								<span class="text-uppercase">Home</span>
-							</a>
-							<button type="submit" class="btn btn-elegant btn-sm">Send</button>
-					</form>
+			<div class="section-heading text-center mb-5">
+				<h2>Drop us a line</h2>
+				<hr class="line-orange">
+				</hr>
+			</div>
+			<div class="section-body">
+				<form method="POST" action="{% url 'contact'%}" id="contact-form" class="needs-validation" novalidate>
+					{% csrf_token %}
+					<div class="md-form md-outline form-sm">
+						<i class="fas fa-user prefix"></i>
+						<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
+						<label for="first-name">First name</label>
+						<div class="valid-feedback pl-4">
+							Looks good!
+						</div>
+						<div class="invalid-feedback pl-4">
+							Please provide a valid first name.
+						</div>
+					</div>
+					<div class="md-form md-outline form-sm">
+						<i class="fas fa-user prefix"></i>
+						<input type="text" class="form-control form-control-sm" id="last-name" name="last-name" value="" required>
+						<label for="last-name">Last name</label>
+						<div class="valid-feedback pl-4">
+							Looks good!
+						</div>
+						<div class="invalid-feedback pl-4">
+							Please provide a valid last name.
+						</div>
+					</div>
+					<div class="md-form md-outline form-sm">
+						<i class="fas fa-envelope prefix"></i>
+						<input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
+						<label for="email">E-mail address</label>
+						<div class="valid-feedback pl-4">
+							Looks good!
+						</div>
+						<div class="invalid-feedback pl-4">
+							Please provide a valid e-mail address.
+						</div>
+					</div>
+					<div class="md-form md-outline form-sm">
+						<i class="fas fa-pencil-alt prefix"></i>
+						<textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5" value="xx" required></textarea>
+						<label for="message">Message</label>
+						<div class="valid-feedback pl-4">
+							Looks good!
+						</div>
+						<div class="invalid-feedback pl-4">
+							Please provide a valid message.
+						</div>
+					</div>
+					<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
+						<span class="icon">
+							<i class="fas fa-chevron-left"></i>
+						</span>
+						<span class="text-uppercase">Home</span>
+					</a>
+					<button type="submit" class="btn btn-elegant btn-sm">Send</button>
+				</form>
 			</div>
 		</div>
 	</div>
+</div>
 {% endblock %}
 
 {% block page_bottom %}

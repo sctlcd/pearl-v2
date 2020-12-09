@@ -1,5 +1,5 @@
 $('document').ready(function($) {
-  
+
   // Go to the top of the page
   $('.btt-button-top').click(function(e) {
     window.scrollTo(0, 0)
@@ -15,4 +15,4 @@ $('document').ready(function($) {
     var form = $(this).parent().prev('.update-form');
     form.submit();
   })
-};
+});
