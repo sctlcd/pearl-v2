@@ -6,6 +6,9 @@ from .forms import ContactForm
 
 
 def contact(request):
+    '''
+        A view to return the contact page
+    '''
     template = 'contact/contact.html'
 
     if request.method == 'POST':
