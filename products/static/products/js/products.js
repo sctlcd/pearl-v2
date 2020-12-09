@@ -1,30 +1,33 @@
-// Go to the top of the page
-$('.btt-button-top').click(function(e) {
-  window.scrollTo(0, 0)
-})
+$('document').ready(function($) {
 
-// Go to the bottom of the page
-$('.btt-button-down').click(function(e) {
-  window.scrollTo(0, document.body.scrollHeight)
-})
+  // Go to the top of the page
+  $('.btt-button-top').click(function(e) {
+    window.scrollTo(0, 0)
+  })
 
-$('#sort-selector').change(function() {
-  var selector = $(this);
-  var currentUrl = new URL(window.location);
+  // Go to the bottom of the page
+  $('.btt-button-down').click(function(e) {
+    window.scrollTo(0, document.body.scrollHeight)
+  })
 
-  var selectedVal = selector.val();
-  if (selectedVal != "reset") {
-    var sort = selectedVal.split("_")[0];
-    var direction = selectedVal.split("_")[1];
+  $('#sort-selector').change(function() {
+    var selector = $(this);
+    var currentUrl = new URL(window.location);
 
-    currentUrl.searchParams.set("sort", sort);
-    currentUrl.searchParams.set("direction", direction);
+    var selectedVal = selector.val();
+    if (selectedVal != "reset") {
+      var sort = selectedVal.split("_")[0];
+      var direction = selectedVal.split("_")[1];
 
-    window.location.replace(currentUrl);
-  } else {
-    currentUrl.searchParams.delete("sort");
-    currentUrl.searchParams.delete("direction");
+      currentUrl.searchParams.set("sort", sort);
+      currentUrl.searchParams.set("direction", direction);
 
-    window.location.replace(currentUrl);
-  }
-});
+      window.location.replace(currentUrl);
+    } else {
+      currentUrl.searchParams.delete("sort");
+      currentUrl.searchParams.delete("direction");
+
+      window.location.replace(currentUrl);
+    }
+  });
+};

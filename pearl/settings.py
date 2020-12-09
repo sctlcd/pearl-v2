@@ -67,7 +67,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pearl.urls'
 
+# CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap4', 'bootstrap4-material')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 TEMPLATES = [
     {

@@ -6,4 +6,5 @@ from . import views
 
 urlpatterns = [
     path('', views.gallery, name='gallery'),
+    path('share', views.gallery_share, name='gallery_share'),
 ]

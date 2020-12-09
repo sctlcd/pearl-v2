@@ -7,98 +7,142 @@
 
 {% block page_header %}
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container mb-2">
-  <div class="row mb-5">
-    <div class="col">
-      <hr>
-      <h2 class="logo-font mb-4 text-center">Contact us</h2>
-      <hr>
-    </div>
-  </div>
+	<div class="row mb-5">
+		<div class="col">
+			<hr>
+			<h2 class="logo-font mb-4 text-center">Contact us</h2>
+			<hr>
+		</div>
+	</div>
 
-  <div class="row">
-    <div class="col-12">
-      <div class="google-map">
-        <div style="width: 100%" class="mb-100">
-          <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=2900%20S%20Claiborne%20Ave%20Ste%20200,%20New%20Orleans,%20LA%2070125+(Pearl)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="contact-information px-4 py-4 sunny-morning-gradient text-black text-center">
-        <i class="fas fa-map-marker-alt fa-lg"></i>
-        <p>2900 S Claiborne Ave Ste 200, New Orleans, LA 70125, USA</p>
-        <i class="fas fa-phone fa-lg"></i>
-        <p>+1 504 555 5555</p>
+	<div class="row">
+		<div class="col-12">
+			<div class="google-map">
+				<div style="width: 100%" class="mb-100">
+					<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=2900%20S%20Claiborne%20Ave%20Ste%20200,%20New%20Orleans,%20LA%2070125+(Pearl)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 col-md-4 offset-md-1 col-lg-4 offset-lg-1 contact-information-container">
+			<div class="contact-information px-4 py-4 sunny-morning-gradient text-black text-center ">
+				<i class="fas fa-map-marker-alt fa-lg"></i>
+				<p>2900 S Claiborne Ave Ste 200, New Orleans, LA 70125, USA</p>
+				<i class="fas fa-phone fa-lg"></i>
+				<p>+1 504 555 5555</p>
 				<i class="fas fa-building fa-lg"></i>
 				<p>Mon - Fri, 8:00-20:00</p>
-        <i class="fas fa-envelope fa-lg"></i>
-        <p>pear@info.com</p>
-      </div>
+				<i class="fas fa-envelope fa-lg"></i>
+				<p>pear@info.com</p>
+			</div>
 			<div>
 			</div>
-    </div>
-    <div class="col-12 col-md-8">
-      <div class="contact-form">
-        <div class="section-heading text-center mb-5">
-          <h2>Drop us a line</h2>
-          <hr class="line-orange">
-          </hr>
-        </div>
-        <form method="POST" action="{% url 'contact'%}" id="contact-form">
-          {% csrf_token %}
-          <div class="section-body">
-            <div class="md-form md-outline input-with-post-icon form-sm">
-              <i class="fas fa-user  input-prefix"></i>
-              <input type="text" class="form-control form-control-sm" id="first-name" name="first-name">
-              <label for="first-name">First name</label>
-            </div>
-            <div class="md-form md-outline input-with-post-icon form-sm">
-              <i class="fas fa-user  input-prefix"></i>
-              <input type="text" class="form-control form-control-sm" id="last-name" name="last-name">
-              <label for="last-name">Last name</label>
-            </div>
-            <div class="md-form md-outline input-with-post-icon form-sm">
-              <i class="fas fa-envelope  input-prefix"></i>
-              <input type="email" class="form-control form-control-sm" id="email" name="email">
-              <label for="email">E-mail address</label>
-            </div>
-            <div class="md-form md-outline input-with-post-icon form-sm">
-              <i class="fas fa-pencil-alt  input-prefix"></i>
-              <textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5"></textarea>
-              <label for="message">Message</label>
-            </div>
-						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="text-uppercase">Home</span>
-						</a>
-            <button type="submit" class="btn btn-elegant btn-sm">Send</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+		</div>
+		<div class="col-12 col-md-6 offset-md-1 col-lg-6 offset-lg-1 contact-form">
+				<div class="section-heading text-center mb-5">
+					<h2>Drop us a line</h2>
+					<hr class="line-orange">
+					</hr>
+				</div>
+				<div class="section-body">
+					<form method="POST" action="{% url 'contact'%}" id="contact-form" class="needs-validation" novalidate>
+						{% csrf_token %}
+							<div class="md-form md-outline form-sm">
+								<i class="fas fa-user prefix"></i>
+								<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
+								<label for="first-name">First name</label>
+								<div class="valid-feedback pl-4">
+									Looks good!
+								</div>
+								<div class="invalid-feedback pl-4">
+									Please provide a valid first name.
+								</div>
+							</div>
+							<div class="md-form md-outline form-sm">
+								<i class="fas fa-user prefix"></i>
+								<input type="text" class="form-control form-control-sm" id="last-name" name="last-name" value="" required>
+								<label for="last-name">Last name</label>
+								<div class="valid-feedback pl-4">
+									Looks good!
+								</div>
+								<div class="invalid-feedback pl-4">
+									Please provide a valid last name.
+								</div>
+							</div>
+							<div class="md-form md-outline form-sm">
+								<i class="fas fa-envelope prefix"></i>
+								<input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
+								<label for="email">E-mail address</label>
+								<div class="valid-feedback pl-4">
+									Looks good!
+								</div>
+								<div class="invalid-feedback pl-4">
+									Please provide a valid e-mail address.
+								</div>
+							</div>
+							<div class="md-form md-outline form-sm">
+								<i class="fas fa-pencil-alt prefix"></i>
+								<textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5" value="xx" required></textarea>
+								<label for="message">Message</label>
+								<div class="valid-feedback pl-4">
+									Looks good!
+								</div>
+								<div class="invalid-feedback pl-4">
+									Please provide a valid message.
+								</div>
+							</div>
+							<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
+								<span class="icon">
+									<i class="fas fa-chevron-left"></i>
+								</span>
+								<span class="text-uppercase">Home</span>
+							</a>
+							<button type="submit" class="btn btn-elegant btn-sm">Send</button>
+					</form>
+			</div>
+		</div>
+	</div>
 {% endblock %}
 
 {% block page_bottom %}
 <div class="container bottom-container">
- <div class="row">
-	 <div class="col"></div>
- </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+	(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.getElementsByClassName('needs-validation');
+			// Loop over them and prevent submission
+			var validation = Array.prototype.filter.call(forms, function(form) {
+				form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				}, false);
+			});
+		}, false);
+	})();
+</script>
 {% endblock %}

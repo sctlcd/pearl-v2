@@ -1,0 +1,81 @@
+/* Style the links inside the pill navigation menu */
+.pill-nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  text-decoration: none;
+  border-radius: 5px;
+	margin-right: 0.2rem;
+	cursor: pointer;
+}
+
+.pill-nav li a {
+	color: black;
+	padding-bottom: 0rem;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav li:hover {
+  background-color: #d8d8d86e;
+	border: 1px solid #fc9601eb !important;
+}
+
+/* Add a color to the active/current link */
+.pill-nav li.active {
+	background-color: #fafafa;
+	border: 2px solid #fc9601eb !important;
+}
+
+.gallery-filters {
+	background-color: #fafafa;
+}
+
+.btn-outline-primary {
+	border-radius: 45px !important;
+}
+
+.modal-dialog-full-width {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	max-width:none !important;
+	}
+
+.modal-content-full-width  {
+	height: auto !important;
+	/* min-height: 100% !important; */
+	border-radius: 0 !important;
+	background-color: #fafafa !important
+}
+
+.modal-header-full-width,
+.modal-footer-full-width  {
+	border-bottom: 1px solid #d8d8d86e !important;
+}
+
+.gallery-footer p a:hover {
+	color: #6c757d !important;
+}
+
+.modal-footer span {
+	color: #000;
+}
+
+.modal-footer a i {
+	color: #fc9601eb;
+}
+
+.modal-footer a i:hover {
+	color: #6c757d!important;
+}
+
+.custom-select:focus {
+  border-color: #fc9601eb;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(252,150,1,.25) !important;
+}
+
+.custom-file-label {
+	background-color: #fafafa;
+}

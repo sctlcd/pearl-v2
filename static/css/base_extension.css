@@ -7,9 +7,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.header-container,
-.bottom-container {
+.header-container {
   padding-top: 4rem;
+}
+
+.bottom-container {
+	padding-top: 6rem;
 }
 
 /* ------------------------------- buttons */
@@ -196,94 +199,19 @@ body {
 	margin: 0rem auto 0rem auto;
 }
 
-/* ------------------------------- gallery */
-
-/* Style the links inside the pill navigation menu */
-.pill-nav li {
-  display: inline-block;
-  text-align: center;
-  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-  text-decoration: none;
-  border-radius: 5px;
-	margin-right: 0.2rem;
-	cursor: pointer;
-}
-
-.pill-nav li a {
-	color: black;
-	padding-bottom: 0rem;
-}
-
-/* Change the color of links on mouse-over */
-.pill-nav li:hover {
-  background-color: #d8d8d86e;
-	border: 1px solid #fc9601eb !important;
-}
-
-/* Add a color to the active/current link */
-.pill-nav li.active {
-	background-color: #fafafa;
-	border: 2px solid #fc9601eb !important;
-}
-
-.gallery-filters {
-	background-color: #fafafa;
-}
-
-.btn-outline-primary {
-	border-radius: 45px !important;
-}
-
-.modal-dialog-full-width {
-	width: 100% !important;
-	height: 100% !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	max-width:none !important;
-	}
-
-.modal-content-full-width  {
-	height: auto !important;
-	/* min-height: 100% !important; */
-	border-radius: 0 !important;
-	background-color: #fafafa !important
-}
-
-.modal-header-full-width,
-.modal-footer-full-width  {
-	border-bottom: 1px solid #d8d8d86e !important;
-}
-
-.gallery-footer p a:hover {
-	color: #6c757d !important;
-}
-
-.modal-footer span {
-	color: #000;
-}
-
-.modal-footer a i {
-	color: #fc9601eb;
-}
-
-.modal-footer a i:hover {
-	color: #6c757d!important;
-}
-
 /* ------------------------------- media query */
 
 /* Quantity input number */
 @media not all and (min-resolution:.001dpcm) {
 @supports (-webkit-appearance: none) and (stroke-color:transparent) {
 
-.number-input.def-number-input.safari_only button:before,
-.number-input.def-number-input.safari_only button:after {
-	margin-top: -.3rem;
-}
+	.number-input.def-number-input.safari_only button:before,
+	.number-input.def-number-input.safari_only button:after {
+		margin-top: -.3rem;
+	}
 }
 }
 
-/* -------------------------------- Media Queries */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
@@ -295,6 +223,10 @@ body {
 	.bag-container-mobile .product-info {
 		margin-top: 2rem;
 	}
+
+	.contact-information-container {
+    padding-bottom: 8rem !important;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -303,10 +235,12 @@ body {
 	.bag-container-mobile .product-image img {
 		width: 100%;
 	}
+
+	.contact-information-container {
+    padding-bottom: 8rem !important;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-
 }
