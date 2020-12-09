@@ -8,6 +8,9 @@ from .forms import OrderForm
 
 
 def checkout(request):
+    '''
+        A view to return the Checkout page
+    '''
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
