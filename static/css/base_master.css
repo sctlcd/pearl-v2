@@ -325,8 +325,12 @@ a.text-danger:hover, a.text-danger:focus {
   box-shadow: 0 0 0 0 transparent;
 }
 
-.navbar-desktop .dropdown:hover>.dropdown-menu {
-	/* display the dropdown menu when the nav-item is hovered */
+.navbar-desktop .dropdown:hover>.dropdown-menu,
+.desktop-user-options-container:hover .dropdown-menu,
+.mobile-user-options-container:hover .dropdown-menu,
+.desktop-gallery-container:hover .dropdown-menu,
+.mobile-gallery-container:hover .dropdown-menu {
+	/* display the dropdown menu when the nav-item and topnav items are hovered */
   display: block;
 }
 
@@ -334,6 +338,8 @@ a.text-danger:hover, a.text-danger:focus {
 .dropdown-menu-mobile-search.show,
 .desktop-user-options-container:hover .dropdown-menu,
 .mobile-user-options-container .dropdown-menu,
+.desktop-gallery-container:hover .dropdown-menu,
+.mobile-gallery-container .dropdown-menu,
 .header .list-inline-item.show .dropdown-menu.show,
 .navbar-desktop .nav-item .dropdown-menu {
 	-webkit-box-shadow: 0px 5px 10px 0px #353535;
@@ -481,11 +487,6 @@ nav .nav-item.show,
 nav .nav-item:hover {
 	background-color: #d8d8d86e;
 	border-radius: 0.25rem;
-}
-
-.desktop-user-options-container:hover .dropdown-menu,
-.mobile-user-options-container:hover .dropdown-menu {
-	display: block;
 }
 
 .navbar-mobile .nav-item.show .dropdown-menu.show {
@@ -725,8 +726,8 @@ box-shadow: 0px 5px 10px 0px #6c757d;
 }
 
 /*
-Convenience classes - colors copied from Material Design Bootstrap:
-https://mdbootstrap.com/docs/standard/content-styles/colors/
+	Convenience classes - colors copied from Material Design Bootstrap:
+	https://mdbootstrap.com/docs/standard/content-styles/colors/
  */
 .arrow-primary {
   border-bottom-color: #1266F1 !important;
@@ -866,10 +867,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
     font-size: .7rem;
 	}
 
+	.mobile-gallery-container .dropdown-menu
 	.mobile-user-options-container .dropdown-menu {
 		margin-left: -3.4rem !important;
 	}
 
+	.mobile-gallery-container .dropdown-menu a,
 	.mobile-user-options-container .dropdown-menu a {
 		font-size: small;
 	}
@@ -965,10 +968,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
     font-size: .8rem;
 	}
 
+	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
 		margin-left: -1.4rem !important;
 	}
 
+	.mobile-gallery-container .dropdown-menu a,
 	.mobile-user-options-container .dropdown-menu a {
 		font-size: small;
 	}
@@ -1067,10 +1072,12 @@ https://mdbootstrap.com/docs/standard/content-styles/colors/
     font-size: .8rem;
 	}
 
+	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
 		margin-left: -1rem !important;
 	}
 
+	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu a {
 		font-size: medium;
 	}

@@ -14,7 +14,7 @@
       </div>
     </a>
     <form class="form" method="GET" action="{% url 'products' %}">
-      <div class="dropdown-menu border-0 w-100 p-3 my-0 test bg-white dropdown-menu-mobile-search" aria-labelledby="mobile-search">
+      <div class="dropdown-menu w-100 p-3 my-0 test bg-white dropdown-menu-mobile-search" aria-labelledby="mobile-search">
         <div class="input-group md-form form-sm form-2 pl-0">
           <input class="form-control my-0 py-1 border-orange" type="text" name="q" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
@@ -23,13 +23,24 @@
         </div>
     </form>
   </li>
-  <li class="list-inline-item">
-    <a class="text-white nav-link d-block d-lg-none" href="{% url 'gallery' %}" id="mobile-gallery">
+  <li class="list-inline-item dropdown mobile-gallery-container">
+    <a class="text-white nav-link" href="#" id="mobile-gallery" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <div class="text-center">
-        <div><i class="fas fa-images fa-lg"></i></div>
-        <p class="my-0">Gallery</p>
+        <div><i class="fas fa-images fa-lg text-white"></i></div>
+        <p class="my-0 text-white">Gallery</p>
       </div>
     </a>
+    <div class="dropdown-menu bg-white" aria-labelledby="mobile-gallery">
+      {% if request.user.is_authenticated %}
+      {% if request.user.is_superuser %}
+      <a href="#" class="dropdown-item">Gallery Management</a>
+      {% endif %}
+      <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
+      <a href="{% url 'gallery_share' %}" class="dropdown-item">Share your work of art</a>
+      {% else %}
+      <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
+      {% endif %}
+    </div>
   </li>
   <li class="list-inline-item dropdown mobile-user-options-container">
     <a class="text-white nav-link d-block d-lg-none" href="#" id="mobile-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +49,7 @@
         <p class="my-0 text-white">My Account</p>
       </div>
     </a>
-    <div class="dropdown-menu border-0 bg-white" aria-labelledby="mobile-user-options">
+    <div class="dropdown-menu bg-white" aria-labelledby="mobile-user-options">
       {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
       <a href="#" class="dropdown-item">Product Management</a>

@@ -14,6 +14,11 @@
 	padding-bottom: 0rem;
 }
 
+.pill-nav li {
+  background-color: #fafafa;
+	border: 1px solid #fafafa; !important;
+}
+
 /* Change the color of links on mouse-over */
 .pill-nav li:hover {
   background-color: #d8d8d86e;
@@ -26,12 +31,10 @@
 	border: 2px solid #fc9601eb !important;
 }
 
-.gallery-filters {
+.gallery-filters ul {
 	background-color: #fafafa;
-}
-
-.btn-outline-primary {
-	border-radius: 45px !important;
+	display: table;
+  margin: 0 auto;
 }
 
 .modal-dialog-full-width {
@@ -45,17 +48,16 @@
 .modal-content-full-width  {
 	height: auto !important;
 	/* min-height: 100% !important; */
-	border-radius: 0 !important;
+	border-radius: 0.5rem !important;
 	background-color: #fafafa !important
-}
-
-.modal-header-full-width,
-.modal-footer-full-width  {
-	border-bottom: 1px solid #d8d8d86e !important;
 }
 
 .gallery-footer p a:hover {
 	color: #6c757d !important;
+}
+
+.modal-footer {
+	border-top: 1px solid #dee2e6 !important;
 }
 
 .modal-footer span {
@@ -78,4 +80,19 @@
 
 .custom-file-label {
 	background-color: #fafafa;
+}
+
+.modal-dialog .modal-content .modal-header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.modal-header-full-width,
+.modal-footer-full-width {
+  border-top: transparent;
+}
+
+ul {
+	display: table;
+  margin: 0 auto;
 }

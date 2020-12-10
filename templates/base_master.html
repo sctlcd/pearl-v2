@@ -63,15 +63,24 @@
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-          <li class="list-inline-item">
-            <a id="desktop-gallery" class="text-white nav-link" href="{% url 'gallery' %}">
+          <li class="list-inline-item dropdown desktop-gallery-container">
+            <a class="text-white nav-link" href="#" id="desktop-gallery" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
                 <div><i class="fas fa-images fa-lg text-white"></i></div>
-                <p class="my-0 text-white">
-                  Gallery
-                </p>
+                <p class="my-0 text-white">Gallery</p>
               </div>
             </a>
+            <div class="dropdown-menu bg-white" aria-labelledby="desktop-gallery">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="#" class="dropdown-item">Gallery Management</a>
+              {% endif %}
+              <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
+              <a href="{% url 'gallery_share' %}" class="dropdown-item">Share your work of art</a>
+              {% else %}
+              <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
+              {% endif %}
+            </div>
           </li>
           <li class="list-inline-item dropdown desktop-user-options-container">
             <a class="text-white nav-link" href="#" id="desktop-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,7 +89,7 @@
                 <p class="my-0">My Account</p>
               </div>
             </a>
-            <div class="dropdown-menu border-0 bg-white" aria-labelledby="desktop-user-options">
+            <div class="dropdown-menu bg-white" aria-labelledby="desktop-user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="#" class="dropdown-item">Product Management</a>
