@@ -328,6 +328,7 @@ Back to [top](#TableOfContents)
 
 ### Content <a name="Content"></a>
 
+- Baker Ross [bakerross](https://www.bakerross.ie/)
 
 Back to [top](#TableOfContents)
 
@@ -382,7 +383,7 @@ Back to [top](#TableOfContents)
 - Portfolio Filter Gallery HTML CSS & JavaScript | Image Category Filtering [webdevtrick](https://webdevtrick.com/portfolio-filter-gallery/)
 - How to - Lightbox - [w3schools](https://www.w3schools.com/howto/howto_js_lightbox.asp)
 - Material Design Full Screen Modal - [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mustafaozkaya/789907#html-tab-view)
-- How to change your commit messages in Git? [github](https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4)
+- How to change your commit messages in Git? - [github](https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4)
 
 
 

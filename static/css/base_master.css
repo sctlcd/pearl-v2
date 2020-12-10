@@ -867,7 +867,7 @@ box-shadow: 0px 5px 10px 0px #6c757d;
     font-size: .7rem;
 	}
 
-	.mobile-gallery-container .dropdown-menu
+	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
 		margin-left: -3.4rem !important;
 	}

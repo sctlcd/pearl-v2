@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from django.contrib import messages
 
 from .forms import ContactForm
 
@@ -16,11 +17,13 @@ def contact(request):
 
         if contact_form.is_valid():
             contact_form.save()
-
+        else:
+            contact_form = ContactForm()
     else:
         contact_form = ContactForm()
 
     context = {
         'contact_form': contact_form,
     }
+
     return render(request, template, context)
