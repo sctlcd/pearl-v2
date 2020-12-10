@@ -33,23 +33,10 @@
 
 .gallery-filters ul {
 	background-color: #fafafa;
-	display: table;
-  margin: 0 auto;
 }
 
-.modal-dialog-full-width {
-	width: 100% !important;
-	height: 100% !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	max-width:none !important;
-	}
-
-.modal-content-full-width  {
-	height: auto !important;
-	/* min-height: 100% !important; */
-	border-radius: 0.5rem !important;
-	background-color: #fafafa !important
+.modal-content {
+	border-radius: 1rem !important;
 }
 
 .gallery-footer p a:hover {
@@ -80,19 +67,4 @@
 
 .custom-file-label {
 	background-color: #fafafa;
-}
-
-.modal-dialog .modal-content .modal-header {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.modal-header-full-width,
-.modal-footer-full-width {
-  border-top: transparent;
-}
-
-ul {
-	display: table;
-  margin: 0 auto;
 }
