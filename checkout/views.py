@@ -6,7 +6,6 @@ from .forms import OrderForm
 
 # Checkout views
 
-
 def checkout(request):
     '''
         A view to return the Checkout page
