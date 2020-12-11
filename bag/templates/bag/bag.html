@@ -2,6 +2,10 @@
 {% load static %}
 {% load bag_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
 	<div class="row">
@@ -91,7 +95,7 @@
 
 					{% for item in bag_items %}
 					<tr>
-						<td class="justify-content-center py-3 mb-3 w-25 zoom">
+						<td class="justify-content-center product-image py-3 mb-3 w-25 zoom">
 							{% include "bag/product_image.html" %}
 						</td>
 						<td class="py-3 w-auto">

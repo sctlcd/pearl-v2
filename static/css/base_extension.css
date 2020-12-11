@@ -183,22 +183,6 @@ body {
 	height: 27rem;
 }
 
-/* ------------------------------- bag */
-
-.bag-container .form-group {
-	margin-bottom: 0.3rem;
-}
-
-.bag-container-mobile .product-image img {
-	display: block;
-	margin: auto;
-}
-
-.bag-container-desktop img {
-	width: 80%;
-	margin: 0rem auto 0rem auto;
-}
-
 /* ------------------------------- media query */
 
 /* Quantity input number */
