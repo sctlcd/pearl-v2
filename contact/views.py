@@ -1,5 +1,4 @@
 from django.shortcuts import render, HttpResponse
-from django.contrib import messages
 
 from .forms import ContactForm
 
