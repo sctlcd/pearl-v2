@@ -17,13 +17,6 @@ body {
   /* font-family: 'Smythe', cursive; */
 }
 
-form div > input,
-form div > select,
-form div > textarea,
-form div > label.active {
-	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
-}
-
 /* ------------------------------- button */
 
 .btn-grey {
@@ -175,6 +168,13 @@ a.text-danger:hover, a.text-danger:focus {
 
 /* ------------------------------- form */
 
+form div > input,
+form div > select,
+form div > textarea,
+form div > label.active {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
 /* .md-form */
 .md-form input:not([type]):focus:not([readonly]),
 .md-form input[type="text"]:not(.browser-default):focus:not([readonly]),
@@ -263,7 +263,8 @@ a.text-danger:hover, a.text-danger:focus {
   left: 0rem;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-control-file:focus {
   box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35);
 }
 
