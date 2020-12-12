@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Product, Category
 
 
@@ -6,8 +7,9 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        # exclude = ('category',)
         fields = '__all__'
+
+    image = forms.ImageField(label="Image", required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -18,7 +20,7 @@ class ProductForm(forms.ModelForm):
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
-        friendly_names[:0] = [('', 'Select a category')]
+        # friendly_names[:0] = [('', 'Select a category')]
         self.fields['category'].choices = friendly_names
 
         self.fields['category'].widget.attrs['autofocus'] = True
