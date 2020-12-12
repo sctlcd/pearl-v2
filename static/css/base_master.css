@@ -256,11 +256,15 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .md-form .prefix.active {
-    color: #fc9601eb;
+  color: #fc9601eb;
 }
 
 .needs-validation .md-form label {
-    left: 0rem;
+  left: 0rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35);
 }
 
 /* ------------------------------- header */

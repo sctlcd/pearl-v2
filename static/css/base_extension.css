@@ -48,8 +48,9 @@ body {
 
 .btn-outline-elegant,
 .btn-elegant,
-.btn-outline-elegant:hover,
-.btn-elegant:hover {
+/* .btn-outline-elegant:hover,
+.btn-elegant:hover, */
+.btn-danger {
 	border-radius: 45px !important;
 	min-width: 2rem;
 }
