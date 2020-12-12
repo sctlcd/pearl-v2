@@ -384,8 +384,8 @@ Back to [top](#TableOfContents)
 - How to - Lightbox - [w3schools](https://www.w3schools.com/howto/howto_js_lightbox.asp)
 - Material Design Full Screen Modal - [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mustafaozkaya/789907#html-tab-view)
 - How to change your commit messages in Git? - [github](https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4)
-
-
+- How to limit the maximum value of a numeric field in a Django model? [stackoverflow] - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
+- python-perform-append-at-beginning-of-list [geeksforgeeks] - https://www.geeksforgeeks.org/python-perform-append-at-beginning-of-list/
 
 Back to [top](#TableOfContents)
 

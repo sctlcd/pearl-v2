@@ -92,7 +92,7 @@
             <div class="dropdown-menu bg-white" aria-labelledby="desktop-user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a href="#" class="dropdown-item">Product Management</a>
+              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
               {% endif %}
               <a href="#" class="dropdown-item">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -233,7 +233,7 @@
           <p>
             <i class="fas fa-map-marker-alt mr-3"></i>New Orleans, LA 70125, USA</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i>pear@info.com</p>
+            <i class="fas fa-envelope mr-3"></i>pearl@info.com</p>
           <p>
             <i class="fas fa-phone mr-3"></i>+1 504 555 5555</p>
             <p><i class="fas fa-building mr-3"></i> Mon - Fri, 8:00-20:00</p>

@@ -1,3 +1,9 @@
+{% if item.product.image %}
 <a href="{% url 'item_detail' item.item_id item.quantity %}" class="pl-4">
-  <img class="img-fluid rounded z-depth-1 hoverable" src="{{ item.product.image.url }}">
+<img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
 </a>
+{% else %}
+<a href="{% url 'item_detail' item.item_id item.quantity %}" class="pl-4">
+<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+</a>
+{% endif %}
