@@ -107,7 +107,7 @@ def edit_product(request, product_id):
     if request.method == 'POST':
         product_form = ProductForm(request.POST, request.FILES, instance=product)
         if product_form.is_valid():
-            product_form.save()
+            product = product_form.save()
             messages.success(request, 'Succeed to edit product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:

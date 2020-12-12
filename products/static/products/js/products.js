@@ -30,4 +30,14 @@ $('document').ready(function($) {
       window.location.replace(currentUrl);
     }
   });
-};
+
+	// Trigger the click event on the delete-product-link id element
+  $('#delete-product-link').click(function(event) {
+		$('.delete-modal').modal('show');
+	});
+
+	$('#edit-product-link').click(function(event) {
+		$('.edit-modal').modal('show');
+	});
+
+});
