@@ -13,7 +13,7 @@ class ProductForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-            Add placeholders and classes, set autofocus on first field
+            Set autofocus on first field
         """
         super().__init__(*args, **kwargs)
 

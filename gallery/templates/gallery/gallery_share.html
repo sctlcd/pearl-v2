@@ -41,7 +41,8 @@
 				</div> -->
 				<form method="POST" action="{% url 'gallery_share' %}" id="share-form" class="needs-validation" novalidate>
 					{% csrf_token %}
-					<div class="section-body">
+					{{ product_form | crispy }}
+					<!-- <div class="section-body">
 						<div class="md-form md-outline form-sm">
 							<i class="fas fa-user prefix"></i>
 							<input type="text" class="form-control form-control-sm" id="user_name" name="user_name" value="" required>
@@ -104,7 +105,7 @@
 							<i class="fas fa-sticky-note prefix"></i>
 							<textarea class="md-textarea form-control form-control-sm" id="note" name="note" rows="5"></textarea>
 							<label for="note">Note</label>
-						</div>
+						</div> -->
 						<div>
 							<p class="text-info"><small>The author name filled in this form will be accompanied by the copyright mention when your photo will be published.</small></p>
 						</div>
