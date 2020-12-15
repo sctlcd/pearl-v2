@@ -6,10 +6,10 @@ from django.db import models
 class GalleryCategory(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Gallery categories'
+        verbose_name_plural = 'Categories'
 
-    name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254, null=True, blank=False)
+    friendly_name = models.CharField(max_length=254, null=True, blank=False)
 
     def __str__(self):
         return self.name
@@ -19,15 +19,19 @@ class GalleryCategory(models.Model):
 
 
 class Gallery(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Gallery'
+
     user_name = models.CharField(max_length=254, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     author_name = models.CharField(max_length=254, null=False, blank=False)
-    gallery_category = models.ForeignKey('GalleryCategory', null=True, blank=True, on_delete=models.SET_NULL)
-    image_url = models.URLField(max_length=1024, null=False, blank=False)
-    image = models.ImageField(null=False, blank=False)
+    gallery_category = models.ForeignKey('GalleryCategory', null=True, blank=False, on_delete=models.SET_NULL)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     note = models.TextField(null=True, blank=True)
-    date = models.DateTimeField(auto_now_add=True)
+    # date = models.DateTimeField(auto_now_add=True)
     is_approved = models.BooleanField(null=False, blank=False, default=False)
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}'
+        return f'{self.user_name} on gallery category {self.gallery_category}'

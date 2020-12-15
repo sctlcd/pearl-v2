@@ -1,0 +1,30 @@
+[
+  {
+    "pk": 1,
+    "model": "gallery.gallery",
+    "fields": {
+      "user_name": "test1",
+      "email": "test1@test.com",
+      "author_name": "Emma Handerson",
+      "gallery_category": 1,
+      "note": "",
+	  	"is_approved": false,
+      "image_url": "https://unsplash.com/photos/JlufluFHiZc",
+      "image": "eyasu-etsub-JlufluFHiZc-unsplash-min.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "gallery.gallery",
+    "fields": {
+      "user_name": "test2",
+      "email": "test2@test.com",
+      "author_name": "Al Wilson",
+      "gallery_category": 2,
+      "note": "",
+	  	"is_approved": false,
+      "image_url": "https://pixabay.com/photos/mosaic-tile-art-ceramic-colorful-200868/",
+      "image": "mosaic-200868_1920-min.jpg"
+    }
+  }
+]

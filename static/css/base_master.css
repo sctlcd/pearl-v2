@@ -265,7 +265,7 @@ form div > label.active {
 
 .form-control:focus,
 .form-control-file:focus {
-  box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35);
+  box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35) !important;
 }
 
 /* ------------------------------- header */
@@ -514,8 +514,9 @@ nav a.waves-effect {
 }
 
 /* topnav dropdown menu offset */
-.topnav .dropdown-menu {
-	margin-left: -1.2rem;
+.topnav .dropdown-menu,
+.list-inline-item:hover .dropdown-menu {
+	margin-left: -2rem;
 }
 
 .dropdown-item {

@@ -9,3 +9,4 @@ bootstrap-material-design
 package-lock.json
 env.py
 contact/static/contact/js/contact-form-validation.js
+gallery/templates/gallery/gallery_copy.html
