@@ -1,5 +1,5 @@
 from django import forms
-from .widgets import CustomClearableFileInput
+from .widgets import CustomFileInput
 from .models import Gallery, GalleryCategory
 
 
@@ -12,7 +12,7 @@ class GalleryForm(forms.ModelForm):
         fields = ('user_name', 'email', 'author_name',
                   'gallery_category', 'image', 'note',)
 
-    image = forms.ImageField(label="Image", required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label="Image", required=False, widget=CustomFileInput)
 
     def __init__(self, *args, **kwargs):
         """
