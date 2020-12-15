@@ -63,11 +63,11 @@
                 <!-- Modal footer-->
                 <div class="modal-footer justify-content-center">
                   <span class="mr-4 font-weight-bold">Spread the word!</span>
-                  <a type="button" class="btn-floating btn-lg"><i class="fab fa-lg fa-facebook"></i></a>
-                  <a type="button" class="btn-floating btn-lg"><i class="fab fa-lg fa-pinterest"></i></a>
-                  <a type="button" class="btn-floating btn-lg"><i class="fab fa-lg fa-instagram"></i></a>
-                  <a type="button" class="btn-floating btn-lg"><i class="fab fa-lg fa-twitter-square"></i></a>
-                  <button type="button" class="btn btn-outline-elegant btn-md ml-4" data-dismiss="modal">Close</button>
+                  <a type="button" class="btn-floating btn-lg" href="https://facebook.com" target="_blank"><i class="fab fa-lg fa-facebook"></i></a>
+                  <a type="button" class="btn-floating btn-lg" href="https://pinterest.com" target="_blank"><i class="fab fa-lg fa-pinterest"></i></a>
+                  <a type="button" class="btn-floating btn-lg" href="https://instagram.com" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
+                  <a type="button" class="btn-floating btn-lg" href="https://twitter.com" target="_blank"><i class="fab fa-lg fa-twitter-square"></i></a>
+                  <button type="button" class="btn btn-outline-elegant btn-md ml-4" target="_blank" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@
             <a class="zoom">
               <img class="img-fluid img-thumbnail z-depth-1" src="/media/gallery/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
             </a>
-            <p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
+            <p class="pt-5"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
           </div>
 
           {% if forloop.counter|divisibleby:1 %}
