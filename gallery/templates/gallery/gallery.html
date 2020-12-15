@@ -38,16 +38,18 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="row gallery-images"> -->
 
+
+        <div class="row">
+          {% for item in gallery %}
           <!-- Modal gallery image -->
-          <div class="modal fade right" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal fade right" id="modal{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
               <!-- Modal content-->
               <div class="modal-content">
                 <!-- Modal header -->
                 <div class="modal-header text-center">
-                  <h5 class="modal-title w-100"><i class="far fa-copyright"></i> Lars Handerson</h5>
+                  <h5 class="modal-title w-100"><i class="far fa-copyright"></i> {{ item.author_name}}</h5>
                   <button type="button" class="close " data-dismiss="modal" aria-label="Close">
                     <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
                   </button>
@@ -55,7 +57,7 @@
                 <!-- Modal body-->
                 <div class="modal-body mb-0 p-0">
                   <div class="modal-image">
-                    <img src="/media/animal-print-paper-sheets-min.jpg" class="img-fluid" />
+                    <img src="/media/gallery/{{ item.image }}" class="img-fluid" />
                   </div>
                 </div>
                 <!-- Modal footer-->
@@ -71,34 +73,49 @@
             </div>
           </div>
 
-          <!-- image 1 -->
-          <div class="col-sm-3 gallery-img-holder my-3" filter-category="beads">
+          <!-- image -->
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 gallery-img-holder my-3" filter-category="{{ item.gallery_category }}">
             <a class="zoom">
-              <img class="img-fluid img-thumbnail z-depth-1" src="/media/animal-print-paper-sheets-min.jpg" alt="image1"
-              data-toggle="modal" data-target="#modal">
+              <img class="img-fluid img-thumbnail z-depth-1" src="/media/gallery/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
             </a>
-            <p class="pt-3"><i class="far fa-copyright"></i> Lars Handerson</p>
+            <p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
           </div>
 
-          <!-- image 2 -->
-          <div class="col-sm-3 gallery-img-holder my-3" filter-category="painting">
-            <a class="zoom">
-              <img class="img-thumbnail z-depth-1" src="/media/animal-print-paper-sheets-min.jpg" alt="image2"
-              data-toggle="modal" data-target="#modal">
-            </a>
-            <p class="pt-3"><i class="far fa-copyright"></i> Lars Handerson</p>
+          {% if forloop.counter|divisibleby:1 %}
+          <div class="col-12 d-sm-none my-4">
+            <hr>
           </div>
+          {% endif %}
+          {% if forloop.counter|divisibleby:2 %}
+          <div class="col-12 d-none d-sm-block d-md-block d-lg-none my-4">
+            <hr>
+          </div>
+          {% endif %}
+          {% if forloop.counter|divisibleby:3 %}
+          <div class="col-12 d-none d-lg-block d-xl-none my-4">
+            <hr>
+          </div>
+          {% endif %}
+          {% if forloop.counter|divisibleby:4 %}
+          <div class="col-12 d-none d-xl-block my-4">
+            <hr>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
 
-      <!-- gallery footer -->
-      <div class="gallery-footer my-5 mx-5">
-        <h5 class="text-black d-inline">Would you like to share your own piece of art?</h5>
-        {% if request.user.is_authenticated %}
-        <h5>Let's go! <a href="{% url 'gallery_share' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
-        {% else %}
-        <p><a href="{% url 'account_signup' %}" class="text-orange">Register</a> yourself or <a href="{% url 'account_login' %}" class="text-orange">login</a> to access this feature.</p>
-        {% endif %}
+        <div class="row">
+          <!-- gallery footer -->
+          <div class="col-12 gallery-footer my-5 mx-5">
+            <h5 class="text-black d-inline">Would you like to share your own piece of art?</h5>
+            {% if request.user.is_authenticated %}
+            <h5>Let's go! <a href="{% url 'gallery_share' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
+            {% else %}
+            <p><a href="{% url 'account_signup' %}" class="text-orange">Register</a> yourself or <a href="{% url 'account_login' %}" class="text-orange">login</a> to access this feature.</p>
+            {% endif %}
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </div>

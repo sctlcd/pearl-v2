@@ -11,6 +11,9 @@ def gallery(request):
         A view to return the gallery page
     """
 
+    gallery = Gallery.objects.all()
+    gallery_categories = GalleryCategory.objects.all()
+
     template = 'gallery/gallery.html'
     context = {
         'gallery': gallery,
