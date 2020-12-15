@@ -514,8 +514,9 @@ nav a.waves-effect {
 }
 
 /* topnav dropdown menu offset */
-.topnav .dropdown-menu {
-	margin-left: -1.2rem;
+.topnav .dropdown-menu,
+.list-inline-item:hover .dropdown-menu {
+	margin-left: -2rem;
 }
 
 .dropdown-item {
