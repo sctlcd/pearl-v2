@@ -41,7 +41,14 @@
 				</div> -->
 				<form method="POST" action="{% url 'gallery_share' %}" id="share-form" class="needs-validation" novalidate>
 					{% csrf_token %}
-					{{ product_form | crispy }}
+					{{ gallery_form | crispy }}
+					<!-- {% for field in gallery_form %}
+						{% if field.name != 'image' %}
+							{{ field | as_crispy_field }}
+						{% else %}
+							{{ field }}
+						{% endif %}
+					{% endfor %} -->
 					<!-- <div class="section-body">
 						<div class="md-form md-outline form-sm">
 							<i class="fas fa-user prefix"></i>

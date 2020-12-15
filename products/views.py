@@ -52,6 +52,7 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    template = 'products/products.html'
     context = {
         'products': products,
         'search_term': query,
@@ -59,7 +60,7 @@ def all_products(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, template, context)
 
 
 def product_detail(request, product_id):
@@ -69,11 +70,12 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    template = 'products/product_detail.html'
     context = {
         'product': product,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
@@ -143,7 +145,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')

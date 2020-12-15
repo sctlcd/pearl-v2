@@ -59,7 +59,8 @@
 			<div class="section-body">
 				<form method="POST" action="{% url 'contact'%}" id="contact-form" name="contact-form" class="needs-validation" novalidate>
 					{% csrf_token %}
-					<div class="md-form md-outline form-sm">
+					{{ contact_form | crispy }}
+					<!-- <div class="md-form md-outline form-sm">
 						<i class="fas fa-user prefix"></i>
 						<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
 						<label for="first-name">First name</label>
@@ -102,7 +103,7 @@
 						<div class="invalid-feedback pl-4">
 							Please provide a valid message.
 						</div>
-					</div>
+					</div> -->
 					<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-sm">
 						<span class="icon">
 							<i class="fas fa-chevron-left"></i>

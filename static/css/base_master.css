@@ -265,7 +265,7 @@ form div > label.active {
 
 .form-control:focus,
 .form-control-file:focus {
-  box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35);
+  box-shadow: 0 0 0 0.2rem rgba(252, 151, 1, 0.35) !important;
 }
 
 /* ------------------------------- header */
