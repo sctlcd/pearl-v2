@@ -75,7 +75,7 @@
               {% if request.user.is_superuser %}
               <a href="#" class="dropdown-item">Gallery Management</a>
               {% endif %}
-              <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
+              <a href="{% url 'gallery' %}" class="dropdown-item">Customers photo gallery</a>
               <a href="{% url 'gallery_share' %}" class="dropdown-item">Share your work of art</a>
               {% else %}
               <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>

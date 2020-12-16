@@ -10,7 +10,7 @@
       "note": "",
 	  	"is_approved": false,
       "image_url": "https://unsplash.com/photos/JlufluFHiZc",
-      "image": "eyasu-etsub-JlufluFHiZc-unsplash-min.jpg"
+      "image": "gallery/eyasu-etsub-JlufluFHiZc-unsplash-min.jpg"
     }
   },
   {
@@ -24,7 +24,7 @@
       "note": "",
 	  	"is_approved": false,
       "image_url": "https://pixabay.com/photos/mosaic-tile-art-ceramic-colorful-200868/",
-      "image": "mosaic-200868_1920-min.jpg"
+      "image": "gallery/mosaic-200868_1920-min.jpg"
     }
   }
 ]

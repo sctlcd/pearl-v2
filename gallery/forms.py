@@ -24,4 +24,4 @@ class GalleryForm(forms.ModelForm):
 
         self.fields['user_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            self.fields[field].widget.attrs['class'] = 'border-grey'
+            self.fields[field].widget.attrs['class'] = 'border-grey rounded'

@@ -28,7 +28,7 @@ class Gallery(models.Model):
     author_name = models.CharField(max_length=254, null=False, blank=False)
     gallery_category = models.ForeignKey('GalleryCategory', null=True, blank=False, on_delete=models.SET_NULL)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(upload_to='gallery', null=True, blank=True)
     note = models.TextField(null=True, blank=True)
     # date = models.DateTimeField(auto_now_add=True)
     is_approved = models.BooleanField(null=False, blank=False, default=False)

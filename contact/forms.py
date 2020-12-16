@@ -18,3 +18,6 @@ def __init__(self, *args, **kwargs):
     super().__init__(*args, **kwargs)
 
     self.fields['first_name'].widget.attrs['autofocus'] = True
+
+    for field_name, field in self.fields.items():
+        field.widget.attrs['class'] = 'border-grey rounded'

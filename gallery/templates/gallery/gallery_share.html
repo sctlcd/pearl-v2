@@ -39,7 +39,7 @@
 					<hr class="line-orange">
 					</hr>
 				</div> -->
-				<form method="POST" action="{% url 'gallery_share' %}" id="share-form" class="needs-validation" novalidate>
+				<form method="POST" action="{% url 'gallery_share' %}" id="share-form" enctype="multipart/form-data" class="needs-validation" novalidate>
 					{% csrf_token %}
 					{{ gallery_form | crispy }}
 					<!-- {% for field in gallery_form %}
