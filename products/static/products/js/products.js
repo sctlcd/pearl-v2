@@ -1,15 +1,5 @@
 $('document').ready(function($) {
 
-  // Go to the top of the page
-  $('.btt-button-top').click(function(e) {
-    window.scrollTo(0, 0)
-  })
-
-  // Go to the bottom of the page
-  $('.btt-button-down').click(function(e) {
-    window.scrollTo(0, document.body.scrollHeight)
-  })
-
   $('#sort-selector').change(function() {
     var selector = $(this);
     var currentUrl = new URL(window.location);
