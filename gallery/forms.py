@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomFileInput
 from .models import Gallery, GalleryCategory
 
 
@@ -10,6 +11,8 @@ class GalleryForm(forms.ModelForm):
         model = Gallery
         fields = ('user_name', 'email', 'author_name',
                   'gallery_category', 'image', 'note',)
+
+    image = forms.ImageField(required=True, widget=CustomFileInput)
 
     def __init__(self, *args, **kwargs):
         """

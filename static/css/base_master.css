@@ -13,8 +13,6 @@ body {
 	height: 100vh;
   background-color: #555;
 	font-family: 'Open Sans', sans-serif;
-	/* font-family: 'Crafty Girls', cursive; */
-  /* font-family: 'Smythe', cursive; */
 }
 
 /* ------------------------------- button */
@@ -22,6 +20,7 @@ body {
 .btn-grey {
 	background-color: #6c757d !important;
 	color: #fafafa;
+	border-radius: 45px;
 }
 
 .shop-now-button:hover,
