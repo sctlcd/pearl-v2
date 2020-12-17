@@ -97,7 +97,7 @@
 					<div class="col-12 gallery-footer my-5 mx-5">
 						<h5 class="text-black d-inline">Would you like to share your own piece of art?</h5>
 						{% if request.user.is_authenticated %}
-						<h5>Let's go! <a href="{% url 'gallery_share' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
+						<h5>Let's go! <a href="{% url 'share_gallery' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
 						{% else %}
 						<p><a href="{% url 'account_signup' %}" class="text-orange">Register</a> yourself or <a href="{% url 'account_login' %}" class="text-orange">login</a> to access this feature.</p>
 						{% endif %}
