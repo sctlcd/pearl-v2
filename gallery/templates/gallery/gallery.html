@@ -42,6 +42,8 @@
 
 				<div class="row">
 					{% for item in gallery %}
+					<!-- display only images approved by admin -->
+					{% if item.is_approved == True %}
 					<!-- Modal gallery image -->
 					<div class="modal fade right" id="modal{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
@@ -82,6 +84,7 @@
 							<p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
 						</div>
 					</div>
+					{% endif %}
 					{% endfor %}
 				</div>
 

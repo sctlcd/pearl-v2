@@ -12,6 +12,7 @@ class GalleryAdmin(admin.ModelAdmin):
         'gallery_category',
         'image',
         'note',
+        'is_approved',
     )
 
     ordering = ('user_name',)
