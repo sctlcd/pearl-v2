@@ -68,3 +68,10 @@
 .custom-file-label {
 	background-color: #fafafa;
 }
+
+.gallery-content .img-thumbnail {
+	width: 100%;
+  height: 300px;
+	object-fit: cover;
+	overflow: hidden;
+}

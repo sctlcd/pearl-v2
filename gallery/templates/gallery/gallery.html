@@ -1,131 +1,130 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
+{% block extra_title %}
+- Customers photo gallery
+{% endblock %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'gallery/css/gallery.css' %}">
 {% endblock %}
 
 {% block page_header %}
 <div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid text-center bg-white">
-  <div class="row mb-5">
-    <div class="container col-12">
-      <hr>
-      <h2 class="logo-font my-4">Gallery</h2>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col container gallery-container">
+	<div class="row mb-5">
+		<div class="container col-12">
+			<hr>
+			<h2 class="logo-font my-4">Gallery</h2>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col container gallery-container">
 
-      <div class="gallery-content">
-        <div class="row mtb-20 d-inline-block">
-          <div class="col-xs-12 gallery-filters">
-            <ul class="nav pill-nav py-4 h5">
-              <li role="presentation" class="active" gallery-filter="all"><a href="#">All</a></li>
-              <li role="presentation" gallery-filter="mosaic"><a href="#">Mosaic</a></li>
-              <li role="presentation" gallery-filter="painting"><a href="#">Painting</a></li>
-              <li role="presentation" gallery-filter="beads"><a href="#">Beads</a></li>
-              <li role="presentation" gallery-filter="other"><a href="#">Other</a></li>
-            </ul>
-          </div>
-        </div>
+			<div class="gallery-content">
+				<div class="row mtb-20 d-inline-block">
+					<div class="col-xs-12 gallery-filters">
+						<ul class="nav pill-nav py-4 h5">
+							<li role="presentation" class="active" gallery-filter="all"><a href="#">All</a></li>
+							<li role="presentation" gallery-filter="mosaic"><a href="#">Mosaic</a></li>
+							<li role="presentation" gallery-filter="painting"><a href="#">Painting</a></li>
+							<li role="presentation" gallery-filter="beads"><a href="#">Beads</a></li>
+							<li role="presentation" gallery-filter="other"><a href="#">Other</a></li>
+						</ul>
+					</div>
+				</div>
 
 
-        <div class="row">
-          {% for item in gallery %}
-          <!-- Modal gallery image -->
-          <div class="modal fade right" id="modal{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <!-- Modal header -->
-                <div class="modal-header text-center">
-                  <h5 class="modal-title w-100"><i class="far fa-copyright"></i> {{ item.author_name}}</h5>
-                  <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <!-- Modal body-->
-                <div class="modal-body mb-0 p-0">
-                  <div class="modal-image">
-                    <img src="/media/gallery/{{ item.image }}" class="img-fluid" />
-                  </div>
-                </div>
-                <!-- Modal footer-->
-                <div class="modal-footer justify-content-center">
-                  <span class="mr-4 font-weight-bold">Spread the word!</span>
-                  <a type="button" class="btn-floating btn-lg" href="https://facebook.com" target="_blank"><i class="fab fa-lg fa-facebook"></i></a>
-                  <a type="button" class="btn-floating btn-lg" href="https://pinterest.com" target="_blank"><i class="fab fa-lg fa-pinterest"></i></a>
-                  <a type="button" class="btn-floating btn-lg" href="https://instagram.com" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
-                  <a type="button" class="btn-floating btn-lg" href="https://twitter.com" target="_blank"><i class="fab fa-lg fa-twitter-square"></i></a>
-                  <button type="button" class="btn btn-outline-elegant btn-md ml-4" target="_blank" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
+				<div class="row">
+					{% for item in gallery %}
+					<!-- display only images approved by admin -->
+					{% if item.is_approved == True %}
+					<!-- Modal gallery image -->
+					<div class="modal fade right" id="modal{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<!-- Modal header -->
+								<div class="modal-header text-center">
+									<h5 class="modal-title w-100"><i class="far fa-copyright"></i> {{ item.author_name}}</h5>
+									<button type="button" class="close " data-dismiss="modal" aria-label="Close">
+										<span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<!-- Modal body-->
+								<div class="modal-body mb-0 p-0">
+									<div class="modal-image">
+										<img src="/media/{{ item.image }}" class="img-fluid" />
+									</div>
+								</div>
+								<!-- Modal footer-->
+								<div class="modal-footer justify-content-center">
+									<span class="mr-4 font-weight-bold">Spread the word!</span>
+									<a type="button" class="btn-floating btn-lg" href="https://facebook.com" target="_blank"><i class="fab fa-lg fa-facebook"></i></a>
+									<a type="button" class="btn-floating btn-lg" href="https://pinterest.com" target="_blank"><i class="fab fa-lg fa-pinterest"></i></a>
+									<a type="button" class="btn-floating btn-lg" href="https://instagram.com" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
+									<a type="button" class="btn-floating btn-lg" href="https://twitter.com" target="_blank"><i class="fab fa-lg fa-twitter-square"></i></a>
+									<button type="button" class="btn btn-outline-elegant btn-md ml-4" target="_blank" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <!-- image -->
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 gallery-img-holder my-3" filter-category="{{ item.gallery_category }}">
-            <a class="zoom">
-              <img class="img-fluid img-thumbnail z-depth-1" src="/media/gallery/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
-            </a>
-            <p class="pt-5"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
-          </div>
+					<!-- image -->
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 gallery-img-holder my-3" filter-category="{{ item.gallery_category }}">
+						<a class="zoom">
+							<img class="img-thumbnail z-depth-1 d-inline" src="/media/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
+						</a>
+						<div class="caption">
+							<p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
+						</div>
+					</div>
+					{% endif %}
+					{% endfor %}
+				</div>
 
-          {% if forloop.counter|divisibleby:1 %}
-          <div class="col-12 d-sm-none my-4">
-            <hr>
-          </div>
-          {% endif %}
-          {% if forloop.counter|divisibleby:2 %}
-          <div class="col-12 d-none d-sm-block d-md-block d-lg-none my-4">
-            <hr>
-          </div>
-          {% endif %}
-          {% if forloop.counter|divisibleby:3 %}
-          <div class="col-12 d-none d-lg-block d-xl-none my-4">
-            <hr>
-          </div>
-          {% endif %}
-          {% if forloop.counter|divisibleby:4 %}
-          <div class="col-12 d-none d-xl-block my-4">
-            <hr>
-          </div>
-          {% endif %}
-          {% endfor %}
-        </div>
+				<div class="row">
+					<!-- gallery footer -->
+					<div class="col-12 gallery-footer my-5 mx-5">
+						<h5 class="text-black d-inline">Would you like to share your own piece of art?</h5>
+						{% if request.user.is_authenticated %}
+						<h5>Let's go! <a href="{% url 'gallery_share' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
+						{% else %}
+						<p><a href="{% url 'account_signup' %}" class="text-orange">Register</a> yourself or <a href="{% url 'account_login' %}" class="text-orange">login</a> to access this feature.</p>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-        <div class="row">
-          <!-- gallery footer -->
-          <div class="col-12 gallery-footer my-5 mx-5">
-            <h5 class="text-black d-inline">Would you like to share your own piece of art?</h5>
-            {% if request.user.is_authenticated %}
-            <h5>Let's go! <a href="{% url 'gallery_share' %}" class="text-orange pl-1"><i class="fas fa-share"></i></a></h5>
-            {% else %}
-            <p><a href="{% url 'account_signup' %}" class="text-orange">Register</a> yourself or <a href="{% url 'account_login' %}" class="text-orange">login</a> to access this feature.</p>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="btt-button-top shadow-sm">
+	<a class="btt-link-top d-flex h-100">
+		<i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+	</a>
+</div>
+<div class="btt-button-down shadow-sm">
+	<a class="btt-link-bottom d-flex h-100">
+		<i class="fas fa-arrow-down text-white mx-auto my-auto"></i>
+	</a>
 </div>
 {% endblock %}
 
 {% block page_bottom %}
 <div class="container bottom-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
+	<div class="row">
+		<div class="col"></div>
+	</div>
 </div>
 {% endblock %}
 

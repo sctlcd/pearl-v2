@@ -22,10 +22,9 @@ class ProductForm(forms.ModelForm):
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
-        # friendly_names[:0] = [('', 'Select a category')]
         self.fields['category'].choices = friendly_names
 
         self.fields['category'].widget.attrs['autofocus'] = True
 
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black'
+            field.widget.attrs['class'] = 'border-grey text-grey rounded-10'

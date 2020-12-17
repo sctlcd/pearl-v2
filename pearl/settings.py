@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+from django.conf.locale.es import formats as es_formats
 
 if os.path.exists('env.py'):
     import env
@@ -77,6 +78,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'templates', 'admin'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -158,9 +160,11 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
+
+DATETIME_FORMAT = "Y-m-d H:i"
 
 
 # Static files (CSS, JavaScript, Images)

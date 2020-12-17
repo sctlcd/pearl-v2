@@ -104,4 +104,14 @@ $(document).ready(function() {
       // This code will execute when mouse leaves the header class element
       $(this).removeClass('fa-lg');
     });
+
+    // Go to the top of the page
+    $('.btt-button-top').click(function(e) {
+      window.scrollTo(0, 0)
+    })
+
+    // Go to the bottom of the page
+    $('.btt-button-down').click(function(e) {
+      window.scrollTo(0, document.body.scrollHeight)
+    })
 });

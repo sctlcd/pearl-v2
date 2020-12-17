@@ -385,7 +385,11 @@ Back to [top](#TableOfContents)
 - Material Design Full Screen Modal - [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mustafaozkaya/789907#html-tab-view)
 - How to change your commit messages in Git? - [github](https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4)
 - How to limit the maximum value of a numeric field in a Django model? [stackoverflow] - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
-- python-perform-append-at-beginning-of-list [geeksforgeeks] - https://www.geeksforgeeks.org/python-perform-append-at-beginning-of-list/
+- Python perform append at beginning of list - [geeksforgeeks] - https://www.geeksforgeeks.org/python-perform-append-at-beginning-of-list/
+- How to upload files with django - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html)
+- How to crop an image in css - [educative](https://www.educative.io/edpresso/how-to-crop-an-image-in-css)
+- Set favicon in django admin - [stackoverflow](https://stackoverflow.com/questions/34959897/set-favicon-in-django-admin)
+- Change the display format of time fields - [stackoverflow](https://stackoverflow.com/questions/7216764/in-the-django-admin-site-how-do-i-change-the-display-format-of-time-fields)
 
 Back to [top](#TableOfContents)
 
