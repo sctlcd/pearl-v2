@@ -388,6 +388,7 @@ Back to [top](#TableOfContents)
 - Python perform append at beginning of list [geeksforgeeks] - https://www.geeksforgeeks.org/python-perform-append-at-beginning-of-list/
 - How to upload files with django - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html)
 - How to crop an image in css [educative](https://www.educative.io/edpresso/how-to-crop-an-image-in-css)
+- Set favicon in django admin [stackoverflow](https://stackoverflow.com/questions/34959897/set-favicon-in-django-admin)
 
 Back to [top](#TableOfContents)
 
