@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from .models import Gallery, GalleryCategory
-from .forms import GalleryForm
+from .forms import GalleryForm, AdminGalleryForm
 
 
 # Gallery views
@@ -23,7 +23,7 @@ def gallery(request):
     return render(request, template, context)
 
 
-def gallery_share(request):
+def share_gallery(request):
     """
         A view to return the gallery form to share your own work of art
     """
@@ -31,16 +31,39 @@ def gallery_share(request):
         gallery_form = GalleryForm(request.POST, request.FILES)
         if gallery_form.is_valid():
             gallery_form.save()
-            messages.success(request, 'Succeed to send your request for sharing your work of art!')
-            return redirect(reverse('gallery_share'))
+            messages.success(request, 'Your request for sharing your work of art has been sent successfully!')
+            return redirect(reverse('share_gallery'))
         else:
-            messages.error(request, 'Failed to send your request for sharing your work of art. Please ensure the gallery form is valid.')
+            messages.error(request, 'Your request for sharing your work of art has failed. Please ensure the gallery form is valid.')
     else:
         gallery_form = GalleryForm()
 
-    template = 'gallery/gallery_share.html'
+    template = 'gallery/share_gallery.html'
     context = {
         'gallery_form': gallery_form,
+    }
+
+    return render(request, template, context)
+
+
+def add_gallery(request):
+    """
+        Add a galery image to the gallery
+    """
+    if request.method == 'POST':
+        admin_gallery_form = AdminGalleryForm(request.POST, request.FILES)
+        if admin_gallery_form.is_valid():
+            admin_gallery_form.save()
+            messages.success(request, 'Succeed to add a gallery image!')
+            return redirect(reverse('gallery'))
+        else:
+            messages.error(request, 'Failed to add a gallery image. Please ensure the gallery form is valid.')
+    else:
+        admin_gallery_form = GalleryForm()
+
+    template = 'gallery/add_gallery.html'
+    context = {
+        'admin_gallery_form': admin_gallery_form,
     }
 
     return render(request, template, context)

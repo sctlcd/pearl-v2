@@ -33,10 +33,10 @@
     <div class="dropdown-menu bg-white" aria-labelledby="mobile-gallery">
       {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
-      <a href="#" class="dropdown-item">Gallery Management</a>
+      <a href="{% url 'add_gallery' %}" class="dropdown-item">Gallery Management</a>
       {% endif %}
       <a href="{% url 'gallery' %}" class="dropdown-item">Customers photo gallery</a>
-      <a href="{% url 'gallery_share' %}" class="dropdown-item">Share your work of art</a>
+      <a href="{% url 'share_gallery' %}" class="dropdown-item">Share your work of art</a>
       {% else %}
       <a href="{% url 'gallery' %}" class="dropdown-item">Portfolio</a>
       {% endif %}

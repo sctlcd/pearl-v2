@@ -6,5 +6,6 @@ from . import views
 
 urlpatterns = [
     path('', views.gallery, name='gallery'),
-    path('share/', views.gallery_share, name='gallery_share'),
+    path('share/', views.share_gallery, name='share_gallery'),
+    path('add/', views.add_gallery, name='add_gallery'),
 ]

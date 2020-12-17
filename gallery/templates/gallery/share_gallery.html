@@ -20,7 +20,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container mb-2">
+<div class="container share-gallery-container mb-2">
 	<div class="row mb-5">
 		<div class="col">
 			<hr>
@@ -43,19 +43,21 @@
 					<hr class="line-orange">
 					</hr>
 				</div>
-				<form method="POST" action="{% url 'gallery_share' %}" id="share-form" enctype="multipart/form-data" class="needs-validation" novalidate>
+				<form method="POST" action="{% url 'share_gallery' %}" id="share-form" enctype="multipart/form-data" class="needs-validation" novalidate>
 					{% csrf_token %}
 					{{ gallery_form | crispy }}
 					<div>
-						<p class="text-info"><small>The author name filled in this form will be accompanied by the copyright mention when your photo will be published.</small></p>
+						<p class="text-info"><i class="fas fa-info-circle fa-sm"></i><small> The author name filled in this form will be accompanied by the copyright mention when your photo will be published.</small></p>
 					</div>
-					<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-md">
-						<span class="icon">
-							<i class="fas fa-chevron-left"></i>
-						</span>
-						<span class="text-uppercase">Home</span>
-					</a>
-					<button type="submit" class="btn btn-elegant btn-md">Share</button>
+					<div class="text-center pt-5">
+						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-lg">
+							<span class="icon">
+								<i class="fas fa-chevron-left"></i>
+							</span>
+							<span class="text-uppercase">Home</span>
+						</a>
+						<button type="submit" class="btn btn-elegant btn-lg">Share</button>
+					</div>
 				</form>
 			</div>
 		</div>
