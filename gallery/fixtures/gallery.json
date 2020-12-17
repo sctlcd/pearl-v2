@@ -8,9 +8,10 @@
       "author_name": "Emma Handerson",
       "gallery_category": 1,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/JlufluFHiZc",
-      "image": "gallery/eyasu-etsub-JlufluFHiZc-unsplash-min.jpg"
+      "image": "gallery/eyasu-etsub-JlufluFHiZc-unsplash-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -22,9 +23,10 @@
       "author_name": "Al Wilson",
       "gallery_category": 2,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/mosaic-tile-art-ceramic-colorful-200868/",
-      "image": "gallery/mosaic-200868_1920-min.jpg"
+      "image": "gallery/mosaic-200868_1920-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -36,9 +38,10 @@
       "author_name": "Juan Rodriguez",
       "gallery_category": 1,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.flickr.com/photos/3sth3r/17888752/",
-      "image": "gallery/17888752_1562ec72fe_b-min.jpg"
+      "image": "gallery/17888752_1562ec72fe_b-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -50,9 +53,10 @@
       "author_name": "Eva Sanchez",
       "gallery_category": 2,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/uzbekistan-mosaic-pattern-artfully-196875/",
-      "image": "gallery/uzbekistan-196875_1920-min.jpg"
+      "image": "gallery/uzbekistan-196875_1920-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -64,9 +68,10 @@
       "author_name": "Pierre Durand",
       "gallery_category": 1,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.flickr.com/photos/earthafricacurio/6367436537/",
-      "image": "gallery/6367436537_e49503a3f0_b-min.jpg"
+      "image": "gallery/6367436537_e49503a3f0_b-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -78,9 +83,10 @@
       "author_name": "Sandra Marchand",
       "gallery_category": 3,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.pexels.com/photo/child-sipping-from-pipe-graffiti-2103127/",
-      "image": "gallery/pexels-shukhrat-umarov-2103127-min.jpg"
+      "image": "gallery/pexels-shukhrat-umarov-2103127-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -92,9 +98,10 @@
       "author_name": "Jules Aoustin",
       "gallery_category": 1,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.flickr.com/photos/hundreds/111294390/",
-      "image": "gallery/111294390_33b9db4816_b-min.jpg"
+      "image": "gallery/111294390_33b9db4816_b-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -106,9 +113,10 @@
       "author_name": "Fred Bourgneuf",
       "gallery_category": 4,
       "note": "",
-	 	 "is_approved": false,
+	 	 "is_approved": true,
       "image_url": "https://www.pexels.com/photo/doodle-comic-art-sketch-16516/",
-      "image": "gallery/pexels-khairul-nizam-16516-min.jpg"
+      "image": "gallery/pexels-khairul-nizam-16516-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -120,9 +128,10 @@
       "author_name": "Camille Duval",
       "gallery_category": 1,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.flickr.com/photos/paullew/12517089325/",
-      "image": "gallery/12517089325_f4eca23e67_k-min.jpg"
+      "image": "gallery/12517089325_f4eca23e67_k-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -134,9 +143,10 @@
       "author_name": "Sofia Ricci",
       "gallery_category": 3,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.pexels.com/photo/art-creative-pattern-purple-5278835/",
-      "image": "gallery/pexels-anni-roenkae-5278835-min.jpg"
+      "image": "gallery/pexels-anni-roenkae-5278835-min.jpg",
+			"uploaded_at": "2020-12-15T13:49:51.141Z"
     }
   },
   {
@@ -148,9 +158,10 @@
       "author_name": "Luisa Weber",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/xlkuA0VQshU",
-      "image": "gallery/elsa-lilja-xlkuA0VQshU-unsplash-min.jpg"
+      "image": "gallery/elsa-lilja-xlkuA0VQshU-unsplash-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -162,9 +173,10 @@
       "author_name": "Lars Johansson",
       "gallery_category": 3,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.pexels.com/photo/photo-of-multicolored-illustration-2832382/",
-      "image": "gallery/pexels-anni-roenkae-2832382-min.jpg"
+      "image": "gallery/pexels-anni-roenkae-2832382-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -176,9 +188,10 @@
       "author_name": "Anna Smith",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/embroidery-needlework-cross-stitch-942255/",
-      "image": "gallery/embroidery-942255_1920-min.jpg"
+      "image": "gallery/embroidery-942255_1920-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -190,9 +203,10 @@
       "author_name": "Mona Müller",
       "gallery_category": 4,
       "note": "I love your website.",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://www.pexels.com/photo/toy-bear-and-thread-on-table-in-room-in-daytime-4792086/",
-      "image": "gallery/pexels-anete-lusina-4792086-min.jpg"
+      "image": "gallery/pexels-anete-lusina-4792086-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -204,9 +218,10 @@
       "author_name": "Fede Gonzales",
       "gallery_category": 1,
       "note": "This functionality is such a good idea!",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/DWjucw3fsaQ",
-      "image": "gallery/fallon-michael-DWjucw3fsaQ-unsplash-min.jpg"
+      "image": "gallery/fallon-michael-DWjucw3fsaQ-unsplash-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -218,9 +233,10 @@
       "author_name": "Luca Rossi",
       "gallery_category": 2,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/park-guell-mosaic-tile-gaudi-887725/",
-      "image": "gallery/park-guell-887725_1920-min.jpg"
+      "image": "gallery/park-guell-887725_1920-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -232,9 +248,10 @@
       "author_name": "Marco Lopez",
       "gallery_category": 3,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/graffiti-wall-graffiti-graffiti-art-1209761/",
-      "image": "gallery/graffiti-wall-1209761_1920-min.jpg"
+      "image": "gallery/graffiti-wall-1209761_1920-min.jpg",
+			"uploaded_at": "2020-12-16T13:49:51.141Z"
     }
   },
   {
@@ -246,9 +263,10 @@
       "author_name": "Abel Vincent",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/o7IsP-DbIgk",
-      "image": "gallery/nasim-keshmiri-o7IsP-DbIgk-unsplash-min.jpg"
+      "image": "gallery/nasim-keshmiri-o7IsP-DbIgk-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -260,9 +278,10 @@
       "author_name": "Remy Garcia",
       "gallery_category": 2,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/mosaic-tile-art-ceramic-colorful-200866/",
-      "image": "gallery/mosaic-200866_1920-min.jpg"
+      "image": "gallery/mosaic-200866_1920-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -274,9 +293,10 @@
       "author_name": "Julie Sanson",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/lUvvRj2RzK0",
-      "image": "gallery/nasim-keshmiri-lUvvRj2RzK0-unsplash-min.jpg"
+      "image": "gallery/nasim-keshmiri-lUvvRj2RzK0-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -288,9 +308,10 @@
       "author_name": "Agatha Ryan",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/9EiJn8OJ8wo",
-      "image": "gallery/nadia-clabassi-9EiJn8OJ8wo-unsplash-min.jpg"
+      "image": "gallery/nadia-clabassi-9EiJn8OJ8wo-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -302,9 +323,10 @@
       "author_name": "Max Lafarde",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/CQ3xrqbV58s",
-      "image": "gallery/nasim-keshmiri-CQ3xrqbV58s-unsplash-min.jpg"
+      "image": "gallery/nasim-keshmiri-CQ3xrqbV58s-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -316,9 +338,10 @@
       "author_name": "Tessa Mayer",
       "gallery_category": 4,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/cdXwe6nROs8",
-      "image": "gallery/nasim-keshmiri-cdXwe6nROs8-unsplash-min.jpg"
+      "image": "gallery/nasim-keshmiri-cdXwe6nROs8-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
   {
@@ -330,9 +353,10 @@
       "author_name": "Marius Hansen",
       "gallery_category": 3,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://pixabay.com/photos/paint-acrylic-paint-art-colorful-4105253/",
-      "image": "gallery/paint-4105253_1920-min.jpg"
+      "image": "gallery/paint-4105253_1920-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   },
 	{
@@ -344,9 +368,10 @@
       "author_name": "Paula Costa",
       "gallery_category": 2,
       "note": "",
-	  	"is_approved": false,
+	  	"is_approved": true,
       "image_url": "https://unsplash.com/photos/D9EgMp2V85o",
-      "image": "gallery/toa-heftiba-D9EgMp2V85o-unsplash-min.jpg"
+      "image": "gallery/toa-heftiba-D9EgMp2V85o-unsplash-min.jpg",
+			"uploaded_at": "2020-12-17T13:49:51.141Z"
     }
   }
 ]

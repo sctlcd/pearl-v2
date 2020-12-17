@@ -6,16 +6,16 @@ from .models import Gallery, GalleryCategory
 
 class GalleryAdmin(admin.ModelAdmin):
     list_display = (
+        'uploaded_at',
         'user_name',
         'email',
         'author_name',
         'gallery_category',
         'image',
-        'note',
         'is_approved',
     )
-
-    ordering = ('user_name',)
+    
+    ordering = ('uploaded_at',)
 
 
 class GalleryCategoryAdmin(admin.ModelAdmin):

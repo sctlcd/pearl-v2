@@ -30,7 +30,7 @@ class Gallery(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(upload_to='gallery', null=False, blank=False)
     note = models.TextField(null=True, blank=True)
-    # uploaded_at = models.DateTimeField(auto_now=True, null=False)
+    uploaded_at = models.DateTimeField(auto_now=True, null=False, blank=False)
     is_approved = models.BooleanField(null=False, blank=False, default=False)
 
     def __str__(self):

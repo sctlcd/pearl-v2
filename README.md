@@ -389,6 +389,7 @@ Back to [top](#TableOfContents)
 - How to upload files with django - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html)
 - How to crop an image in css - [educative](https://www.educative.io/edpresso/how-to-crop-an-image-in-css)
 - Set favicon in django admin - [stackoverflow](https://stackoverflow.com/questions/34959897/set-favicon-in-django-admin)
+- Change the display format of time fields - [stackoverflow](https://stackoverflow.com/questions/7216764/in-the-django-admin-site-how-do-i-change-the-display-format-of-time-fields)
 
 Back to [top](#TableOfContents)
 
