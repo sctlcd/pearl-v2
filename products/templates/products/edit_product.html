@@ -1,6 +1,10 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
+{% block extra_title %}
+- Edit Product
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
 	<div class="row">
@@ -11,7 +15,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container edit-product-container">
 	<div class="row">
 		<div class="col-12 col-md-6 text-center mb-5" style="margin:0 auto">
 			<hr>
@@ -33,8 +37,8 @@
 					{% endif %}
 				{% endfor %}
 				<div class="text-right">
-					<a class="btn btn-outline-elegant" href="{% url 'product_detail' product.id %}">Cancel</a>
-					<button class="btn btn-elegant" type="submit">Edit Product</button>
+					<a class="btn btn-outline-elegant btn-md" href="{% url 'product_detail' product.id %}">Cancel</a>
+					<button class="btn btn-elegant btn-md" type="submit">Edit Product</button>
 				</div>
 			</form>
 		</div>

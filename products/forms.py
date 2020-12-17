@@ -27,4 +27,4 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].widget.attrs['autofocus'] = True
 
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded'
+            field.widget.attrs['class'] = 'border-grey text-grey rounded-10'
