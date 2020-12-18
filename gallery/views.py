@@ -10,7 +10,6 @@ def gallery(request):
     """
         A view to return the gallery page
     """
-
     gallery = Gallery.objects.all()
     gallery_categories = GalleryCategory.objects.all()
 
@@ -55,7 +54,7 @@ def add_gallery(request):
         if admin_gallery_form.is_valid():
             admin_gallery_form.save()
             messages.success(request, 'Succeed to add a gallery image!')
-            # return redirect(reverse('gallery'))
+            return redirect(reverse('gallery'))
         else:
             messages.error(request, 'Failed to add a gallery image. Please ensure the gallery form is valid.')
     else:
@@ -73,7 +72,6 @@ def edit_gallery(request, gallery_id):
     """
         Edit a galery image to the gallery
     """
-
     gallery_item = get_object_or_404(Gallery, pk=gallery_id)
     if request.method == 'POST':
         admin_gallery_form = AdminGalleryForm(request.POST, request.FILES, instance=gallery_item)
@@ -94,3 +92,13 @@ def edit_gallery(request, gallery_id):
     }
 
     return render(request, template, context)
+
+
+def delete_gallery(request, gallery_id):
+    """
+        Delete a gallery image from the gallery
+    """
+    gallery_item = get_object_or_404(Gallery, pk=gallery_id)
+    gallery_item.delete()
+    messages.success(request, 'Gallery image deleted!')
+    return redirect(reverse('gallery'))

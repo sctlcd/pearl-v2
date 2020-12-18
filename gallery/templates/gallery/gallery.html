@@ -84,17 +84,16 @@
 						<a class="zoom">
 							<img class="img-thumbnail z-depth-1 d-inline" src="/media/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
 						</a>
-						<div class="caption">
-							<p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
+						<div class="caption pt-4">
+							<p><i class="far fa-copyright"></i> {{ item.author_name }}</p>
 						</div>
-						<div>
-							<small class="ml-3">
+						<div class="text-center mb-4">
+							<small>
 								<a class="text-info" href="{% url 'edit_gallery' item.id %}"><i class="fas fa-edit"></i></a> |
-								<a class="text-danger" href="#"><i class="fas fa-trash-alt"></i></a>
+								<a class="text-danger" href="{% url 'delete_gallery' item.id %}"><i class="fas fa-trash-alt"></i></a>
 							</small>
 						</div>
 					</div>
-
 					{% endif %}
 					{% endfor %}
 				</div>
