@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-- Add Gallery image
+- Edit Gallery image
 {% endblock %}
 
 {% block page_header %}
@@ -20,7 +20,7 @@
 		<div class="col-12 col-md-6 text-center mb-5" style="margin:0 auto">
 			<hr>
 			<h2 class="logo-font mb-4">Gallery Management</h2>
-			<h5 class="text-muted">Add a Gallery image</h5>
+			<h5 class="text-muted">Edit a Gallery image</h5>
 			<hr>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 				{{ admin_gallery_form | crispy }}
 				<div class="text-center pt-5">
 					<a class="btn btn-outline-elegant btn-lg" href="{% url 'gallery' %}">Cancel</a>
-					<button class="btn btn-elegant btn-lg" type="submit">Add Gallery image</button>
+					<button class="btn btn-elegant btn-lg" type="submit">Edit Gallery image</button>
 				</div>
 			</form>
 		</div>

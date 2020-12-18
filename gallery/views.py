@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .models import Gallery, GalleryCategory
 from .forms import GalleryForm, AdminGalleryForm
@@ -55,7 +55,7 @@ def add_gallery(request):
         if admin_gallery_form.is_valid():
             admin_gallery_form.save()
             messages.success(request, 'Succeed to add a gallery image!')
-            return redirect(reverse('gallery'))
+            # return redirect(reverse('gallery'))
         else:
             messages.error(request, 'Failed to add a gallery image. Please ensure the gallery form is valid.')
     else:
@@ -64,6 +64,33 @@ def add_gallery(request):
     template = 'gallery/add_gallery.html'
     context = {
         'admin_gallery_form': admin_gallery_form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_gallery(request, gallery_id):
+    """
+        Edit a galery image to the gallery
+    """
+
+    gallery_item = get_object_or_404(Gallery, pk=gallery_id)
+    if request.method == 'POST':
+        admin_gallery_form = AdminGalleryForm(request.POST, request.FILES, instance=gallery_item)
+        if admin_gallery_form.is_valid():
+            gallery_item = admin_gallery_form.save()
+            messages.success(request, 'Succeed to edit gallery image!')
+            return redirect(reverse('gallery'))
+        else:
+            messages.error(request, 'Failed to update gallery image. Please ensure the gallery form is valid.')
+    else:
+        admin_gallery_form = AdminGalleryForm(instance=gallery_item)
+        messages.info(request, f'You are editing {gallery_item.user_name}\'s image')
+
+    template = 'gallery/edit_gallery.html'
+    context = {
+        'admin_gallery_form': admin_gallery_form,
+        'gallery_item': gallery_item,
     }
 
     return render(request, template, context)
