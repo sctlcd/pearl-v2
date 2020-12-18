@@ -87,7 +87,14 @@
 						<div class="caption">
 							<p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
 						</div>
+						<div>
+							<small class="ml-3">
+								<a class="text-info" href="{% url 'edit_gallery' item.id %}"><i class="fas fa-edit"></i></a> |
+								<a class="text-danger" href="#"><i class="fas fa-trash-alt"></i></a>
+							</small>
+						</div>
 					</div>
+
 					{% endif %}
 					{% endfor %}
 				</div>
