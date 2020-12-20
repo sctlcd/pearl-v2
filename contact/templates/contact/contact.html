@@ -64,7 +64,7 @@
 				<form method="POST" action="{% url 'contact'%}" id="contact-form" name="contact-form" class="needs-validation" novalidate>
 					{% csrf_token %}
 					{{ contact_form | crispy }}
-					<!-- <div class="md-form md-outline form-sm">
+					<!-- <div class="md-form form-sm">
 						<i class="fas fa-user prefix"></i>
 						<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
 						<label for="first-name">First name</label>
@@ -134,7 +134,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	(function() {
 		'use strict';
 		window.addEventListener('load', function() {
@@ -152,5 +152,5 @@
 			});
 		}, false);
 	})();
-</script>
+</script> -->
 {% endblock %}
