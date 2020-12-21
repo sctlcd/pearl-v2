@@ -6,7 +6,8 @@ from .models import Gallery, GalleryCategory
 
 class GalleryAdmin(admin.ModelAdmin):
     list_display = (
-        'uploaded_at',
+        'created_at',
+        'updated_at',
         'user_name',
         'email',
         'author_name',
@@ -14,8 +15,8 @@ class GalleryAdmin(admin.ModelAdmin):
         'image',
         'is_approved',
     )
-    
-    ordering = ('uploaded_at',)
+
+    ordering = ('created_at',)
 
 
 class GalleryCategoryAdmin(admin.ModelAdmin):
