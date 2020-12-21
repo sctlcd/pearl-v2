@@ -390,6 +390,7 @@ Back to [top](#TableOfContents)
 - How to crop an image in css - [educative](https://www.educative.io/edpresso/how-to-crop-an-image-in-css)
 - Set favicon in django admin - [stackoverflow](https://stackoverflow.com/questions/34959897/set-favicon-in-django-admin)
 - Change the display format of time fields - [stackoverflow](https://stackoverflow.com/questions/7216764/in-the-django-admin-site-how-do-i-change-the-display-format-of-time-fields)
+- Automatic datetime fields - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tips/2016/05/23/django-tip-4-automatic-datetime-fields.html)
 
 Back to [top](#TableOfContents)
 
