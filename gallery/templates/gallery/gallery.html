@@ -79,22 +79,91 @@
 						</div>
 					</div>
 
+					<!-- Edit gallery image modal confirmation -->
+					<div class="modal edit-modal fade" id="edit-{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-notify modal-warning" role="document">
+							<!-- modal content -->
+							<div class="modal-content">
+								<!-- modal header -->
+								<div class="modal-header">
+									<p class="heading lead">Edit Gallery image</p>
+
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" class="white-text">&times;</span>
+									</button>
+								</div>
+
+								<!-- modal body -->
+								<div class="modal-body">
+									<div class="text-center">
+										<i class="far fa-trash-alt fa-4x mb-3 animated rotateIn"></i>
+										<p>Are you sure you want to edit {{ item.author_name }}'s image?</p>
+									</div>
+								</div>
+
+								<!-- footer -->
+								<div class="modal-footer justify-content-center">
+									<a type="button" class="btn btn-warning btn-md" href="{% url 'edit_gallery' item.id %}">
+										Yes
+									<a>
+									<a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'gallery' %}" data-dismiss="modal">
+										Cancel
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Delete gallery image modal confirmation -->
+					<div class="modal delete-modal fade" id="delete-{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-notify modal-danger" role="document">
+							<!-- modal content -->
+							<div class="modal-content">
+								<!-- modal header -->
+								<div class="modal-header">
+									<p class="heading lead">Delete Gallery image</p>
+
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" class="white-text">&times;</span>
+									</button>
+								</div>
+
+								<!-- modal body -->
+								<div class="modal-body">
+									<div class="text-center">
+										<i class="far fa-trash-alt fa-4x mb-3 animated rotateIn"></i>
+										<p>Are you sure you want to delete {{ item.author_name }}'s image?</p>
+									</div>
+								</div>
+
+								<!-- footer -->
+								<div class="modal-footer justify-content-center">
+									<a type="button" class="btn btn-danger btn-md" href="{% url 'delete_gallery' item.id %}">
+										Yes, I am sure
+									<a>
+									<a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'gallery' %}" data-dismiss="modal">
+										Cancel
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<!-- image -->
 					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 gallery-img-holder my-3" filter-category="{{ item.gallery_category }}">
 						<a class="zoom">
 							<img class="img-thumbnail z-depth-1 d-inline" src="/media/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
 						</a>
-						<div class="caption">
-							<p class="pt-4"><i class="far fa-copyright"></i> {{ item.author_name }}</p>
+						<div class="caption pt-4">
+							<p><i class="far fa-copyright"></i> {{ item.author_name }}</p>
 						</div>
-						<div>
-							<small class="ml-3">
-								<a class="text-info" href="{% url 'edit_gallery' item.id %}"><i class="fas fa-edit"></i></a> |
-								<a class="text-danger" href="#"><i class="fas fa-trash-alt"></i></a>
+						<div class="text-center mb-4">
+							<small>
+								<a class="text-info" href="#" data-toggle="modal" data-target="#edit-{{ item.id }}"><i class="fas fa-edit"></i></a> |
+								<a class="text-danger" href="#" data-toggle="modal" data-target="#delete-{{ item.id }}"><i class="fas fa-trash-alt"></i></a>
 							</small>
 						</div>
 					</div>
-
 					{% endif %}
 					{% endfor %}
 				</div>

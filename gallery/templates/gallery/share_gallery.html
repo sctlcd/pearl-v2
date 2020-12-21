@@ -39,24 +39,90 @@
 		<div class="col-12 col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
 			<div class="share-form ">
 				<div class="section-heading text-center mb-5">
-					<h5 class="pb-3 text-grey">Send an image of your crafts and arts creation and we will publish it in the customers photo gallery.</h5>
+					<h5 class="pb-3 text-grey">Send an image of your crafts and arts and we will publish your creations in the customers photo gallery.</h5>
 					<hr class="line-orange">
 					</hr>
 				</div>
 				<form method="POST" action="{% url 'share_gallery' %}" id="share-form" enctype="multipart/form-data" class="needs-validation" novalidate>
 					{% csrf_token %}
 					{{ gallery_form | crispy }}
-					<div>
-						<p class="text-info"><i class="fas fa-info-circle fa-sm"></i><small> The author name filled in this form will be accompanied by the copyright mention when your photo will be published.</small></p>
-					</div>
-					<div class="text-center pt-5">
-						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-lg">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="text-uppercase">Home</span>
-						</a>
-						<button type="submit" class="btn btn-elegant btn-lg">Share</button>
+					<!-- <div class="section-body">
+						<div class="md-form md-outline form-sm">
+							<i class="fas fa-user prefix"></i>
+							<input type="text" class="form-control form-control-sm" id="user_name" name="user_name" value="" required>
+							<label for="user_name">User name</label>
+							<div class="valid-feedback pl-4">
+								Looks good!
+							</div>
+							<div class="invalid-feedback pl-4">
+								Please provide a valid user name.
+							</div>
+						</div>
+						<div class="md-form md-outline form-sm">
+							<i class="fas fa-envelope prefix"></i>
+							<input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
+							<label for="email">E-mail address</label>
+							<div class="valid-feedback pl-4">
+								Looks good!
+							</div>
+							<div class="invalid-feedback pl-4">
+								Please provide a valid e-mail address.
+							</div>
+						</div>
+						<div class="md-form md-outline form-sm">
+							<i class="fas fa-user prefix"></i>
+							<input type="text" class="form-control form-control-sm" id="author_name" name="author_name" value="" required>
+							<label for="author_name">Author name</label>
+							<div class="valid-feedback pl-4">
+								Looks good!
+							</div>
+							<div class="invalid-feedback pl-4">
+								Please provide a valid author name.
+							</div>
+						</div>
+						<div>
+							<select class="custom-select custom-select-sm" required>
+								<option value="" disabled selected>Select a category</option>
+								<option value="mosaic">Mosaic</option>
+								<option value="painting">Painting</option>
+								<option value="bead">Beads</option>
+								<option value="other">Other</option>
+							</select>
+							<div class="valid-feedback">
+								Looks good!
+							</div>
+							<div class="invalid-feedback">
+								Please select a category.
+							</div>
+						</div>
+						<div class="md-form md-outline custom-file">
+							<input type="file" class="custom-file-input" id="customFile" name="custom-file" value="" required>
+							<label class="custom-file-label" for="customFile">Choose file</label>
+							<div class="valid-feedback pt-2">
+								Looks good!
+							</div>
+							<div class="invalid-feedback pt-2">
+								Please provide a valid file.
+							</div>
+						</div>
+						<div class="md-form md-outline form-sm">
+							<i class="fas fa-sticky-note prefix"></i>
+							<textarea class="md-textarea form-control form-control-sm" id="note" name="note" rows="5"></textarea>
+							<label for="note">Note</label>
+						</div> -->
+
+						<div>
+							<p class="text-info"><i class="fas fa-info-circle fa-sm"></i><small> The author name filled in this form will be accompanied by the copyright mention when your photo will be published.</small></p>
+						</div>
+						<div class="text-center pt-5">
+							<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-lg">
+								<span class="icon">
+									<i class="fas fa-chevron-left"></i>
+								</span>
+								<span class="text-uppercase">Home</span>
+							</a>
+							<button type="submit" class="btn btn-elegant btn-lg">Share</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -76,6 +142,25 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!-- <script type="text/javascript">
+	(() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+</script> -->
 <script type="text/javascript">
 	$('#new-image').change(function() {
 		var file = $('#new-image')[0].files[0];
