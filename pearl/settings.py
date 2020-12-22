@@ -29,7 +29,7 @@ SECRET_KEY = '!673$ex3ca^-5$+9xi21a*b%g&kw$rae8x-kfk!e$$2q*pjyl9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [https://sctlcd-pearl.herokuapp.com/]
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -124,16 +124,18 @@ WSGI_APPLICATION = 'pearl.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://fsszceacankfui:3abc0f802cda432383ad9dacd62ff94613449b36eb3d2a1e3e150bc74bddfa6e@ec2-54-246-85-151.eu-west-1.compute.amazonaws.com:5432/d9ckfknqbec88')
-}
+#
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
