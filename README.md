@@ -392,6 +392,7 @@ Back to [top](#TableOfContents)
 - Change the display format of time fields - [stackoverflow](https://stackoverflow.com/questions/7216764/in-the-django-admin-site-how-do-i-change-the-display-format-of-time-fields)
 - Automatic datetime fields - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tips/2016/05/23/django-tip-4-automatic-datetime-fields.html)
 - Delete a git commit but keep the changes [stackoverflow](https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes)
+ - You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path - [stackoverflow](https://stackoverflow.com/questions/48455469/youre-using-the-staticfiles-app-without-having-set-the-static-root-setting-to-a)
 
 Back to [top](#TableOfContents)
 
