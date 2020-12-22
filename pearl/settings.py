@@ -29,7 +29,7 @@ SECRET_KEY = '!673$ex3ca^-5$+9xi21a*b%g&kw$rae8x-kfk!e$$2q*pjyl9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [https://sctlcd-pearl.herokuapp.com/]
 
 
 # Application definition
