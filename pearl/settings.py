@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
-from django.conf.locale.es import formats as es_formats
+import dj_database_url
 
 if os.path.exists('env.py'):
     import env
@@ -123,7 +123,7 @@ WSGI_APPLICATION = 'pearl.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -157,7 +157,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 # Time Zone in New Orleans, Louisiana, USA : CST — Central Standard Time
-# corresponding to America/Chicago according to https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# corresponding to America/Chicago according to
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
