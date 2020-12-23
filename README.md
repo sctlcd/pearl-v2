@@ -393,6 +393,7 @@ Back to [top](#TableOfContents)
 - Automatic datetime fields - [simpleisbetterthancomplex](https://simpleisbetterthancomplex.com/tips/2016/05/23/django-tip-4-automatic-datetime-fields.html)
 - Delete a git commit but keep the changes [stackoverflow](https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes)
  - You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path - [stackoverflow](https://stackoverflow.com/questions/48455469/youre-using-the-staticfiles-app-without-having-set-the-static-root-setting-to-a)
+ - Python django error oserror winerror 123 the filename directory name or vol - [stackoverflow](https://stackoverflow.com/questions/56166319/python-django-error-oserror-winerror-123-the-filename-directory-name-or-vol)
 
 Back to [top](#TableOfContents)
 
