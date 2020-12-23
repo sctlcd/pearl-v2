@@ -63,7 +63,7 @@
 								<!-- Modal body-->
 								<div class="modal-body mb-0 p-0">
 									<div class="modal-image">
-										<img src="/media/{{ item.image }}" class="img-fluid" />
+										<img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid" />
 									</div>
 								</div>
 								<!-- Modal footer-->
@@ -152,7 +152,7 @@
 					<!-- image -->
 					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 gallery-img-holder my-3" filter-category="{{ item.gallery_category }}">
 						<a class="zoom">
-							<img class="img-thumbnail z-depth-1 d-inline" src="/media/{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
+							<img class="img-thumbnail z-depth-1 d-inline" src="{{ MEDIA_URL }}{{ item.image }}" alt="image{{ item.id }}" data-toggle="modal" data-target="#modal{{ item.id }}">
 						</a>
 						<div class="caption pt-4">
 							<p><i class="far fa-copyright"></i> {{ item.author_name }}</p>
