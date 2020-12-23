@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 # DEBUG = True
 
-ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
