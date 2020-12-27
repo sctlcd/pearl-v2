@@ -75,3 +75,11 @@
 	object-fit: cover;
 	overflow: hidden;
 }
+
+#share-form .form-control {
+    color: #000;
+}
+
+#share-form input::placeholder {
+    color: #aab7c4;
+}
