@@ -40,6 +40,7 @@ def share_gallery(request):
     template = 'gallery/share_gallery.html'
     context = {
         'gallery_form': gallery_form,
+        'on_share_gallery_page': True
     }
 
     return render(request, template, context)

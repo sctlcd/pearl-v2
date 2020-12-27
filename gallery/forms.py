@@ -51,4 +51,4 @@ class AdminGalleryForm(forms.ModelForm):
 
         self.fields['user_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            self.fields[field].widget.attrs['class'] = 'border-grey text-grey rounded-10'
+            self.fields[field].widget.attrs['class'] = 'border-grey text-grey rounded-10 profile-form-input'
