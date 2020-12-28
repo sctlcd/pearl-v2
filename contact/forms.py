@@ -1,14 +1,14 @@
 from django import forms
-
 from .models import Contact
 
 
 # Contact form
 
 class ContactForm(forms.ModelForm):
+
     class Meta:
         model = Contact
-        fields = ('first_name', 'last_name', 'email', 'message')
+        fields = '__all__'
 
 
 def __init__(self, *args, **kwargs):
@@ -19,5 +19,8 @@ def __init__(self, *args, **kwargs):
 
     self.fields['first_name'].widget.attrs['autofocus'] = True
 
-    for field_name, field in self.fields.items():
-        field.widget.attrs['class'] = 'border-grey rounded'
+    for field in self.fields:
+        self.fields[field].widget.attrs['class'] = 'border-grey text-grey rounded-10'
+
+    # for field_name, field in self.fields.items():
+    #     field.widget.attrs['class'] = 'border-grey text-grey rounded-10'

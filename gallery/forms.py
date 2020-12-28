@@ -1,5 +1,5 @@
 from django import forms
-from django.forms import ModelForm, HiddenInput
+from django.forms import HiddenInput
 from .widgets import CustomClearableFileInput
 from .models import Gallery, GalleryCategory
 
@@ -53,4 +53,4 @@ class AdminGalleryForm(forms.ModelForm):
 
         self.fields['user_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            self.fields[field].widget.attrs['class'] = 'border-grey text-grey rounded-10 profile-form-input'
+            self.fields[field].widget.attrs['class'] = 'border-grey text-grey rounded-10'

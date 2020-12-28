@@ -1,28 +1,33 @@
-from django.shortcuts import render, HttpResponse
-
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 from .forms import ContactForm
 
-# Contact views
 
+# Contact views
 
 def contact(request):
     '''
         A view to return the contact page
     '''
-    template = 'contact/contact.html'
 
     if request.method == 'POST':
-        contact_form = ContactForm(request.POST)
+        contact_form = ContactForm(request.POST, request.FILES)
 
         if contact_form.is_valid():
             contact_form.save()
+            messages.success(request, 'Your request has been sent successfully!')
+            return redirect(reverse('home'))
         else:
-            contact_form = ContactForm()
+            # contact_form = ContactForm()
+            messages.error(request, 'Your request has failed. Please ensure the contact form is valid.')
     else:
         contact_form = ContactForm()
 
+    template = 'contact/contact.html'
+
     context = {
         'contact_form': contact_form,
+        'on_contact_page': True
     }
 
     return render(request, template, context)
