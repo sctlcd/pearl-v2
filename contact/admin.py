@@ -6,13 +6,14 @@ from .models import Contact
 
 class ContactAdmin(admin.ModelAdmin):
     list_display = (
+        'date',
         'first_name',
         'last_name',
         'email',
         'message',
     )
 
-    ordering = ('last_name', 'first_name')
+    ordering = ('date',)
 
 
 admin.site.register(Contact, ContactAdmin)

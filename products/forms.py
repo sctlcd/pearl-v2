@@ -15,9 +15,15 @@ class ProductForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-            Set autofocus on first field
+            Add placeholders and classes, set autofocus on first field
         """
         super().__init__(*args, **kwargs)
+        placeholders = {
+            'sku': 'Sku',
+            'name': 'Name',
+            'description': 'Description',
+            'image_url': 'Image url',
+        }
 
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
@@ -26,5 +32,13 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].widget.attrs['autofocus'] = True
 
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-grey text-grey rounded-10'
+        # for field_name, field in self.fields.items():
+        for field in self.fields:
+            if field == 'sku' or field == 'name' or field == 'description' or field == 'image_url':
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
+            # field.widget.attrs['class'] = 'border-grey rounded-10'
+            self.fields[field].widget.attrs['class'] = 'border-grey rounded-10'

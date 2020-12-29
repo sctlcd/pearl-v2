@@ -338,14 +338,19 @@ form div > label.active {
   box-shadow: 0 0 0 0 transparent;
 }
 
-.navbar-desktop .dropdown:hover>.dropdown-menu,
+.navbar-mobile {
+  height: 100vh;
+	z-index: 999;
+}
+
+/* .navbar-desktop .dropdown:hover>.dropdown-menu,
 .desktop-user-options-container:hover .dropdown-menu,
 .mobile-user-options-container:hover .dropdown-menu,
 .desktop-gallery-container:hover .dropdown-menu,
-.mobile-gallery-container:hover .dropdown-menu {
+.mobile-gallery-container:hover .dropdown-menu { */
 	/* display the dropdown menu when the nav-item and topnav items are hovered */
-  display: block;
-}
+  /* display: block;
+} */
 
 .navbar-desktop .dropdown:hover>.dropdown-menu,
 .dropdown-menu-mobile-search.show,
@@ -370,6 +375,15 @@ form div > label.active {
 	box-shadow: 0px 5px 10px 0px #353535;
 	padding: 0;
 } */
+
+.navbar-mobile ul {
+	padding-top: 2rem;
+}
+
+.navbar-mobile ul li {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 
 .navbar-mobile .dropdown>.dropdown-menu {
 	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
@@ -522,10 +536,10 @@ nav a.waves-effect {
 }
 
 /* topnav dropdown menu offset */
-.topnav .dropdown-menu,
+/* .topnav .dropdown-menu,
 .list-inline-item:hover .dropdown-menu {
 	margin-left: -2rem;
-}
+} */
 
 .dropdown-item {
 	padding: 0.7rem;

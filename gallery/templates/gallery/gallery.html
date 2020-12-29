@@ -157,12 +157,14 @@
 						<div class="caption pt-4">
 							<p><i class="far fa-copyright"></i> {{ item.author_name }}</p>
 						</div>
+						{% if request.user.is_superuser %}
 						<div class="text-center mb-4">
 							<small>
 								<a class="text-info" href="#" data-toggle="modal" data-target="#edit-{{ item.id }}"><i class="fas fa-edit"></i></a> |
 								<a class="text-danger" href="#" data-toggle="modal" data-target="#delete-{{ item.id }}"><i class="fas fa-trash-alt"></i></a>
 							</small>
 						</div>
+						{% endif %}
 					</div>
 					{% endif %}
 					{% endfor %}

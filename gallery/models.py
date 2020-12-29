@@ -35,4 +35,4 @@ class Gallery(models.Model):
     is_approved = models.BooleanField(null=False, blank=False, default=False)
 
     def __str__(self):
-        return f'{self.user_name} on gallery category {self.gallery_category}'
+        return f'{self.user_name}\'s image in {self.gallery_category} gallery category'

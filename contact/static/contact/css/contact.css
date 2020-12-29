@@ -21,10 +21,11 @@
     margin: 0 auto;
 }
 
-.contact-style-input {
-    background-color: red;
+#contact-form .form-control {
+    color: #000;
 }
 
-.contact-style-input::placeholder {
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
     color: #aab7c4;
 }

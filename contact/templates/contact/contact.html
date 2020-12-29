@@ -1,12 +1,12 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
-{% endblock %}
-
 {% block extra_title %}
 - Contact us
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -61,53 +61,9 @@
 				</hr>
 			</div>
 			<div class="section-body">
-				<form method="POST" action="{% url 'contact'%}" id="contact-form" name="contact-form" class="needs-validation" novalidate>
+				<form method="POST" action="{% url 'contact' %}" id="contact-form" enctype="multipart/form-data" class="needs-validation" novalidate>
 					{% csrf_token %}
 					{{ contact_form | crispy }}
-					<!-- <div class="md-form form-sm">
-						<i class="fas fa-user prefix"></i>
-						<input type="text" class="form-control form-control-sm" id="first-name" name="first-name" value="" required>
-						<label for="first-name">First name</label>
-						<div class="valid-feedback pl-4">
-							Looks good!
-						</div>
-						<div class="invalid-feedback pl-4">
-							<p>Please provide a valid first name.</p>
-						</div>
-					</div>
-					<div class="md-form md-outline form-sm">
-						<i class="fas fa-user prefix"></i>
-						<input type="text" class="form-control form-control-sm" id="last-name" name="last-name" value="" required>
-						<label for="last-name">Last name</label>
-						<div class="valid-feedback pl-4">
-							Looks good!
-						</div>
-						<div class="invalid-feedback pl-4">
-							Please provide a valid last name.
-						</div>
-					</div>
-					<div class="md-form md-outline form-sm">
-						<i class="fas fa-envelope prefix"></i>
-						<input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
-						<label for="email">E-mail address</label>
-						<div class="valid-feedback pl-4">
-							Looks good!
-						</div>
-						<div class="invalid-feedback pl-4">
-							Please provide a valid e-mail address.
-						</div>
-					</div>
-					<div class="md-form md-outline form-sm">
-						<i class="fas fa-pencil-alt prefix"></i>
-						<textarea class="md-textarea form-control form-control-sm" id="message" name="message" rows="5" value="xx" required></textarea>
-						<label for="message">Message</label>
-						<div class="valid-feedback pl-4">
-							Looks good!
-						</div>
-						<div class="invalid-feedback pl-4">
-							Please provide a valid message.
-						</div>
-					</div> -->
 					<div class="text-center pt-5">
 						<a href="{% url 'home' %}" class="btn btn-outline-elegant btn-md">
 							<span class="icon">
@@ -134,23 +90,4 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<!-- <script type="text/javascript">
-	(function() {
-		'use strict';
-		window.addEventListener('load', function() {
-			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-			var forms = document.getElementsByClassName('needs-validation');
-			// Loop over them and prevent submission
-			var validation = Array.prototype.filter.call(forms, function(form) {
-				form.addEventListener('submit', function(event) {
-					if (form.checkValidity() === false) {
-						event.preventDefault();
-						event.stopPropagation();
-					}
-					form.classList.add('was-validated');
-				}, false);
-			});
-		}, false);
-	})();
-</script> -->
 {% endblock %}

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Gallery, GalleryCategory
 from .forms import GalleryForm, AdminGalleryForm
 
@@ -22,6 +23,7 @@ def gallery(request):
     return render(request, template, context)
 
 
+@login_required
 def share_gallery(request):
     """
         A view to return the gallery form to share your own work of art
@@ -46,6 +48,7 @@ def share_gallery(request):
     return render(request, template, context)
 
 
+@login_required
 def add_gallery(request):
     """
         Add a galery image to the gallery
@@ -59,7 +62,7 @@ def add_gallery(request):
         else:
             messages.error(request, 'Failed to add a gallery image. Please ensure the gallery form is valid.')
     else:
-        admin_gallery_form = GalleryForm()
+        admin_gallery_form = AdminGalleryForm()
 
     template = 'gallery/add_gallery.html'
     context = {
@@ -69,6 +72,7 @@ def add_gallery(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_gallery(request, gallery_id):
     """
         Edit a galery image to the gallery
@@ -84,7 +88,7 @@ def edit_gallery(request, gallery_id):
             messages.error(request, 'Failed to update gallery image. Please ensure the gallery form is valid.')
     else:
         admin_gallery_form = AdminGalleryForm(instance=gallery_item)
-        messages.info(request, f'You are editing {gallery_item.user_name}\'s image')
+        messages.info(request, f'You are editing {gallery_item.user_name}\'s image in {gallery_item.gallery_category} gallery category')
 
     template = 'gallery/edit_gallery.html'
     context = {
@@ -95,6 +99,7 @@ def edit_gallery(request, gallery_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_gallery(request, gallery_id):
     """
         Delete a gallery image from the gallery
