@@ -126,7 +126,7 @@ def edit_product(request, product_id):
             messages.error(request, 'Failed to update product. Please ensure the product form is valid.')
     else:
         product_form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+        messages.info(request, f'You are editing {product.name} in {product.category.friendly_name} product category')
 
     template = 'products/edit_product.html'
     context = {
@@ -148,5 +148,5 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
+    messages.success(request, f'{product.name} in {product.category.friendly_name} product category deleted!')
     return redirect(reverse('products'))
