@@ -76,10 +76,17 @@
 	overflow: hidden;
 }
 
-#share-form .form-control {
+#share-gallery-form .form-control,
+#add-gallery-form .form-control,
+#edit-gallery-form .form-control {
     color: #000;
 }
 
-#share-form input::placeholder {
+#share-gallery-form input::placeholder,
+#share-gallery-form textarea::placeholder,
+#add-gallery-form input::placeholder,
+#add-gallery-form textarea::placeholder,
+#edit-gallery-form input::placeholder,
+#edit-gallery-form textarea::placeholder {
     color: #aab7c4;
 }
