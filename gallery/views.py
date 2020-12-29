@@ -88,7 +88,7 @@ def edit_gallery(request, gallery_id):
             messages.error(request, 'Failed to update gallery image. Please ensure the gallery form is valid.')
     else:
         admin_gallery_form = AdminGalleryForm(instance=gallery_item)
-        messages.info(request, f'You are editing {gallery_item.user_name}\'s image')
+        messages.info(request, f'You are editing {gallery_item.user_name}\'s image in {gallery_item.gallery_category} gallery category')
 
     template = 'gallery/edit_gallery.html'
     context = {
