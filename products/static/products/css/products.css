@@ -43,3 +43,15 @@ a.category-badge > span.badge:hover {
 	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.22);
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.26), 0 2px 15px 0 rgba(0,0,0,0.22);
 }
+
+#add-product-form .form-control,
+#edit-product-form .form-control {
+    color: #000;
+}
+
+#add-product-form input::placeholder,
+#add-product-form textarea::placeholder,
+#edit-product-form input::placeholder,
+#edit-product-form textarea::placeholder {
+    color: #aab7c4;
+}
