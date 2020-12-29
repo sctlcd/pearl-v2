@@ -42,7 +42,7 @@
 			</div>
 			{% for item in bag_items %}
 			<div class="row">
-				<div class="col-2 mb-1">
+				<div class="col-2 mb-1 zoom">
 					<a href="{% url 'product_detail' item.product.id %}">
 						{% if item.product.image %}
 						<img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
@@ -60,8 +60,8 @@
 				</div>
 			</div>
 			{% endfor %}
-			<hr class="my-0">
-			<div class="row text-black text-right">
+			<hr class="my-2">
+			<div class="row text-black text-right my-3">
 				<div class="col-7 offset-2">
 					<p class="my-0">Order Total:</p>
 					<p class="my-0">Delivery:</p>
