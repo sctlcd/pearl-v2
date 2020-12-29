@@ -15,6 +15,10 @@ body {
 	padding-top: 6rem;
 }
 
+.allauth-container {
+	margin-bottom: 8rem;
+}
+
 /* ------------------------------- buttons */
 
 /* top/down buttons */
@@ -194,7 +198,7 @@ body {
 /* ------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
-  margin-top: 1.5rem; /* mt-4 */
+  margin-top: 2rem;
   color: #6c757d;
 }
 
@@ -223,7 +227,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #2e2e2e;
+  background: #2e2e2e !important;
   padding: .5rem 1.2rem;
   font-size: 0.7rem;
   line-height: 1.5;
@@ -240,7 +244,7 @@ body {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
-  background-color: #222;
+  background-color: #222 !important;
   border-color: #222;
 	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
 	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
@@ -248,6 +252,10 @@ body {
 
 .allauth-form-inner-content a {
 	color: #39C0ED; /* text-info */
+}
+
+.allauth-buttons {
+	margin-top: 2rem;
 }
 
 /* ------------------------------- media query */
