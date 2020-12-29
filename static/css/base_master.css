@@ -328,6 +328,11 @@ form div > label.active {
 .dropdown-menu-mobile-search .input-group.md-form.form-sm.form-2 input {
   border-top-left-radius: 0.25rem !important;
   border-bottom-left-radius: 0.25rem !important;
+	color: #000;
+}
+
+.dropdown-menu-mobile-search input::placeholder {
+    color: #aab7c4 !important;
 }
 
 
