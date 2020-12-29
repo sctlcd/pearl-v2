@@ -541,10 +541,9 @@ nav a.waves-effect {
 }
 
 /* topnav dropdown menu offset */
-/* .topnav .dropdown-menu,
-.list-inline-item:hover .dropdown-menu {
+.topnav .dropdown-menu {
 	margin-left: -2rem;
-} */
+}
 
 .dropdown-item {
 	padding: 0.7rem;
@@ -902,7 +901,7 @@ box-shadow: 0px 5px 10px 0px #6c757d;
 
 	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
-		margin-left: -3.4rem !important;
+		margin-left: -4rem !important;
 	}
 
 	.mobile-gallery-container .dropdown-menu a,
@@ -1003,7 +1002,7 @@ box-shadow: 0px 5px 10px 0px #6c757d;
 
 	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
-		margin-left: -1.4rem !important;
+		margin-left: -2rem !important;
 	}
 
 	.mobile-gallery-container .dropdown-menu a,
@@ -1107,7 +1106,7 @@ box-shadow: 0px 5px 10px 0px #6c757d;
 
 	.mobile-gallery-container .dropdown-menu,
 	.mobile-user-options-container .dropdown-menu {
-		margin-left: -1rem !important;
+		margin-left: -2rem !important;
 	}
 
 	.mobile-gallery-container .dropdown-menu a,
