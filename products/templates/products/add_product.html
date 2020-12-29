@@ -33,13 +33,7 @@
 		<div class="col-12 col-md-6" style="margin:0 auto">
 			<form method="POST" action="{% url 'add_product' %}" id="add-product-form" class="form mb-2" enctype="multipart/form-data" class="needs-validation" novalidate>
 				{% csrf_token %}
-				{% for field in product_form %}
-					{% if field.name != 'image' %}
-						{{ field | as_crispy_field }}
-					{% else %}
-						{{ field }}
-					{% endif %}
-				{% endfor %}
+				{{ product_form | crispy }}
 				<div class="text-center pt-5">
 					<a class="btn btn-outline-elegant btn-lg" href="{% url 'products' %}">Cancel</a>
 					<button class="btn btn-elegant btn-lg" type="submit">Add Product</button>
@@ -66,5 +60,4 @@
 		$('#filename').text(`Image will be set to: ${file.name}`);
 	});
 </script>
-<!-- <script src="{% static 'products/js/products.js' %}" type="text/javascript"></script> -->
 {% endblock %}

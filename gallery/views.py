@@ -88,7 +88,7 @@ def edit_gallery(request, gallery_id):
             messages.error(request, 'Failed to update gallery image. Please ensure the gallery form is valid.')
     else:
         admin_gallery_form = AdminGalleryForm(instance=gallery_item)
-        messages.info(request, f'You are editing {gallery_item.user_name}\'s image in {gallery_item.gallery_category} gallery category')
+        messages.info(request, f'You are editing {gallery_item.author_name}\'s image in {gallery_item.gallery_category} gallery category')
 
     template = 'gallery/edit_gallery.html'
     context = {
@@ -104,7 +104,11 @@ def delete_gallery(request, gallery_id):
     """
         Delete a gallery image from the gallery
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
     gallery_item = get_object_or_404(Gallery, pk=gallery_id)
     gallery_item.delete()
-    messages.success(request, 'Gallery image deleted!')
+    messages.success(request, f'{gallery_item.author_name}\'s image in {gallery_item.gallery_category} gallery category deleted!')
     return redirect(reverse('gallery'))

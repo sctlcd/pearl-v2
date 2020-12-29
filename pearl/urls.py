@@ -30,3 +30,8 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = 'Pearl Admin'
+admin.site.site_title = 'Pearl Admin Portal'
+admin.site.index_title = 'Welcome to Pearl Admin Portal'
+admin.site.site_url = '/admin'
