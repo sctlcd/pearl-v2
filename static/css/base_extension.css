@@ -19,6 +19,11 @@ body {
 	margin-bottom: 10rem;
 }
 
+.line-orange {
+  width: 40px;
+  border-top: 7px solid #fc9601eb;
+  border-radius: 45px;
+}
 /* ------------------------------- buttons */
 
 /* top/down buttons */

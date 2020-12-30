@@ -10,7 +10,7 @@
 [...](https://pearl.herokuapp.com/)
 <dt></dt>  
 <br>
-!! Warning: Because of an issue relative to submit a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved for my project submission. This was not my initial gallery model setup. Please be aware the submission of a form with an added or updated image uploaded is currently failing. 
+!! Warning: Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved in order to submit my project to Code Institute. This was not my initial gallery model setup. Please be aware than the submission of an added or updated image to upload in gallery and products form is currently returning an error.
 
 ---
 
@@ -396,6 +396,7 @@ Back to [top](#TableOfContents)
  - You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path - [stackoverflow](https://stackoverflow.com/questions/48455469/youre-using-the-staticfiles-app-without-having-set-the-static-root-setting-to-a)
  - Python django error oserror winerror 123 the filename directory name or vol - [stackoverflow](https://stackoverflow.com/questions/56166319/python-django-error-oserror-winerror-123-the-filename-directory-name-or-vol)
  - Modify Title and Header Django Admin Interface - [medium](https://adiramadhan17.medium.com/modify-title-and-header-django-admin-interface-a6ad6e470d92)
+ - Customizing HTTP error web pages 404, 500, 403 and 400 in Django - [lavatechtechnology](http://lavatechtechnology.com/post/customizing-http-error-web-pages-404-500-403-and-400-in-django/)
 
 Back to [top](#TableOfContents)
 
