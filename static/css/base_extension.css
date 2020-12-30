@@ -283,9 +283,9 @@ body {
 		margin-top: 2rem;
 	}
 
-	.contact-information-container {
+	/* .contact-information-container {
     padding-bottom: 8rem !important;
-	}
+	} */
 }
 
 /* File */
@@ -323,9 +323,9 @@ body {
 		width: 100%;
 	}
 
-	.contact-information-container {
+	/* .contact-information-container {
     padding-bottom: 8rem !important;
-	}
+	} */
 }
 
 /* Medium devices (tablets, 768px and up) */

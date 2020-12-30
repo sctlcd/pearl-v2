@@ -76,10 +76,6 @@ body {
 .btn[class*="btn-outline-"].btn-md,
 .bag-container .btn-md,
 .checkout-container .btn-md {
-/* .add-product-container .btn-md,
-.edit-product-container .btn-md,
-.add-gallery-container .btn-md,
-.edit-gallery-container .btn-md { */
   padding: .5rem 1.2rem !important;
 }
 

@@ -9,7 +9,7 @@
       "price": 6.20,
       "category": 1,
       "rating": 4.6,
-      "image": "products/metallic-alphabet-cube-beads-min.jpg",
+      "image": "metallic-alphabet-cube-beads-min.jpg",
       "created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -24,7 +24,7 @@
       "price": 4.60,
       "category": 1,
       "rating": 3.6,
-      "image": "products/wooden-painted-flower-beads-min.jpg",
+      "image": "wooden-painted-flower-beads-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -39,7 +39,7 @@
       "price": "4.60",
       "category": 1,
       "rating": 4.8,
-      "image": "products/funny-face-beads-min.jpg",
+      "image": "funny-face-beads-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -54,7 +54,7 @@
       "price": 4.60,
       "category": 1,
       "rating": 3.9,
-      "image": "products/metallic-pony-beads-min.jpg",
+      "image": "metallic-pony-beads-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -69,7 +69,7 @@
       "price": 4.00,
       "category": 2,
       "rating": 3.2,
-      "image": "products/mini-pom-pom-fluffy-sheep-min.jpg",
+      "image": "mini-pom-pom-fluffy-sheep-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -84,7 +84,7 @@
       "price": 5.00,
       "category": 2,
       "rating": 3.8,
-      "image": "products/pom-pom-makers-min.jpg",
+      "image": "pom-pom-makers-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -99,7 +99,7 @@
       "price": 3.70,
       "category": 2,
       "rating": 3.5,
-      "image": "products/mini-coloured-pom-poms-min.jpg",
+      "image": "mini-coloured-pom-poms-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -114,7 +114,7 @@
       "price": 3.70,
       "category": 2,
       "rating": 3.5,
-      "image": "products/pom-poms-min.jpg",
+      "image": "pom-poms-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -129,7 +129,7 @@
       "price": 6.20,
       "category": 5,
       "rating": 4.2,
-      "image": "products/gold-silver-large-glitter-shakers-min.jpg",
+      "image": "gold-silver-large-glitter-shakers-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -144,7 +144,7 @@
       "price": 16.30,
       "category": 5,
       "rating": 4.5,
-      "image": "products/large-glitter-shakers-min.jpg",
+      "image": "large-glitter-shakers-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -159,7 +159,7 @@
       "price": 19.90,
       "category": 5,
       "rating": 4.6,
-      "image": "products/glitter-shakers-bumper-value-pack-min.jpg",
+      "image": "glitter-shakers-bumper-value-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -174,7 +174,7 @@
       "price": 9.90,
       "category": 5,
       "rating": 4.7,
-      "image": "products/jumbo-glitter-glue-min.jpg",
+      "image": "jumbo-glitter-glue-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -189,7 +189,7 @@
       "price": 4.6,
       "category": 1,
       "rating": 3.4,
-      "image": "products/sparkle-beads-min.jpg",
+      "image": "sparkle-beads-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -204,7 +204,7 @@
       "price": 4.6,
       "category": 1,
       "rating": 4.1,
-      "image": "products/mini-seaside-beads-min.jpg",
+      "image": "mini-seaside-beads-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -219,7 +219,7 @@
       "price": 5.70,
       "category": 5,
       "rating": 4.3,
-      "image": "products/rainbow-colours-glitter-shakers-min.jpg",
+      "image": "rainbow-colours-glitter-shakers-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -234,7 +234,7 @@
       "price": 6.20,
       "category": 5,
       "rating": 4.4,
-      "image": "products/glitter-glue-pens-min.jpg",
+      "image": "glitter-glue-pens-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -249,7 +249,7 @@
       "price": 5.00,
       "category": 2,
       "rating": 3.9,
-      "image": "products/rainbow-colours-pom-poms-min.jpg",
+      "image": "rainbow-colours-pom-poms-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -264,7 +264,7 @@
       "price": 3.70,
       "category": 2,
       "rating": 4.4,
-      "image": "products/gold-and-silver-glitter-pom-poms-min.jpg",
+      "image": "gold-and-silver-glitter-pom-poms-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -279,7 +279,7 @@
       "price": 6.40,
       "category": 6,
       "rating": 4.0,
-      "image": "products/pebeo-porcelain-paint-pots-bumper-pack-min.jpg",
+      "image": "pebeo-porcelain-paint-pots-bumper-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -294,7 +294,7 @@
       "price": 15.20,
       "category": 6,
       "rating": 3.6,
-      "image": "products/fluorescent-acrylic-paint-min.jpg",
+      "image": "fluorescent-acrylic-paint-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -309,7 +309,7 @@
       "price": 13.90,
       "category": 6,
       "rating": 4.3,
-      "image": "products/pearlised-acrylic-paint-min.jpg",
+      "image": "pearlised-acrylic-paint-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -324,7 +324,7 @@
       "price": 13.90,
       "category": 6,
       "rating": 4.2,
-      "image": "products/textile-paint-min.jpg",
+      "image": "textile-paint-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -339,7 +339,7 @@
       "price": 23.30,
       "category": 6,
       "rating": 4.4,
-      "image": "products/pebeo-glass-paint-pots-bumper-pack-min.jpg",
+      "image": "pebeo-glass-paint-pots-bumper-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -354,7 +354,7 @@
       "price": 21.80,
       "category": 6,
       "rating": 4.1,
-      "image": "products/glitter-paint-pack-min.jpg",
+      "image": "glitter-paint-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -369,7 +369,7 @@
       "price": 8.90,
       "category": 7,
       "rating": 3.9,
-      "image": "products/fluorescent-marbling-ink-min.jpg",
+      "image": "fluorescent-marbling-ink-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -384,7 +384,7 @@
       "price": 10.20,
       "category": 7,
       "rating": 4.1,
-      "image": "products/christmas-marbling-ink-min.jpg",
+      "image": "christmas-marbling-ink-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -399,7 +399,7 @@
       "price": 8.90,
       "category": 7,
       "rating": 4.6,
-      "image": "products/marbling-ink-min.jpg",
+      "image": "marbling-ink-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -414,7 +414,7 @@
       "price": 11.30,
       "category": 7,
       "rating": 4.6,
-      "image": "products/pastel-marbling-ink-min.jpg",
+      "image": "pastel-marbling-ink-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -429,7 +429,7 @@
       "price": 26.90,
       "category": 7,
       "rating": 4.4,
-      "image": "products/vivid-block-printing-ink-min.jpg",
+      "image": "vivid-block-printing-ink-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -444,7 +444,7 @@
       "price": 34.80,
       "category": 7,
       "rating": 4.4,
-      "image": "products/tie-dye-classpack-min.jpg",
+      "image": "tie-dye-classpack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -459,7 +459,7 @@
       "price": 15.70,
       "category": 9,
       "rating": 4.0,
-      "image": "products/papyrus-effect-paper-min.jpg",
+      "image": "papyrus-effect-paper-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -474,7 +474,7 @@
       "price": 12.60,
       "category": 9,
       "rating": 4.4,
-      "image": "products/bumper-craft-creativity-pack-min.jpg",
+      "image": "bumper-craft-creativity-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -489,7 +489,7 @@
       "price": 8.90,
       "category": 9,
       "rating": 4.2,
-      "image": "products/natures-textures-a4-sheets-min.jpg",
+      "image": "natures-textures-a4-sheets-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -504,7 +504,7 @@
       "price": 7.6,
       "category": 9,
       "rating": 4.6,
-      "image": "products/tissue-paper-combination-pack-min.jpg",
+      "image": "tissue-paper-combination-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -519,7 +519,7 @@
       "price": 6.20,
       "category": 9,
       "rating": 3.9,
-      "image": "products/animal-print-paper-sheets-min.jpg",
+      "image": "animal-print-paper-sheets-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -534,7 +534,7 @@
       "price": 7.60,
       "category": 9,
       "rating": 4.4,
-      "image": "products/tissue-sheet-value-pack-min.jpg",
+      "image": "tissue-sheet-value-pack-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -549,7 +549,7 @@
       "price" : 1.5,
       "category": 8,
       "rating": 3.5,
-      "image": "products/woodland-animal-woodcraft-kits-min.jpg",
+      "image": "woodland-animal-woodcraft-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -564,7 +564,7 @@
       "price": 0.60,
       "category": 8,
       "rating": 3.6,
-      "image": "products/christmas-gift-bags-min.jpg",
+      "image": "christmas-gift-bags-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -579,7 +579,7 @@
       "price": 5.00,
       "category": 8,
       "rating": 4.7,
-      "image": "products/wooden-buttons-assortment-min.jpg",
+      "image": "wooden-buttons-assortment-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -594,7 +594,7 @@
       "price": 2.5,
       "category": 8,
       "rating": 4.0,
-      "image": "products/large-wooden-chalkboards-min.jpg",
+      "image": "large-wooden-chalkboards-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -609,7 +609,7 @@
       "price": 3.20,
       "category": 8,
       "rating": 4.7,
-      "image": "products/hedgehog-ceramic-flowerpots-min.jpg",
+      "image": "hedgehog-ceramic-flowerpots-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -624,7 +624,7 @@
       "price": 3.20,
       "category": 8,
       "rating": 3.9,
-      "image": "products/design-your-own-water-bottles-min.jpg",
+      "image": "design-your-own-water-bottles-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -639,7 +639,7 @@
       "price": 3.20,
       "category": 4,
       "rating": 3.9,
-      "image": "products/design-a-fabric-apron-min.jpg",
+      "image": "design-a-fabric-apron-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -654,7 +654,7 @@
       "price": 6.00,
       "category": 4,
       "rating": 4.1,
-      "image": "products/natural-hair-paint-brushes-min.jpg",
+      "image": "natural-hair-paint-brushes-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -669,7 +669,7 @@
       "price": 1.80,
       "category": 4,
       "rating": 4.2,
-      "image": "products/monster-bunch-hand-puppet-kits-min.jpg",
+      "image": "monster-bunch-hand-puppet-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -684,7 +684,7 @@
       "price": 2.00,
       "category": 4,
       "rating": 4.1,
-      "image": "products/wooden-guitar-kits-min.jpg",
+      "image": "wooden-guitar-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -699,7 +699,7 @@
       "price": 1.80,
       "category": 4,
       "rating": 4.5,
-      "image": "products/hedgehog-dreamcatcher-kits-min.jpg",
+      "image": "hedgehog-dreamcatcher-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -714,7 +714,7 @@
       "price": 5.30,
       "category": 4,
       "rating": 4.0,
-      "image": "products/tipi-colour-in-cross-stitch-kits-min.jpg",
+      "image": "tipi-colour-in-cross-stitch-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -728,7 +728,7 @@
       "price": 1.2,
       "category": 3,
       "rating": 4.1,
-      "image": "products/festive-friends-puzzle-cube-keyrings-min.jpg",
+      "image": "festive-friends-puzzle-cube-keyrings-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -743,7 +743,7 @@
       "price": 3.95,
       "category": 3,
       "rating": 4.5,
-      "image": "products/gold-and-silver-lobster-claw-clasps-min.jpg",
+      "image": "gold-and-silver-lobster-claw-clasps-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -758,7 +758,7 @@
       "price": 4.60,
       "category": 3,
       "rating": 3.9,
-      "image": "products/pearlised-a4-card-min.jpg",
+      "image": "pearlised-a4-card-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -773,7 +773,7 @@
       "price": 3.95,
       "category": 3,
       "rating": 3.8,
-      "image": "products/monster-bunch-wreath-kits-min.jpg",
+      "image": "monster-bunch-wreath-kits-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -788,7 +788,7 @@
       "price": 4.70,
       "category": 3,
       "rating": 4.1,
-      "image": "products/festive-friends-colour-in-puzzle-cubes-min.jpg",
+      "image": "festive-friends-colour-in-puzzle-cubes-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -803,7 +803,7 @@
       "price": 5.30,
       "category": 3,
       "rating": 3.8,
-      "image": "products/wooden-tealight-holders-min.jpg",
+      "image": "wooden-tealight-holders-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
@@ -818,7 +818,7 @@
       "price": 11.90,
       "category": 3,
       "rating": 4.0,
-      "image": "products/pastel-candle-making-kit-min.jpg",
+      "image": "pastel-candle-making-kit-min.jpg",
 			"created_at": "2020-12-15T13:49:51.141Z",
 			"updated_at": "2020-12-15T13:49:51.141Z"
     }
