@@ -397,6 +397,7 @@ Back to [top](#TableOfContents)
  - Python django error oserror winerror 123 the filename directory name or vol - [stackoverflow](https://stackoverflow.com/questions/56166319/python-django-error-oserror-winerror-123-the-filename-directory-name-or-vol)
  - Modify Title and Header Django Admin Interface - [medium](https://adiramadhan17.medium.com/modify-title-and-header-django-admin-interface-a6ad6e470d92)
  - Customizing HTTP error web pages 404, 500, 403 and 400 in Django - [lavatechtechnology](http://lavatechtechnology.com/post/customizing-http-error-web-pages-404-500-403-and-400-in-django/)
+ - Equivalent of export command in Windows - [superuser](https://superuser.com/questions/1500272/equivalent-of-export-command-in-windows)
 
 Back to [top](#TableOfContents)
 
