@@ -24,12 +24,12 @@
 		<div class="col-12 col-md-6 col-lg-4 offset-lg-2 text-center">
 			<div class="image-container my-5 mr-5 zoom">
 				{% if product.image %}
-				<a href="{{ product.image.url }}" target="_blank">
-					<img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+				<a href="{{ MEDIA_URL }}{{ product.image }}" target="_blank">
+					<img class="img-fluid rounded" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
 				</a>
 				{% else %}
-				<a href="{{ MEDIA_URL }}noimage.png">
-					<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+				<a href="{{ MEDIA_URL }}products/noimage.png">
+					<img class="img-fluid rounded" src="{{ MEDIA_URL }}products/noimage.png" alt="{{ product.name }}">
 				</a>
 				{% endif %}
 			</div>
@@ -45,10 +45,10 @@
 					</a>
 				</p>
 				{% endif %}
-				{% if product.rating %}
-				<small class="text-muted"><i class="fas fa-star mr-1 text-yellow"></i>{{ product.rating }} / 5</small>
+				{% if product.rating == 0 or product.rating is None %}
+				<small class="text-muted"><i class="fas fa-star text-yellow mr-1"></i>No rating yet !</small>
 				{% else %}
-				<small class="text-muted">No Rating</small>
+				<small class="text-muted"><i class="fas fa-star text-yellow mr-1"></i>{{ product.rating }} / 5</small>
 				{% endif %}
 
 				<!-- Edit product modal confirmation -->

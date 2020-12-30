@@ -37,6 +37,7 @@ $(document).ready(function() {
     $('.navbar-toggler').click(function(event) {
       $('#main-nav').toggleClass('navbar-mobile');
       $('#main-nav').toggleClass('navbar-desktop');
+      $('.header').toggleClass('fixed-top');
     });
 
     // Trigger the click event on the wrapper class element

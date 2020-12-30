@@ -23,7 +23,6 @@ class GalleryForm(forms.ModelForm):
             'user_name': 'User Name',
             'email': 'Email Address',
             'author_name': 'Author Name',
-            'image_url': 'Image url',
             'note': 'Note'
         }
 
@@ -36,7 +35,7 @@ class GalleryForm(forms.ModelForm):
 
         self.fields['user_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field == 'user_name' or field == 'email' or field == 'author_name' or field == 'image_url' or field == 'note':
+            if field == 'user_name' or field == 'email' or field == 'author_name' or field == 'note':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
@@ -62,7 +61,6 @@ class AdminGalleryForm(forms.ModelForm):
             'user_name': 'User Name',
             'email': 'Email Address',
             'author_name': 'Author Name',
-            'image_url': 'Image url',
             'note': 'Note'
         }
 
@@ -73,7 +71,7 @@ class AdminGalleryForm(forms.ModelForm):
 
         self.fields['user_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field == 'user_name' or field == 'email' or field == 'author_name' or field == 'image_url' or field == 'note':
+            if field == 'user_name' or field == 'email' or field == 'author_name' or field == 'note':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
