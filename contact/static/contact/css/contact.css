@@ -8,10 +8,6 @@
     border-radius: 45px;
 }
 
-.google-map {
-    padding-bottom: 8rem;
-}
-
 .contact-information {
     border-radius: 30px;
 }
@@ -28,4 +24,8 @@
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
     color: #aab7c4;
+}
+
+.contact-form .btn-md {
+    padding: .7rem 1.6rem !important;
 }

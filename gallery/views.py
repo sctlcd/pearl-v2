@@ -57,10 +57,10 @@ def add_gallery(request):
         admin_gallery_form = AdminGalleryForm(request.POST, request.FILES)
         if admin_gallery_form.is_valid():
             admin_gallery_form.save()
-            messages.success(request, 'Succeed to add a gallery image!')
+            messages.success(request, f'Succeed to add the gallery image!')
             return redirect(reverse('gallery'))
         else:
-            messages.error(request, 'Failed to add a gallery image. Please ensure the gallery form is valid.')
+            messages.error(request, f'Failed to add the gallery image. Please ensure the gallery form is valid.')
     else:
         admin_gallery_form = AdminGalleryForm()
 
@@ -82,10 +82,10 @@ def edit_gallery(request, gallery_id):
         admin_gallery_form = AdminGalleryForm(request.POST, request.FILES, instance=gallery_item)
         if admin_gallery_form.is_valid():
             gallery_item = admin_gallery_form.save()
-            messages.success(request, 'Succeed to edit gallery image!')
+            messages.success(request, f'Succeed to edit {gallery_item.author_name}\'s image in {gallery_item.gallery_category.friendly_name} gallery category!')
             return redirect(reverse('gallery'))
         else:
-            messages.error(request, 'Failed to update gallery image. Please ensure the gallery form is valid.')
+            messages.error(request, f'Failed to update {gallery_item.author_name}\'s image in {gallery_item.gallery_category.friendly_name} gallery category. Please ensure the gallery form is valid.')
     else:
         admin_gallery_form = AdminGalleryForm(instance=gallery_item)
         messages.info(request, f'You are editing {gallery_item.author_name}\'s image in {gallery_item.gallery_category} gallery category')
@@ -107,8 +107,8 @@ def delete_gallery(request, gallery_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    
+
     gallery_item = get_object_or_404(Gallery, pk=gallery_id)
     gallery_item.delete()
-    messages.success(request, f'{gallery_item.author_name}\'s image in {gallery_item.gallery_category} gallery category deleted!')
+    messages.success(request, f'Succeed to delete {gallery_item.author_name}\'s image in {gallery_item.gallery_category} gallery category!')
     return redirect(reverse('gallery'))

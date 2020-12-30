@@ -1,5 +1,4 @@
 from django import forms
-from django.forms import HiddenInput
 from .widgets import CustomClearableFileInput
 from .models import Product, Category
 
@@ -10,7 +9,7 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ('category', 'sku', 'name', 'description', 'price', 'image',)
 
     image = forms.ImageField(label="Image", required=False, widget=CustomClearableFileInput)
 
@@ -23,10 +22,7 @@ class ProductForm(forms.ModelForm):
             'sku': 'Sku',
             'name': 'Name',
             'description': 'Description',
-            'image_url': 'Image url',
         }
-
-        self.fields['rating'].widget = HiddenInput()
 
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]

@@ -91,10 +91,10 @@ def add_product(request):
         product_form = ProductForm(request.POST, request.FILES)
         if product_form.is_valid():
             product = product_form.save()
-            messages.success(request, 'Succeed to add product!')
+            messages.success(request, 'Succeed to add the product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the product form is valid.')
+            messages.error(request, 'Failed to add the product. Please ensure the product form is valid.')
     else:
         product_form = ProductForm()
 
@@ -120,10 +120,10 @@ def edit_product(request, product_id):
         product_form = ProductForm(request.POST, request.FILES, instance=product)
         if product_form.is_valid():
             product = product_form.save()
-            messages.success(request, 'Succeed to edit product!')
+            messages.success(request, f'Succeed to edit {product.name} in {product.category.friendly_name} product category!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the product form is valid.')
+            messages.error(request, f'Failed to update {product.name} in {product.category.friendly_name} product category. Please ensure the product form is valid.')
     else:
         product_form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name} in {product.category.friendly_name} product category')
@@ -148,5 +148,5 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, f'{product.name} in {product.category.friendly_name} product category deleted!')
+    messages.success(request, f'Succeed to delete {product.name} in {product.category.friendly_name} product category!')
     return redirect(reverse('products'))
