@@ -2,12 +2,6 @@
     top: 0;
 }
 
-.line-orange {
-    width: 40px;
-    border-top: 7px solid #fc9601eb;
-    border-radius: 45px;
-}
-
 .contact-information {
     border-radius: 30px;
 }

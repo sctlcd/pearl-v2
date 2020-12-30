@@ -31,6 +31,9 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = 'pearl.views.handler404'
+handler500 = 'pearl.views.handler500'
+
 admin.site.site_header = 'Pearl Administration'
 admin.site.site_title = 'Pearl Admin Portal'
 admin.site.index_title = 'Welcome to Pearl Admin Portal'

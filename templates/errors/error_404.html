@@ -1,0 +1,37 @@
+{% extends "base_extension.html" %}
+{% load static %}
+
+{% block extra_title %}
+- Error: Page Not Found
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container text-center text-muted my-5">
+	<div class="row">
+		<div class="col-12">
+			<h1>Error</h1>
+			<h2 class="pt-3 pb-5">Page Not Found</h2>
+			<h3 class="pt-5">Whoops! This page doesn't exist!</h3>
+			<h3 class="pt-3">Let's go back to
+				<span><a id="back-products-home" class="text-info" href="{% url 'products' %}">Products Home</a></span>!
+			</h3>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block page_bottom %}
+<div class="container bottom-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}

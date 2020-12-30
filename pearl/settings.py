@@ -27,10 +27,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1']
+
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -53,6 +55,7 @@ INSTALLED_APPS = [
     'gallery',
     'contact',
     'profiles',
+    'pearl',
 
     # Other
     'crispy_forms',
@@ -71,7 +74,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pearl.urls'
 
-# CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap4', 'bootstrap4-material')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
@@ -82,6 +84,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
             os.path.join(BASE_DIR, 'templates', 'admin'),
+            os.path.join(BASE_DIR, 'templates', 'errors'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
