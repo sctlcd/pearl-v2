@@ -11,7 +11,7 @@ class GalleryForm(forms.ModelForm):
         model = Gallery
         fields = ('user_name', 'email', 'author_name', 'gallery_category', 'image', 'note',)
 
-    image = forms.ImageField(required=True, widget=CustomClearableFileInput)
+    image = forms.ImageField(required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
@@ -47,7 +47,7 @@ class AdminGalleryForm(forms.ModelForm):
         model = Gallery
         fields = ('user_name', 'email', 'author_name', 'gallery_category', 'image', 'note', 'is_approved',)
 
-    image = forms.ImageField(required=True, widget=CustomClearableFileInput)
+    image = forms.ImageField(required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """

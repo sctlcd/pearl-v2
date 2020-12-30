@@ -10,6 +10,7 @@
 [...](https://pearl.herokuapp.com/)
 <dt></dt>  
 <br>
+!! Warning: Because of an issue relative to submit a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved for my project submission. This was not my initial gallery model setup. Please be aware the submission of a form with an added or updated image uploaded is currently failing. 
 
 ---
 
