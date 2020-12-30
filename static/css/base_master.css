@@ -70,11 +70,12 @@ body {
 }
 
 .btn-md {
-  padding: .7rem 1.2rem !important;
+  padding: .6rem 1.2rem !important;
 }
 
 .btn[class*="btn-outline-"].btn-md,
-.bag-container .btn-md {
+.bag-container .btn-md,
+.checkout-container .btn-md {
 /* .add-product-container .btn-md,
 .edit-product-container .btn-md,
 .add-gallery-container .btn-md,
