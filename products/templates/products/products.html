@@ -65,11 +65,11 @@
 					<div class="card h-100 bg-white zoom">
 						{% if product.image %}
 						<a href="{% url 'product_detail' product.id %}">
-							<img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+							<img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
 						</a>
 						{% else %}
 						<a href="{% url 'product_detail' product.id %}">
-							<img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+							<img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}products/noimage.png" alt="{{ product.name }}">
 						</a>
 						{% endif %}
 						<div class="card-body bg-light-grey pb-0">
@@ -86,10 +86,10 @@
 										</a>
 									</p>
 									{% endif %}
-									{% if product.rating > 0 %}
-									<small class="text-muted"><i class="fas fa-star text-yellow mr-1"></i>{{ product.rating }} / 5</small>
+									{% if product.rating == 0 or product.rating is None %}
+									<small class="text-muted"><i class="fas fa-star text-yellow mr-1"></i>No rating yet !</small>
 									{% else %}
-									<small class="text-muted">No rating yet!</small>
+									<small class="text-muted"><i class="fas fa-star text-yellow mr-1"></i>{{ product.rating }} / 5</small>
 									{% endif %}
 
 									{% if request.user.is_superuser %}

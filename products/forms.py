@@ -1,4 +1,5 @@
 from django import forms
+from django.forms import HiddenInput
 from .widgets import CustomClearableFileInput
 from .models import Product, Category
 
@@ -25,6 +26,8 @@ class ProductForm(forms.ModelForm):
             'image_url': 'Image url',
         }
 
+        self.fields['rating'].widget = HiddenInput()
+
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
@@ -32,13 +35,11 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].widget.attrs['autofocus'] = True
 
-        # for field_name, field in self.fields.items():
         for field in self.fields:
-            if field == 'sku' or field == 'name' or field == 'description' or field == 'image_url':
+            if field == 'sku' or field == 'name' or field == 'description':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            # field.widget.attrs['class'] = 'border-grey rounded-10'
             self.fields[field].widget.attrs['class'] = 'border-grey rounded-10'
