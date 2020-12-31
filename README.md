@@ -401,6 +401,8 @@ Back to [top](#TableOfContents)
  - Modify Title and Header Django Admin Interface - [medium](https://adiramadhan17.medium.com/modify-title-and-header-django-admin-interface-a6ad6e470d92)
  - Customizing HTTP error web pages 404, 500, 403 and 400 in Django - [lavatechtechnology](http://lavatechtechnology.com/post/customizing-http-error-web-pages-404-500-403-and-400-in-django/)
  - Equivalent of export command in Windows - [superuser](https://superuser.com/questions/1500272/equivalent-of-export-command-in-windows)
+ - Heroku Django Deploy Stripe Issue - No module named 'stripe'
+ - [stackoverflow](https://stackoverflow.com/questions/51509121/heroku-django-deploy-stripe-issue-no-module-named-stripe/51509169)
 
 Back to [top](#TableOfContents)
 
