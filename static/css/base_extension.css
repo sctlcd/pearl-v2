@@ -1,9 +1,8 @@
 /*---------------------------------------------------------------------------------------------------------------- */
 /*																									base_extension style */
 /*---------------------------------------------------------------------------------------------------------------- */
-
 body {
-	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+  background: linear-gradient(rgba(250, 250, 250, 0.3), rgba(250, 250, 250, 0.3)) #fafafa !important;
   font-family: 'Lato', sans-serif;
 }
 
@@ -12,11 +11,11 @@ body {
 }
 
 .bottom-container {
-	padding-top: 6rem;
+  padding-top: 6rem;
 }
 
 .allauth-container {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .line-orange {
@@ -24,61 +23,58 @@ body {
   border-top: 7px solid #fc9601eb;
   border-radius: 45px;
 }
-/* ------------------------------- buttons */
 
+/* ------------------------------- buttons */
 /* top/down buttons */
 .btt-button-top,
 .btt-button-down {
-	position: fixed;
-	right: 0.6rem;
-	border-radius: 45px;
-	background-color: #a4aaaf;
-	color: #fafafa;
-	-webkit-box-shadow: 0px 4px 10px #353535  !important;
-	box-shadow: 0px 4px 10px #353535  !important;
-	z-index: 998;
+  position: fixed;
+  right: 0.6rem;
+  border-radius: 45px;
+  background-color: #a4aaaf;
+  color: #fafafa;
+  -webkit-box-shadow: 0px 4px 10px #353535 !important;
+  box-shadow: 0px 4px 10px #353535 !important;
+  z-index: 998;
 }
 
 .btt-button-down {
-	bottom: 0.6rem;
+  bottom: 0.6rem;
 }
 
 .btt-button-top:hover,
 .btt-button-down:hover {
-	background-color: #6c757d;
-	-webkit-box-shadow: 0px 4px 10px #353535  !important;
-	box-shadow: 0px 4px 10px #353535  !important;
+  background-color: #6c757d;
+  -webkit-box-shadow: 0px 4px 10px #353535 !important;
+  box-shadow: 0px 4px 10px #353535 !important;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
- cursor: pointer;
+  cursor: pointer;
 }
 
 .btn-outline-elegant,
 .btn-elegant,
-/* .btn-outline-elegant:hover,
-.btn-elegant:hover, */
 .btn-danger,
 .btn-warning {
-	border-radius: 45px !important;
-	min-width: 2rem;
+  border-radius: 45px !important;
+  min-width: 2rem;
 }
 
 .btn-elegant {
-	border: 2px solid #2e2e2e;
+  border: 2px solid #2e2e2e;
 }
 
 .btn-elegant:hover {
-	background-color: #000 !important;
-	border: 2px solid #000 !important;
-	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
-	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
+  background-color: #000 !important;
+  border: 2px solid #000 !important;
+  -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.18), 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.18), 0 2px 5px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------------------------- navbar */
-
 .bg-hover-white,
 .bg-hover-white:hover {
   background: #f3f3f3 !important;
@@ -86,24 +82,22 @@ body {
 
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
-	background-color: #fafafa !important;
-	-webkit-box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
-	box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
-	border-bottom: 4px double rgba(252, 150, 1, 0.75);
+  background-color: #fafafa !important;
+  -webkit-box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+  box-shadow: 0px 1px 10px rgba(252, 150, 1, 0.75);
+  border-bottom: 4px double rgba(252, 150, 1, 0.75);
 }
 
 /* ------------------------------- Quantity input number */
-
 /* Quantity input number credit : https://mdbootstrap.com/docs/jquery/forms/inputs/ */
 .number-input input[type="number"] {
-	-webkit-appearance: textfield;
-	-moz-appearance: textfield;
-	appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .number-input input[type=number]::-webkit-inner-spin-button,
 .number-input input[type=number]::-webkit-outer-spin-button {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .number-input {
@@ -113,96 +107,94 @@ body {
 }
 
 .number-input button {
-	-webkit-appearance: none;
-	background-color: #2e2e2e;
-	border: none;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	margin: 0;
-	position: relative;
+  -webkit-appearance: none;
+  background-color: #2e2e2e;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
 }
 
 .number-input button:hover {
-	background-color: #000;
+  background-color: #000;
 }
 
 .number-input button:before,
 .number-input button:after {
-	display: inline-block;
-	position: absolute;
-	content: '';
-	height: 2px;
-	transform: translate(-50%, -50%);
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  transform: translate(-50%, -50%);
 }
 
 .number-input button.plus:after {
-	transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .number-input input[type=number] {
-	text-align: center;
+  text-align: center;
 }
 
 .number-input.number-input {
-	border: 1px solid transparent;
-	max-width: 6.5rem;
-	border-radius: .25rem;
+  border: 1px solid transparent;
+  max-width: 6.5rem;
+  border-radius: .25rem;
 }
 
 .number-input.number-input button {
-	width: 2.6rem;
-	height: .7rem;
+  width: 2.6rem;
+  height: .7rem;
 }
 
 .number-input.number-input button.minus,
 .number-input.number-input button.plus {
-	padding: 0.7rem;
+  padding: 0.7rem;
 }
 
 .number-input.number-input button:before,
 .number-input.number-input button:after {
-	width: .7rem;
-	background-color: #fafafa;
+  width: .7rem;
+  background-color: #fafafa;
 }
 
 .number-input.number-input input[type=number] {
-	max-width: 4rem;
-	border: 1px solid transparent;
-	border-width: 0 1px;
-	font-size: 0.8rem;
-	height: 2rem;
-	color: #495057;
+  max-width: 4rem;
+  border: 1px solid transparent;
+  border-width: 0 1px;
+  font-size: 0.8rem;
+  height: 2rem;
+  color: #495057;
 }
 
 .md-form .number-input.number-input input[type=number] {
-	padding: 0rem;
+  padding: 0rem;
 }
 
 .md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
 .number-input.number-input input[type="number"]:not(.browser-default):focus:not([readonly]) {
-	border-bottom: 1px solid #fc9601eb;
+  border-bottom: 1px solid #fc9601eb;
   -webkit-box-shadow: 0 1px 0 0 #fc9601eb;
   box-shadow: 0 1px 0 0 #fc9601eb;
 }
 
 .bag-container-mobile .md-form {
-	margin-top: 0rem !important;
-	margin-bottom: 0rem !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
-.push-bag-empty  {
-	height: 27rem;
+.push-bag-empty {
+  height: 27rem;
 }
 
 /* ------------------------------- forms */
-
 .rounded-10 {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* ------------------------------- Allauth form formatting */
-
 .allauth-form-inner-content p {
   margin-top: 2rem;
   color: #6c757d;
@@ -223,8 +215,8 @@ body {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+  /* btn */
+  display: inline-block;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -238,63 +230,56 @@ body {
   font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 45px;
-	border: 2px solid #2e2e2e;
-	text-transform: uppercase;
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-
+  border: 2px solid #2e2e2e;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   /* standard bootstrap btn transitions */
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
-	color: #fff;
+  color: #fff;
   background-color: #222 !important;
   border-color: #222;
-	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
-	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.18), 0 2px 5px 2px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.18), 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.18), 0 2px 5px 2px rgba(0, 0, 0, 0.15);
 }
 
 .allauth-form-inner-content a {
-	color: #39C0ED; /* text-info */
+  color: #39C0ED;
+  /* text-info */
 }
 
 .allauth-buttons {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /* ------------------------------- media query */
-
 /* Quantity input number */
 @media not all and (min-resolution:.001dpcm) {
-@supports (-webkit-appearance: none) and (stroke-color:transparent) {
+  @supports (-webkit-appearance: none) {
 
-	.number-input.def-number-input.safari_only button:before,
-	.number-input.def-number-input.safari_only button:after {
-		margin-top: -.3rem;
-	}
-}
+    .number-input.def-number-input.safari_only button:before,
+    .number-input.def-number-input.safari_only button:after {
+      margin-top: -.3rem;
+    }
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
+  .bag-container-mobile .product-image img {
+    width: 90%;
+  }
 
-	.bag-container-mobile .product-image img {
-		width: 90%;
-	}
-
-	.bag-container-mobile .product-info {
-		margin-top: 2rem;
-	}
-
-	/* .contact-information-container {
-    padding-bottom: 8rem !important;
-	} */
+  .bag-container-mobile .product-info {
+    margin-top: 2rem;
+  }
 }
 
 /* File */
-
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -323,16 +308,7 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-
-	.bag-container-mobile .product-image img {
-		width: 100%;
-	}
-
-	/* .contact-information-container {
-    padding-bottom: 8rem !important;
-	} */
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+  .bag-container-mobile .product-image img {
+    width: 100%;
+  }
 }

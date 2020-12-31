@@ -428,18 +428,24 @@ Back to [top](#TableOfContents)
 
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
+	- Django template syntax not understood
+	- No error
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+	- No error
 
 **Javascript**
 - [Javascript Validator](https://jshint.com/)
+	- No error
 
 **Chrome DevTools**
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+	- Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
 
 **Python**
 - [Python validator](http://pep8online.com/)
+ - No error
 
 Back to [top](#TableOfContents)
 
@@ -450,7 +456,7 @@ Back to [top](#TableOfContents)
 - top/down page visible when scroll down then scroll up to window scroll = 0 when mobile menu is collapse
 - Sign up issue relative to sending email. Implementing email backend to fix this issue
 - Set image gallery back to required.
-- Create products and gallery sub-directories in media folder containing respectively product images and gallery images. 
+- Create products and gallery sub-directories in media folder containing respectively product images and gallery images.
 
 Back to [top](#TableOfContents)
 

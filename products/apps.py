@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-# Products apps
+# ProductsConfig apps
 
 class ProductsConfig(AppConfig):
     name = 'products'

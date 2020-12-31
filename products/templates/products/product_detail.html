@@ -52,39 +52,39 @@
 				{% endif %}
 
 				<!-- Edit product modal confirmation -->
-        <div class="modal edit-modal fade" id="edit-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-notify modal-warning" role="document">
-            <!-- modal content -->
-            <div class="modal-content">
-              <!-- modal header -->
-              <div class="modal-header">
-                <p class="heading lead">Edit Product</p>
+				<div class="modal edit-modal fade" id="edit-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-notify modal-warning" role="document">
+						<!-- modal content -->
+						<div class="modal-content">
+							<!-- modal header -->
+							<div class="modal-header">
+								<p class="heading lead">Edit Product</p>
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true" class="white-text">&times;</span>
-                </button>
-              </div>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
 
-              <!-- modal body -->
-              <div class="modal-body">
-                <div class="text-center">
-                  <i class="far fa-edit fa-4x mb-3 animated rotateIn"></i>
-                  <p>Are you sure you want to edit {{ product.name }}?</p>
-                </div>
-              </div>
+							<!-- modal body -->
+							<div class="modal-body">
+								<div class="text-center">
+									<i class="far fa-edit fa-4x mb-3 animated rotateIn"></i>
+									<p>Are you sure you want to edit {{ product.name }}?</p>
+								</div>
+							</div>
 
-              <!-- footer -->
-              <div class="modal-footer justify-content-center">
-                <a type="button" class="btn btn-warning btn-md" href="{% url 'edit_product' product.id %}">
-                  Yes
-                <a>
-                <a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'product_detail' product.id %}" data-dismiss="modal">
-                  Cancel
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+							<!-- footer -->
+							<div class="modal-footer justify-content-center">
+								<a type="button" class="btn btn-warning btn-md" href="{% url 'edit_product' product.id %}">
+									Yes
+									<a>
+										<a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'product_detail' product.id %}" data-dismiss="modal">
+											Cancel
+										</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<!-- Delete product modal confirmation -->
 				<div class="modal delete-modal fade" id="delete-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -112,10 +112,10 @@
 							<div class="modal-footer justify-content-center">
 								<a type="button" class="btn btn-danger btn-md" href="{% url 'delete_product' product.id %}">
 									Yes, I am sure
-								<a>
-								<a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'product_detail' product.id %}" data-dismiss="modal">
-									Cancel
-								</a>
+									<a>
+										<a type="button" class="btn btn-outline-elegant btn-md waves-effect" href="{% url 'product_detail' product.id %}" data-dismiss="modal">
+											Cancel
+										</a>
 							</div>
 						</div>
 					</div>

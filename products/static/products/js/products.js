@@ -21,18 +21,13 @@ $('document').ready(function($) {
     }
   });
 
-	// Trigger the click event on the delete-product-link id element
+  // Trigger the click event on the delete-product-link id element
   $('#delete-product-link').click(function(event) {
-		$('.delete-modal').modal('show');
-	});
+    $('.delete-modal').modal('show');
+  });
 
-	// Trigger the click event on the edit-product-link id element
-	$('#edit-product-link').click(function(event) {
-		$('.edit-modal').modal('show');
-	});
-
-	// $('#new-image').change(function() {
-  //   var file = $('#new-image')[0].files[0];
-  //   $('#filename').text(`Image will be set to: ${file.name}`);
-	// });
+  // Trigger the click event on the edit-product-link id element
+  $('#edit-product-link').click(function(event) {
+    $('.edit-modal').modal('show');
+  });
 });

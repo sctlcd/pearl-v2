@@ -1,25 +1,25 @@
 .md-form textarea.md-textarea+label {
-    top: 0;
+  top: 0;
 }
 
 .contact-information {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .section-body {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #contact-form .form-control {
-    color: #000;
+  color: #000;
 }
 
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
-    color: #aab7c4;
+  color: #aab7c4;
 }
 
 .contact-form .btn-md {
-    padding: .7rem 1.6rem !important;
+  padding: .7rem 1.6rem !important;
 }
