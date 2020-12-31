@@ -10,7 +10,7 @@
 [...](https://pearl.herokuapp.com/)
 <dt></dt>  
 <br>
-!! Warning: Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved in order to submit my project to Code Institute. This was not my initial gallery model setup. Please be aware than the submission of an added or updated image to upload in gallery and products form is currently returning an error.
+** Warning ** Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved in order to submit my project to Code Institute. This was not my initial gallery model setup. Please be aware than the submission of an added or updated image to upload in gallery and products form is currently returning an error.
 
 ---
 
@@ -71,10 +71,9 @@ Back to [top](#TableOfContents)
 
 ### Why this project? <a name="WhyThisProject"></a>
 
-This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Full Stack Frameworks With Django** module. The objective of this milestone project is
+This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Full Stack Frameworks With Django** module. The objective of this milestone project is building a full-stack site based around business logic used to control a centrally-owned dataset, setting up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
 
-For this project we could choose from one of the following ideas:
-- Bring your own idea(s) to life, based on providing value to users to address a specific real or imagined need.
+
 
 Back to [top](#TableOfContents)
 
