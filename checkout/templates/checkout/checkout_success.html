@@ -1,4 +1,4 @@
-{% extends "base_extended.html" %}
+{% extends "base_extension.html" %}
 {% load static %}
 
 {% block extra_css %}
@@ -23,14 +23,14 @@
 	<div class="row">
 		<div class="col">
 			<hr>
-			<h2 class="logo-font mb-4">Thank You</h2>
+			<h2 class="logo-font my-4 text-center">Thank You</h2>
 			<hr>
 			<p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-12 col-lg-7">
+		<div class="col-12 col-lg-8">
 			<div class="order-confirmation-wrapper p-2 border">
 				<div class="row">
 					<div class="col">

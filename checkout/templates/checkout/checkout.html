@@ -42,7 +42,7 @@
 			</div>
 			{% for item in bag_items %}
 			<div class="row">
-				<div class="col-2 mb-1 zoom">
+				<div class="col-2 mb-2 zoom">
 					<a href="{% url 'product_detail' item.product.id %}">
 						{% if item.product.image %}
 						<img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
@@ -76,7 +76,7 @@
 		</div>
 		<div class="col-12 col-lg-6">
 			<p class="text-muted">Please fill out the form below to complete your order</p>
-			<form action="{% url 'checkout' %}" method="POST" id="payment-form" enctype="multipart/form-data">
+			<form action="{% url 'checkout' %}" method="POST" id="payment-form">
 				{% csrf_token %}
 				<fieldset class="rounded px-3 mb-5">
 					<legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
@@ -94,7 +94,7 @@
 					{{ order_form.country | as_crispy_field }}
 					<div class="form-check form-check-inline float-right mr-0">
 						{% if user.is_authenticated %}
-						<label class="form-check-label font-small" for="id-save-info">Save this delivery information to my profile</label>
+						<label class="form-check-label small" for="id-save-info">Save this delivery information to my profile</label>
 						<input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 						{% else %}
 						<label class="form-check-label font-small" for="id-save-info">
@@ -110,7 +110,7 @@
 					<div class="mb-3" id="card-element"></div>
 
 					<!-- Used to display form errors -->
-					<div class="mb-3 text-danger font-small" id="card-errors" role="alert"></div>
+					<div class="mb-3 text-danger small" id="card-errors" role="alert"></div>
 					<!-- Pass the client secret to the view so we can get the payment intent id -->
           <input type="hidden" value="{{ client_secret }}" name="client_secret">
 				</fieldset>
