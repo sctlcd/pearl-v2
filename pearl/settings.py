@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost', '1e5721ee139b.ngrok.io']
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost', '1da53ccc621d.ngrok.io']
 
 
 # Application definition
