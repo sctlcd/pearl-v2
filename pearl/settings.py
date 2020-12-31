@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost', '1da53ccc621d.ngrok.io']
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -187,7 +187,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
     # Cache control
