@@ -1,8 +1,10 @@
 from django.apps import AppConfig
 
 
-# Checkout apps 
-
+# Checkout apps
 
 class CheckoutConfig(AppConfig):
     name = 'checkout'
+
+    def ready(self):
+        import checkout.signals
