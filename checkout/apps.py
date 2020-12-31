@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-# Checkout apps
+# CheckoutConfig apps
 
 class CheckoutConfig(AppConfig):
     name = 'checkout'

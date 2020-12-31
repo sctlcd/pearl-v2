@@ -37,9 +37,6 @@ def add_to_bag(request, item_id):
         'product': product,
         'quantity': bag[item_id],
     }
-
-    # return redirect(redirect_url)
-
     # reload product_detail page quantity updated accordingly to the quantity
     # in the shopping bag and reset quantity input number to 1
     return render(request, 'products/product_detail.html', context)

@@ -5,16 +5,9 @@
   padding: 10px 12px;
   border: 1px solid #6c757d !important;
   border-radius: 10px;
-  /* box-shadow: 0 1px 3px 0 #e6ebf1; */
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
-
-/* .StripeElement--focus,
-.stripe-style-input:focus,
-.stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #cfd7df;
-} */
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
@@ -37,17 +30,17 @@
 
 select,
 select option {
-	color: #000000;
+  color: #000000;
 }
 
 select:invalid,
 select option[value=""] {
-	color: #aab7c4!important;
+  color: #aab7c4 !important;
 }
 
 #loading-overlay {
-	display: none;
-	position: fixed;
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -57,7 +50,7 @@ select option[value=""] {
 }
 
 .loading-spinner {
-	display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
