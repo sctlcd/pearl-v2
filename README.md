@@ -10,7 +10,7 @@
 
 [Let me show you!](https://sctlcd-pearl2.herokuapp.com/)
 
-** Warning ** Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved in order to submit my project to Code Institute. This was not my initial gallery model setup. Please be aware than the submission of an added or updated image to upload in gallery and products form is currently returning an error.
+**Warning** Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue which has been solved just before my project deadline submission. I set up initially the gallery image field as required. I will set it back to required in the future.
 
 ---
 
@@ -448,8 +448,9 @@ Back to [top](#TableOfContents)
 ### Known Issues <a name="KnownIssues"></a>
 
 - top/down page visible when scroll down then scroll up to window scroll = 0 when mobile menu is collapse
-
 - Sign up issue relative to sending email. Implementing email backend to fix this issue
+- Set image gallery back to required.
+- Create products and gallery sub-directories in media folder containing respectively product images and gallery images. 
 
 Back to [top](#TableOfContents)
 
