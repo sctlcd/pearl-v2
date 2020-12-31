@@ -184,6 +184,7 @@ Back to [top](#TableOfContents)
 - [Atom](https://atom.io/) - Used as a local IDE.
 - [Compressjpeg](https://compressjpeg.com/) - Used to compress images for loading faster
 - [Techsini](https://techsini.com/multi-mockup/) - Used to generate multi-device website mockup
+- [Ngrok 2.3.35](https://ngrok.com/) - Expose a local web server to the public internet over secure tunnels
 
 Back to [top](#TableOfContents)
 
@@ -321,7 +322,9 @@ Back to [top](#TableOfContents)
 
 ## Credits <a name="Credits"></a>
 
-- My inspiration comes from
+- My inspiration comes from:
+- [Etsy](https://www.etsy.com/) - E-commerce website focused on handmade or vintage items and craft supplies
+- [Cultura](https://www.cultura.com/)- E-commerce website specialized in cultural, arts and crafts goods and leisure activities
 
 Back to [top](#TableOfContents)
 

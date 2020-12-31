@@ -27,11 +27,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['sctlcd-pearl.herokuapp.com', '127.0.0.1', 'localhost', '1e5721ee139b.ngrok.io']
 
 
 # Application definition
@@ -215,8 +215,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
+# Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
