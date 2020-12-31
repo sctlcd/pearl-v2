@@ -63,7 +63,7 @@
 
 ## About <a name="About"></a>
 
-...
+The primary purpose of Pearl is to purchase arts and crafts supplies. Its secondary purpose is to share customers' work of art in the meantime as getting inspiration from other customers' creative work. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
 Back to [top](#TableOfContents)
 
@@ -73,7 +73,7 @@ Back to [top](#TableOfContents)
 
 This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Full Stack Frameworks With Django** module. The objective of this milestone project is building a full-stack site based around business logic used to control a centrally-owned dataset, setting up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
 
-
+My modern responsive e-commerce arts and craft supplies shop usind is built using HTML, CSS, Material Design for Bootstrap, JavaScript, jQuery, Django, Python, PostgreSQL.
 
 Back to [top](#TableOfContents)
 
@@ -95,13 +95,22 @@ Back to [top](#TableOfContents)
 
 ---
 
-### Design <a name="Design"></a>  
+### Design <a name="Design"></a>
+
+I choose this
 
 Back to [top](#TableOfContents)
 
 ---
 
 #### Framework <a name="Framework"></a>
+
+- [Material Design for Bootstrap 4.19.1](https://mdbootstrap.com/)
+	- I really like the modern and clean layout of Material Design and the ease of use and standards of Bootstrap so I wanted to give a try and getting familiar with Material Design for Bootstrap
+- [jQuery 3.5.1](https://jquery.com/)
+	- For the purpose of keeping the JavaScript minimal
+- [Django 3.1.1](https://www.djangoproject.com/)
+
 
 Back to [top](#TableOfContents)
 
