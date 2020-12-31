@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['sctlcd-pearl2.herokuapp.com']
+ALLOWED_HOSTS = ['sctlcd-pearl2.herokuapp.com', "localhost", '127.0.0.1:8000']
 
 
 # Application definition
@@ -221,5 +221,3 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-
-DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
