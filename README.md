@@ -1,16 +1,15 @@
 # Pearl
 
-# [Pearl](https://pearl.herokuapp.com/)
+# [Pearl](https://sctlcd-pearl2.herokuapp.com/)
 
 <img src="https://github.com/sctlcd/pearl/blob/master/design/mockups.png" alt="Pearl" width="700">
 
-<dd>Do you like creative activities, Arts and Crafts and creating things by yourself with your hands and creativity ?</dd>
-<dd>This website is made for you!</dd>
-<dd>At Pearl's you can purchase arts and crafts supplies and sharing customers' work of art in the meantime as getting inspiration from other customers' creative work in the gallery</dd>
+<dd>Do you like creative activities, Arts and Crafts and making things by yourself with your hands and your creativity ?</dd>
+<dt>This website is a pearl to you!</date_to_long_string>
+<dt>At Pearl's you can purchase arts and crafts supplies and sharing customers' work of art in the meantime as getting inspiration from other customers' creative work in the gallery</dt>
 
-[...](https://pearl.herokuapp.com/)
-<dt></dt>  
-<br>
+[Let me show you!](https://sctlcd-pearl2.herokuapp.com/)
+
 ** Warning ** Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue unresolved in order to submit my project to Code Institute. This was not my initial gallery model setup. Please be aware than the submission of an added or updated image to upload in gallery and products form is currently returning an error.
 
 ---
