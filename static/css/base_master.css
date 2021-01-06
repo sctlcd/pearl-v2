@@ -90,6 +90,30 @@ body {
   padding: .7rem 1.6rem !important;
 }
 
+/* top/down buttons */
+.btt-button-top,
+.btt-button-down {
+  position: fixed;
+  right: 0.6rem;
+  border-radius: 45px;
+  background-color: #a4aaaf;
+  color: #fafafa;
+  -webkit-box-shadow: 0px 4px 10px #353535 !important;
+  box-shadow: 0px 4px 10px #353535 !important;
+  z-index: 998;
+}
+
+.btt-button-down {
+  bottom: 0.6rem;
+}
+
+.btt-button-top:hover,
+.btt-button-down:hover {
+  background-color: #6c757d;
+  -webkit-box-shadow: 0px 4px 10px #353535 !important;
+  box-shadow: 0px 4px 10px #353535 !important;
+}
+
 /* ------------------------------- text, border, background style */
 .text-black {
   color: #000 !important;
@@ -255,6 +279,7 @@ form div>label.active {
 .navbar {
   -webkit-box-shadow: 0 0 0 0 transparent;
   box-shadow: 0 0 0 0 transparent;
+  padding: .5rem .8rem;
 }
 
 .navbar-mobile {
