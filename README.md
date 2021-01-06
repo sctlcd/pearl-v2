@@ -324,7 +324,7 @@ The Relational scheme diagram can be found [here](https://github.com/sctlcd/pear
 - :heavy_check_mark: view the site from any device (mobile, tablet, desktop).
 - :heavy_check_mark: be able to log in.
 - :heavy_check_mark: be able to log out.
-- :x: be able to register. (see known issue section)
+- :heavy_check_mark: be able to register. (see known issue section)
 - :heavy_check_mark: filter and search amongst all products.
 - :heavy_check_mark: view all products.
 - :heavy_check_mark: view a product details.
