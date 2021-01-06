@@ -279,6 +279,7 @@ form div>label.active {
 .navbar {
   -webkit-box-shadow: 0 0 0 0 transparent;
   box-shadow: 0 0 0 0 transparent;
+  padding: .5rem .8rem;
 }
 
 .navbar-mobile {
