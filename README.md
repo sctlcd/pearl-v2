@@ -89,33 +89,33 @@ Back to [top](#TableOfContents)
 [v] successfully implemented
 [x] not yet implemented
 
-- [v] view the site from any device (mobile, tablet, desktop).
-- [v] be able to log in.
-- [v] be able to log out.
-- [v] be able to register.
-- [v] filter and search amongst all products.
-- [v] view all products.
-- [v] view a product details.
-- [v] add products with an image as an admin.
-- [v] add products without an image as an admin.
-- [v] edit products with an image as an admin.
-- [v] edit products without an image as an admin.
-- [v] delete products as an admin.
-- [v] view gallery images.
-- [v] view a gallery image.
-- [v] share a gallery image as a logged in user.
-- [v] add a gallery item with an image as an admin.
-- [v] add a gallery item without an image as an admin.
-- [v] edit a gallery item with an image as an admin.
-- [v] edit a gallery item without an image as an admin.
-- [v] delete a gallery image as an admin.
-- [v] approved a gallery image as an admin.
-- [v] view my profile as a logged in user.
-- [v] update my profile as a logged in user.
-- [v] update my profile as logged in user.
-- [v] add products to my bag.
-- [v] checkout my order.
-- [v] send a contact request.
+- :heavy_check_mark: view the site from any device (mobile, tablet, desktop).
+- :heavy_check_mark: be able to log in.
+- :heavy_check_mark: be able to log out.
+- :heavy_check_mark: be able to register.
+- :heavy_check_mark: filter and search amongst all products.
+- :heavy_check_mark: view all products.
+- :heavy_check_mark: view a product details.
+- :heavy_check_mark: add products with an image as an admin.
+- :heavy_check_mark: add products without an image as an admin.
+- :heavy_check_mark: edit products with an image as an admin.
+- :heavy_check_mark: edit products without an image as an admin.
+- :heavy_check_mark: delete products as an admin.
+- :heavy_check_mark: view gallery images.
+- :heavy_check_mark: view a gallery image.
+- :heavy_check_mark: share a gallery image as a logged in user.
+- :heavy_check_mark: add a gallery item with an image as an admin.
+- :heavy_check_mark: add a gallery item without an image as an admin.
+- :heavy_check_mark: edit a gallery item with an image as an admin.
+- :heavy_check_mark: edit a gallery item without an image as an admin.
+- :heavy_check_mark: delete a gallery image as an admin.
+- :heavy_check_mark: approved a gallery image as an admin.
+- :heavy_check_mark: view my profile as a logged in user.
+- :heavy_check_mark: update my profile as a logged in user.
+- :heavy_check_mark: update my profile as logged in user.
+- :heavy_check_mark: add products to my bag.
+- :heavy_check_mark: checkout my order.
+- :heavy_check_mark: send a contact request.
 
 
 Back to [top](#TableOfContents)
@@ -318,36 +318,36 @@ The Relational scheme diagram can be found [here](https://github.com/sctlcd/pear
 
 ### User story validation <a name="UserStoryValidation"></a>
 
-[v] *as expected*
+:heavy_check_mark: *as expected*
 :x: *not as expected*
 
-- [v] view the site from any device (mobile, tablet, desktop).
-- [v] be able to log in.
-- [v] be able to log out.
-- [x] be able to register. (see known issue section)
-- [v] filter and search amongst all products.
-- [v] view all products.
-- [v] view a product details.
-- [v] add products with an image as an admin.
-- [v] add products without an image as an admin.
-- [v] edit products with an image as an admin.
-- [v] edit products without an image as an admin.
-- [v] delete products as an admin.
-- [v] view gallery images.
-- [v] view a gallery image.
-- [v] share a gallery image as a logged in user.
-- [v] add a gallery item with an image as an admin.
-- [v] add a gallery item without an image as an admin.
-- [v] edit a gallery item with an image as an admin.
-- [v] edit a gallery item without an image as an admin.
-- [v] delete a gallery image as an admin.
-- [v] approved a gallery image as an admin.
-- [v] view my profile as a logged in user.
-- [v] update my profile as a logged in user.
-- [v] update my profile as logged in user.
-- [v] add products to my bag.
-- [v] checkout my order.
-- [v] send a contact request.
+- :heavy_check_mark: view the site from any device (mobile, tablet, desktop).
+- :heavy_check_mark: be able to log in.
+- :heavy_check_mark: be able to log out.
+- :x: be able to register. (see known issue section)
+- :heavy_check_mark: filter and search amongst all products.
+- :heavy_check_mark: view all products.
+- :heavy_check_mark: view a product details.
+- :heavy_check_mark: add products with an image as an admin.
+- :heavy_check_mark: add products without an image as an admin.
+- :heavy_check_mark: edit products with an image as an admin.
+- :heavy_check_mark: edit products without an image as an admin.
+- :heavy_check_mark: delete products as an admin.
+- :heavy_check_mark: view gallery images.
+- :heavy_check_mark: view a gallery image.
+- :heavy_check_mark: share a gallery image as a logged in user.
+- :heavy_check_mark: add a gallery item with an image as an admin.
+- :heavy_check_mark: add a gallery item without an image as an admin.
+- :heavy_check_mark: edit a gallery item with an image as an admin.
+- :heavy_check_mark: edit a gallery item without an image as an admin.
+- :heavy_check_mark: delete a gallery image as an admin.
+- :heavy_check_mark: approved a gallery image as an admin.
+- :heavy_check_mark: view my profile as a logged in user.
+- :heavy_check_mark: update my profile as a logged in user.
+- :heavy_check_mark: update my profile as logged in user.
+- :heavy_check_mark: add products to my bag.
+- :heavy_check_mark: checkout my order.
+- :heavy_check_mark: send a contact request.
 
 ---
 
@@ -485,16 +485,20 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 **Permissions** > **CORS configuration**:
 
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-<CORSRule>
-    <AllowedOrigin>*</AllowedOrigin>
-    <AllowedMethod>GET</AllowedMethod>
-    <AllowedMethod>HEAD</AllowedMethod>
-    <MaxAgeSeconds>3000</MaxAgeSeconds>
-    <AllowedHeader>Authorization</AllowedHeader>
-</CORSRule>
-</CORSConfiguration>
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
 ```
 
 **Permissions** > **Bucket Policy**:
