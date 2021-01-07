@@ -1,14 +1,12 @@
-# Pearl
+# [Pearl](https://sctlcd-pearl-latest-version.herokuapp.com/)
 
-# [Pearl](https://sctlcd-pearl2.herokuapp.com/)
-
-<img src="https://github.com/sctlcd/pearl/blob/master/design/mockups.png" alt="Pearl" width="700">
+<img src="https://github.com/sctlcd/pearl-latest-version/blob/master/design/mockups.png" alt="Pearl" width="700">
 
 <dd>Do you like creative activities, Arts and Crafts and making things by yourself with your hands and your creativity ?</dd>
 <dt>This website is a pearl to you!</date_to_long_string>
 <dt>At Pearl's you can purchase arts and crafts supplies and sharing customers' work of art in the meantime as getting inspiration from other customers' creative work in the gallery</dt>
 
-[Let me show you!](https://sctlcd-pearl2.herokuapp.com/)
+[Let me show you!](https://sctlcd-pearl-latest-version.herokuapp.com/)
 
 **Warning** Because of an issue relative to submitting a form with an uploaded image in my deployed environment I did set up the image field in the gallery model as not required for limiting the impact of the issue which has been solved just before my project deadline submission. I set up initially the gallery image field as required. I will set it back to required in the future.
 
@@ -125,7 +123,7 @@ Back to [top](#TableOfContents)
 ### Design <a name="Design"></a>
 
 I did choose a warm and joyful dominant orange [#fc9601](https://placehold.it/15/fc9601/fc9601) combinated with sober colors ranging between off-white [#fafafa](https://placehold.it/15/fafafa/fafafa) and black with a range of grey.
-I choose the [logo](https://github.com/sctlcd/pearl/blob/master/media/logo/pearl-min.png) and all the website [images](https://github.com/sctlcd/pearl/tree/master/media) relative to arts and crafts and creative activities. I selected the main home page image, [hero-image-background](https://github.com/sctlcd/pearl/blob/master/media/home/hero_image/hero-image-background-min.jpg), as I found it absolutely beautiful, very eye-catchy and intriguing. It catches the customers/visitors' attention and makes them very curious about it.
+I choose the [logo](https://github.com/sctlcd/pearl-latest-version/blob/master/media/logo/pearl-min.png) and all the website [images](https://github.com/sctlcd/pearl-latest-version/tree/master/media) relative to arts and crafts and creative activities. I selected the main home page image, [hero-image-background](https://github.com/sctlcd/pearl-latest-version/blob/master/media/home/hero_image/hero-image-background-min.jpg), as I found it absolutely beautiful, very eye-catchy and intriguing. It catches the customers/visitors' attention and makes them very curious about it.
 I decided to implement a customers' gallery and offer the possibility to share your own piece of art and getting inspiration from other customers' art work. I believe this feature is an very interesting one as it involves the customers in the website building. They are in a way actor of the gallery page building and content.  
 
 Back to [top](#TableOfContents)
@@ -311,7 +309,7 @@ Back to [top](#TableOfContents)
 
 ## Relational scheme <a name="RelationalScheme"></a>
 
-The Relational scheme diagram can be found [here](https://github.com/sctlcd/pearl/blob/master/design/relational-scheme.png)
+The Relational scheme diagram can be found [here](https://github.com/sctlcd/pearl-latest-version/blob/master/design/relational-scheme.png)
 
 
 ## Testing <a name="Testing"></a>
@@ -470,10 +468,10 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 
 - Create a **requirements.txt** file so Heroku can install the required dependencies to run the app:
     - `sudo pip3 freeze --local > requirements.txt`
-    - The *requirements.txt* file for this project can be found here: [requirements.txt](https://github.com/sctlcd/pearl/blob/master/requirements.txt)
-- Create a **Procfile** to tell Heroku what type of application is being deployed using *pearl*, and how to run it:
+    - The *requirements.txt* file for this project can be found here: [requirements.txt](https://github.com/sctlcd/pearl-latest-version/blob/master/requirements.txt)
+- Create a **Procfile** to tell Heroku what type of application is being deployed using *pearl-latest-version*, and how to run it:
     - `echo web: gunicorn main.wsgi:application > Procfile`
-    - The *Procfile* for this project can be found here: [Procfile](https://github.com/sctlcd/pearl/blob/master/Procfile)
+    - The *Procfile* for this project can be found here: [Procfile](https://github.com/sctlcd/pearl-latest-version/blob/master/Procfile)
 - Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
 - In the Heroku **Resources** tab, navigate to the *Add-Ons* section and search for **Heroku Postgres**. Make sure to select the free *Hobby* level. This will allow you to have a remote database instead of using the local sqlite3 database, and can be found in the Settings tab. You'll need to update your *.env* file with your new *database-url* details.
 - In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables. You will need to copy/paste all of the *.env* key value pairs into the config variables, but please omit the *development=1* variable; this is only for local deployment.
@@ -545,7 +543,7 @@ In order to run this project locally on your own system, you will need the follo
 Next, there's a series of steps to take in order to proceed with local deployment:
 
 - Clone this GitHub repository by either clicking the green "*Clone or download*" button above in order to download the project as a zip-file (remember to unzip it first), or by entering the following command into the Git CLI terminal:
-    - `git clone https://github.com/sctlcd/pearl.git`
+    - `git clone https://github.com/sctlcd/pearl-latest-version.git`
 - Navigate to the correct file location after unpacking the files.
     - `cd <path to folder>`
 - Create a `.env` file with your own credentials. An example *.env* file can be found here ([.env_sample](project/.env_sample)).
@@ -565,7 +563,7 @@ Next, there's a series of steps to take in order to proceed with local deploymen
 
 Once the database migrations and superuser have been successfully completed, Django should migrate the existing *migrations.py* files from each app to configure the following relational schema:
 
-[Relational Schema](https://github.com/sctlcd/pearl/blob/master/design/relational-scheme.png)
+[Relational Schema](https://github.com/sctlcd/pearl-latest-version/blob/master/design/relational-scheme.png)
 
 Back to [top](#TableOfContents)
 
