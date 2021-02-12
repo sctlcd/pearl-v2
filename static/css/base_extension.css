@@ -176,6 +176,13 @@ body {
   color: #6c757d;
 }
 
+.allauth-form-inner-content .invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
 .allauth-form-inner-content input {
   border-color: #000;
   border-radius: 0;
