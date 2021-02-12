@@ -581,7 +581,7 @@ Back to [top](#TableOfContents)
 
 ### Content <a name="Content"></a>
 
-- Baker Ross [bakerross](https://www.bakerross.ie/)
+- [Baker Ross](https://www.bakerross.ie/)
 
 Back to [top](#TableOfContents)
 
